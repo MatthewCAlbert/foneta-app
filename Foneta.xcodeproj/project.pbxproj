@@ -16,6 +16,20 @@
 		4C6628CC285097B500084711 /* FonetaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628CB285097B500084711 /* FonetaUITestsLaunchTests.swift */; };
 		4C6628DE28509A2000084711 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628DD28509A2000084711 /* HomeView.swift */; };
 		4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628DF28509A2C00084711 /* HomeViewModel.swift */; };
+		4C6628E32850A4F600084711 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628E22850A4F600084711 /* README.md */; };
+		4C6628E82850A55100084711 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628E72850A55100084711 /* AppColor.swift */; };
+		4C6628EC2850A66C00084711 /* Jua-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628EA2850A66C00084711 /* Jua-Regular.ttf */; };
+		4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628EF2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf */; };
+		4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F12850A67A00084711 /* Inter-Medium.ttf */; };
+		4C6628FE2850A67A00084711 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F22850A67A00084711 /* Inter-Light.ttf */; };
+		4C6628FF2850A67A00084711 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F32850A67A00084711 /* Inter-Thin.ttf */; };
+		4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F42850A67A00084711 /* Inter-Bold.ttf */; };
+		4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F52850A67A00084711 /* Inter-Regular.ttf */; };
+		4C6629022850A67A00084711 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F62850A67A00084711 /* Inter-ExtraBold.ttf */; };
+		4C6629032850A67A00084711 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F72850A67A00084711 /* Inter-ExtraLight.ttf */; };
+		4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F82850A67A00084711 /* Inter-Black.ttf */; };
+		4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */; };
+		4C66290E2850ABB700084711 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C66290D2850ABB700084711 /* AppFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,21 @@
 		4C6628CB285097B500084711 /* FonetaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonetaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C6628DD28509A2000084711 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4C6628DF28509A2C00084711 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4C6628E22850A4F600084711 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4C6628E72850A55100084711 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		4C6628EA2850A66C00084711 /* Jua-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jua-Regular.ttf"; sourceTree = "<group>"; };
+		4C6628EF2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		4C6628F12850A67A00084711 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		4C6628F22850A67A00084711 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		4C6628F32850A67A00084711 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		4C6628F42850A67A00084711 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		4C6628F52850A67A00084711 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		4C6628F62850A67A00084711 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4C6628F72850A67A00084711 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4C6628F82850A67A00084711 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		4C66290C2850AB4D00084711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4C66290D2850ABB700084711 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +107,7 @@
 		4C6628A2285097B400084711 = {
 			isa = PBXGroup;
 			children = (
+				4C6628E22850A4F600084711 /* README.md */,
 				4C6628AD285097B400084711 /* Foneta */,
 				4C6628BE285097B500084711 /* FonetaTests */,
 				4C6628C8285097B500084711 /* FonetaUITests */,
@@ -98,6 +128,8 @@
 		4C6628AD285097B400084711 /* Foneta */ = {
 			isa = PBXGroup;
 			children = (
+				4C66290C2850AB4D00084711 /* Info.plist */,
+				4C6628E42850A52C00084711 /* Themes */,
 				4C6628DA285099CD00084711 /* Model */,
 				4C6628D82850995400084711 /* UI */,
 				4C6628B2285097B500084711 /* Assets.xcassets */,
@@ -171,6 +203,66 @@
 				4C6628DF28509A2C00084711 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4C6628E42850A52C00084711 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628E62850A54900084711 /* Colors */,
+				4C6628E52850A53100084711 /* Fonts */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		4C6628E52850A53100084711 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628EE2850A67A00084711 /* Inter */,
+				4C6628E92850A66C00084711 /* Jua */,
+				4C66290D2850ABB700084711 /* AppFont.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4C6628E62850A54900084711 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628E72850A55100084711 /* AppColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		4C6628E92850A66C00084711 /* Jua */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628EA2850A66C00084711 /* Jua-Regular.ttf */,
+			);
+			path = Jua;
+			sourceTree = "<group>";
+		};
+		4C6628EE2850A67A00084711 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628EF2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf */,
+				4C6628F02850A67A00084711 /* static */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		4C6628F02850A67A00084711 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628F12850A67A00084711 /* Inter-Medium.ttf */,
+				4C6628F22850A67A00084711 /* Inter-Light.ttf */,
+				4C6628F32850A67A00084711 /* Inter-Thin.ttf */,
+				4C6628F42850A67A00084711 /* Inter-Bold.ttf */,
+				4C6628F52850A67A00084711 /* Inter-Regular.ttf */,
+				4C6628F62850A67A00084711 /* Inter-ExtraBold.ttf */,
+				4C6628F72850A67A00084711 /* Inter-ExtraLight.ttf */,
+				4C6628F82850A67A00084711 /* Inter-Black.ttf */,
+				4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +369,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6628E32850A4F600084711 /* README.md in Resources */,
+				4C6628FF2850A67A00084711 /* Inter-Thin.ttf in Resources */,
+				4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */,
+				4C6628FE2850A67A00084711 /* Inter-Light.ttf in Resources */,
+				4C6629032850A67A00084711 /* Inter-ExtraLight.ttf in Resources */,
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
+				4C6628EC2850A66C00084711 /* Jua-Regular.ttf in Resources */,
+				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
+				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
+				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
+				4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				4C6628B3285097B500084711 /* Assets.xcassets in Resources */,
+				4C6629022850A67A00084711 /* Inter-ExtraBold.ttf in Resources */,
+				4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C66290E2850ABB700084711 /* AppFont.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
+				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
@@ -468,6 +574,7 @@
 				DEVELOPMENT_TEAM = GXV96JYG87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foneta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,6 +604,7 @@
 				DEVELOPMENT_TEAM = GXV96JYG87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foneta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
