@@ -14,6 +14,8 @@
 		4C6628C0285097B500084711 /* FonetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628BF285097B500084711 /* FonetaTests.swift */; };
 		4C6628CA285097B500084711 /* FonetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628C9285097B500084711 /* FonetaUITests.swift */; };
 		4C6628CC285097B500084711 /* FonetaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628CB285097B500084711 /* FonetaUITestsLaunchTests.swift */; };
+		4C6628DE28509A2000084711 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628DD28509A2000084711 /* HomeView.swift */; };
+		4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628DF28509A2C00084711 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4C6628C5285097B500084711 /* FonetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FonetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6628C9285097B500084711 /* FonetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonetaUITests.swift; sourceTree = "<group>"; };
 		4C6628CB285097B500084711 /* FonetaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonetaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C6628DD28509A2000084711 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4C6628DF28509A2C00084711 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		4C6628AD285097B400084711 /* Foneta */ = {
 			isa = PBXGroup;
 			children = (
-				4C6628AE285097B400084711 /* FonetaApp.swift */,
-				4C6628B0285097B400084711 /* ContentView.swift */,
+				4C6628DA285099CD00084711 /* Model */,
+				4C6628D82850995400084711 /* UI */,
 				4C6628B2285097B500084711 /* Assets.xcassets */,
 				4C6628B4285097B500084711 /* Preview Content */,
 			);
@@ -125,6 +129,48 @@
 				4C6628CB285097B500084711 /* FonetaUITestsLaunchTests.swift */,
 			);
 			path = FonetaUITests;
+			sourceTree = "<group>";
+		};
+		4C6628D82850995400084711 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628AE285097B400084711 /* FonetaApp.swift */,
+				4C6628B0285097B400084711 /* ContentView.swift */,
+				4C6628D9285099BE00084711 /* Scenes */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4C6628D9285099BE00084711 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628DC28509A0C00084711 /* Home */,
+				4C6628DB285099F400084711 /* Stages */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4C6628DA285099CD00084711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C6628DB285099F400084711 /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stages;
+			sourceTree = "<group>";
+		};
+		4C6628DC28509A0C00084711 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628DD28509A2000084711 /* HomeView.swift */,
+				4C6628DF28509A2C00084711 /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
+				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
