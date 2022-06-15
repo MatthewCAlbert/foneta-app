@@ -26,6 +26,17 @@ jobs:
         with:
           xcode-version: 'latest-stable'
 
+      - uses: actions/cache@v2
+        with:
+          path: .build
+          key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
+
+      - name: Install SPM Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies -scmProvider system
+
       - name: Build (${{ matrix.ios }})
         run: |
           xcodebuild -project Foneta.xcodeproj \
