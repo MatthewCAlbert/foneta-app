@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8A7E9F23CF2CC99EC3397C /* Pods_Foneta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */; };
 		4C6628AF285097B400084711 /* FonetaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628AE285097B400084711 /* FonetaApp.swift */; };
 		4C6628B1285097B400084711 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628B0285097B400084711 /* ContentView.swift */; };
 		4C6628B3285097B500084711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628B2285097B500084711 /* Assets.xcassets */; };
@@ -30,8 +31,8 @@
 		4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F82850A67A00084711 /* Inter-Black.ttf */; };
 		4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */; };
 		4C66290E2850ABB700084711 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C66290D2850ABB700084711 /* AppFont.swift */; };
-		4CE4DB76285A2BF300E48E6F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4CE4DB75285A2BF300E48E6F /* Realm */; };
-		4CE4DB78285A2BF300E48E6F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4CE4DB77285A2BF300E48E6F /* RealmSwift */; };
+		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
+		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00614C3082AEECBA32C97C42 /* Pods-Foneta-FonetaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta-FonetaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C6628AB285097B400084711 /* Foneta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foneta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6628AE285097B400084711 /* FonetaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonetaApp.swift; sourceTree = "<group>"; };
 		4C6628B0285097B400084711 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 		4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		4C66290C2850AB4D00084711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4C66290D2850ABB700084711 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
+		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
+		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B80923B70ABE2DC221E2180 /* Pods-FonetaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FonetaTests.debug.xcconfig"; path = "Target Support Files/Pods-FonetaTests/Pods-FonetaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8657C37D1432C05931982DFD /* Pods-FonetaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FonetaTests.release.xcconfig"; path = "Target Support Files/Pods-FonetaTests/Pods-FonetaTests.release.xcconfig"; sourceTree = "<group>"; };
+		9980663035A79112A1663452 /* Pods-Foneta-FonetaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta-FonetaUITests.release.xcconfig"; path = "Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta_FonetaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE4DB78285A2BF300E48E6F /* RealmSwift in Frameworks */,
-				4CE4DB76285A2BF300E48E6F /* Realm in Frameworks */,
+				1E8A7E9F23CF2CC99EC3397C /* Pods_Foneta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C186EA589F0718FA6058FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */,
+				64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */,
+				00614C3082AEECBA32C97C42 /* Pods-Foneta-FonetaUITests.debug.xcconfig */,
+				9980663035A79112A1663452 /* Pods-Foneta-FonetaUITests.release.xcconfig */,
+				7B80923B70ABE2DC221E2180 /* Pods-FonetaTests.debug.xcconfig */,
+				8657C37D1432C05931982DFD /* Pods-FonetaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4C6628A2285097B400084711 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +140,8 @@
 				4C6628BE285097B500084711 /* FonetaTests */,
 				4C6628C8285097B500084711 /* FonetaUITests */,
 				4C6628AC285097B400084711 /* Products */,
+				4C186EA589F0718FA6058FC4 /* Pods */,
+				730B96DFFCB7D4DA83ACF6A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +295,16 @@
 			path = static;
 			sourceTree = "<group>";
 		};
+		730B96DFFCB7D4DA83ACF6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */,
+				BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */,
+				FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,19 +312,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C6628CF285097B500084711 /* Build configuration list for PBXNativeTarget "Foneta" */;
 			buildPhases = (
+				81410428F46C6D614CF45104 /* [CP] Check Pods Manifest.lock */,
 				4C6628A7285097B400084711 /* Sources */,
 				4C6628A8285097B400084711 /* Frameworks */,
 				4C6628A9285097B400084711 /* Resources */,
+				C0EB546F12A0F141D4B03AF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Foneta;
-			packageProductDependencies = (
-				4CE4DB75285A2BF300E48E6F /* Realm */,
-				4CE4DB77285A2BF300E48E6F /* RealmSwift */,
-			);
 			productName = Foneta;
 			productReference = 4C6628AB285097B400084711 /* Foneta.app */;
 			productType = "com.apple.product-type.application";
@@ -297,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C6628D2285097B500084711 /* Build configuration list for PBXNativeTarget "FonetaTests" */;
 			buildPhases = (
+				BDD2119F154819449F55D3BA /* [CP] Check Pods Manifest.lock */,
 				4C6628B7285097B500084711 /* Sources */,
 				4C6628B8285097B500084711 /* Frameworks */,
 				4C6628B9285097B500084711 /* Resources */,
@@ -315,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C6628D5285097B500084711 /* Build configuration list for PBXNativeTarget "FonetaUITests" */;
 			buildPhases = (
+				CD4A1CFDFE371632E57A16A6 /* [CP] Check Pods Manifest.lock */,
 				4C6628C1285097B500084711 /* Sources */,
 				4C6628C2285097B500084711 /* Frameworks */,
 				4C6628C3285097B500084711 /* Resources */,
+				08F68B89F9B46E62928BA313 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,9 +398,6 @@
 				Base,
 			);
 			mainGroup = 4C6628A2285097B400084711;
-			packageReferences = (
-				4CE4DB74285A2BF300E48E6F /* XCRemoteSwiftPackageReference "realm-swift" */,
-			);
 			productRefGroup = 4C6628AC285097B400084711 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,6 +446,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08F68B89F9B46E62928BA313 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81410428F46C6D614CF45104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foneta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD2119F154819449F55D3BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FonetaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0EB546F12A0F141D4B03AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foneta/Pods-Foneta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foneta/Pods-Foneta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foneta/Pods-Foneta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4A1CFDFE371632E57A16A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foneta-FonetaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C6628A7285097B400084711 /* Sources */ = {
@@ -576,6 +713,7 @@
 		};
 		4C6628D0285097B500084711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -606,6 +744,7 @@
 		};
 		4C6628D1285097B500084711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,8 +775,9 @@
 		};
 		4C6628D3285097B500084711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B80923B70ABE2DC221E2180 /* Pods-FonetaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -656,8 +796,9 @@
 		};
 		4C6628D4285097B500084711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8657C37D1432C05931982DFD /* Pods-FonetaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -676,8 +817,9 @@
 		};
 		4C6628D6285097B500084711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00614C3082AEECBA32C97C42 /* Pods-Foneta-FonetaUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GXV96JYG87;
@@ -694,8 +836,9 @@
 		};
 		4C6628D7285097B500084711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9980663035A79112A1663452 /* Pods-Foneta-FonetaUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GXV96JYG87;
@@ -750,30 +893,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4CE4DB74285A2BF300E48E6F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.19.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4CE4DB75285A2BF300E48E6F /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4CE4DB74285A2BF300E48E6F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		4CE4DB77285A2BF300E48E6F /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4CE4DB74285A2BF300E48E6F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C6628A3285097B400084711 /* Project object */;
 }

@@ -28,18 +28,17 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: .build
-          key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-spm-
+            ${{ runner.os }}-pods-
 
-      - name: Install SPM Dependencies
-        run: |
-          xcodebuild -resolvePackageDependencies -scmProvider system
+      - name: CocoaPod Install
+        run: pod install
 
       - name: Build (${{ matrix.ios }})
         run: |
-          xcodebuild -project Foneta.xcodeproj \
+          xcodebuild -workspace Foneta.xcworkspace \
             -scheme Foneta \
             -destination '${{matrix.destination}}' \
             build \
@@ -48,7 +47,7 @@ jobs:
 
       # - name: Test (${{ matrix.ios }})
       #   run: |
-      #     xcodebuild -project Foneta.xcodeproj \
+      #     xcodebuild -workspace Foneta.xcworkspace \
       #       -scheme Foneta \
       #       -destination '${{matrix.destination}}' \
       #       clean test \
