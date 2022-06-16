@@ -33,7 +33,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
 
-      - name: CocoaPod Install
+      - name: CocoaPods Install
         run: pod install
 
       - name: Build (${{ matrix.ios }})
