@@ -4,10 +4,13 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OpenDyslexicAlta-BoldItalic.otf</string>
+		<string>OpenDyslexicAlta-Regular.otf</string>
+		<string>OpenDyslexicAlta-BoldItalic.otf</string>
+		<string>OpenDyslexicAlta-Italic.otf</string>
 		<string>Inter-Regular.ttf</string>
 		<string>Inter-Light.ttf</string>
 		<string>Inter-Bold.ttf</string>
-		<string>Jua-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

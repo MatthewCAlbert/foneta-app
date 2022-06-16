@@ -10,6 +10,10 @@ on:
     paths-ignore:
       - '**/README.md'
 
+concurrency:
+  group: test-build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: macos-latest

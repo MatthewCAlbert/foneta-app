@@ -19,7 +19,6 @@
 		4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628DF28509A2C00084711 /* HomeViewModel.swift */; };
 		4C6628E32850A4F600084711 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628E22850A4F600084711 /* README.md */; };
 		4C6628E82850A55100084711 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6628E72850A55100084711 /* AppColor.swift */; };
-		4C6628EC2850A66C00084711 /* Jua-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628EA2850A66C00084711 /* Jua-Regular.ttf */; };
 		4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628EF2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf */; };
 		4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F12850A67A00084711 /* Inter-Medium.ttf */; };
 		4C6628FE2850A67A00084711 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F22850A67A00084711 /* Inter-Light.ttf */; };
@@ -31,6 +30,18 @@
 		4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F82850A67A00084711 /* Inter-Black.ttf */; };
 		4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */; };
 		4C66290E2850ABB700084711 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C66290D2850ABB700084711 /* AppFont.swift */; };
+		4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB7A285ACBA700E48E6F /* RMStageSession.swift */; };
+		4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */; };
+		4CE4DB8E285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */; };
+		4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */; };
+		4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */; };
+		4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */; };
+		4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB93285AD27900E48E6F /* UserData.swift */; };
+		4CE4DB9A285AD50500E48E6F /* StageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB99285AD50500E48E6F /* StageManager.swift */; };
+		4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB9C285AD5DC00E48E6F /* LevelData.swift */; };
+		4CE4DB9F285AD60000E48E6F /* StageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB9E285AD60000E48E6F /* StageData.swift */; };
+		4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */; };
+		4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,7 +79,6 @@
 		4C6628DF28509A2C00084711 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4C6628E22850A4F600084711 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C6628E72850A55100084711 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
-		4C6628EA2850A66C00084711 /* Jua-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jua-Regular.ttf"; sourceTree = "<group>"; };
 		4C6628EF2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		4C6628F12850A67A00084711 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		4C6628F22850A67A00084711 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
@@ -81,6 +91,18 @@
 		4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		4C66290C2850AB4D00084711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4C66290D2850ABB700084711 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		4CE4DB7A285ACBA700E48E6F /* RMStageSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMStageSession.swift; sourceTree = "<group>"; };
+		4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLevelSession.swift; sourceTree = "<group>"; };
+		4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
+		4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
+		4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
+		4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
+		4CE4DB93285AD27900E48E6F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		4CE4DB99285AD50500E48E6F /* StageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageManager.swift; sourceTree = "<group>"; };
+		4CE4DB9C285AD5DC00E48E6F /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
+		4CE4DB9E285AD60000E48E6F /* StageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageData.swift; sourceTree = "<group>"; };
+		4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStageView.swift; sourceTree = "<group>"; };
+		4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelContent.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +182,8 @@
 			children = (
 				4C66290C2850AB4D00084711 /* Info.plist */,
 				4C6628E42850A52C00084711 /* Themes */,
-				4C6628DA285099CD00084711 /* Model */,
+				4C6628DA285099CD00084711 /* Data */,
+				4CE4DB98285AD4D500E48E6F /* Utilities */,
 				4C6628D82850995400084711 /* UI */,
 				4C6628B2285097B500084711 /* Assets.xcassets */,
 				4C6628B4285097B500084711 /* Preview Content */,
@@ -196,43 +219,24 @@
 		4C6628D82850995400084711 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DB97285AD49300E48E6F /* Components */,
+				4CE4DB7E285ACC9700E48E6F /* Screen */,
+				4CE4DB99285AD50500E48E6F /* StageManager.swift */,
 				4C6628AE285097B400084711 /* FonetaApp.swift */,
 				4C6628B0285097B400084711 /* ContentView.swift */,
-				4C6628D9285099BE00084711 /* Scenes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		4C6628D9285099BE00084711 /* Scenes */ = {
+		4C6628DA285099CD00084711 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4C6628DC28509A0C00084711 /* Home */,
-				4C6628DB285099F400084711 /* Stages */,
+				4CE4DBA2285AD6E200E48E6F /* Content */,
+				4CE4DB9B285AD5C500E48E6F /* Entities */,
+				4CE4DB92285AD1FF00E48E6F /* UserDefaults */,
+				4CE4DB79285ACB1A00E48E6F /* Model */,
 			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		4C6628DA285099CD00084711 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4C6628DB285099F400084711 /* Stages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stages;
-			sourceTree = "<group>";
-		};
-		4C6628DC28509A0C00084711 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4C6628DD28509A2000084711 /* HomeView.swift */,
-				4C6628DF28509A2C00084711 /* HomeViewModel.swift */,
-			);
-			path = Home;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		4C6628E42850A52C00084711 /* Themes */ = {
@@ -247,8 +251,8 @@
 		4C6628E52850A53100084711 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DB89285ACE4D00E48E6F /* OpenDyslexicAltA */,
 				4C6628EE2850A67A00084711 /* Inter */,
-				4C6628E92850A66C00084711 /* Jua */,
 				4C66290D2850ABB700084711 /* AppFont.swift */,
 			);
 			path = Fonts;
@@ -260,14 +264,6 @@
 				4C6628E72850A55100084711 /* AppColor.swift */,
 			);
 			path = Colors;
-			sourceTree = "<group>";
-		};
-		4C6628E92850A66C00084711 /* Jua */ = {
-			isa = PBXGroup;
-			children = (
-				4C6628EA2850A66C00084711 /* Jua-Regular.ttf */,
-			);
-			path = Jua;
 			sourceTree = "<group>";
 		};
 		4C6628EE2850A67A00084711 /* Inter */ = {
@@ -293,6 +289,91 @@
 				4C6628F92850A67A00084711 /* Inter-SemiBold.ttf */,
 			);
 			path = static;
+			sourceTree = "<group>";
+		};
+		4CE4DB79285ACB1A00E48E6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DB7A285ACBA700E48E6F /* RMStageSession.swift */,
+				4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CE4DB7E285ACC9700E48E6F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DB96285AD47F00E48E6F /* Stages */,
+				4CE4DB7F285ACCA300E48E6F /* Home */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		4CE4DB7F285ACCA300E48E6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C6628DD28509A2000084711 /* HomeView.swift */,
+				4C6628DF28509A2C00084711 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4CE4DB89285ACE4D00E48E6F /* OpenDyslexicAltA */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */,
+				4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */,
+				4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */,
+				4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */,
+			);
+			path = OpenDyslexicAltA;
+			sourceTree = "<group>";
+		};
+		4CE4DB92285AD1FF00E48E6F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DB93285AD27900E48E6F /* UserData.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		4CE4DB96285AD47F00E48E6F /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
+			);
+			path = Stages;
+			sourceTree = "<group>";
+		};
+		4CE4DB97285AD49300E48E6F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4CE4DB98285AD4D500E48E6F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4CE4DB9B285AD5C500E48E6F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DB9C285AD5DC00E48E6F /* LevelData.swift */,
+				4CE4DB9E285AD60000E48E6F /* StageData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4CE4DBA2285AD6E200E48E6F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		730B96DFFCB7D4DA83ACF6A2 /* Frameworks */ = {
@@ -414,15 +495,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */,
 				4C6628E32850A4F600084711 /* README.md in Resources */,
 				4C6628FF2850A67A00084711 /* Inter-Thin.ttf in Resources */,
+				4CE4DB8E285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf in Resources */,
 				4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */,
 				4C6628FE2850A67A00084711 /* Inter-Light.ttf in Resources */,
 				4C6629032850A67A00084711 /* Inter-ExtraLight.ttf in Resources */,
+				4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */,
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
-				4C6628EC2850A66C00084711 /* Jua-Regular.ttf in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
+				4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */,
 				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
 				4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				4C6628B3285097B500084711 /* Assets.xcassets in Resources */,
@@ -555,12 +639,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE4DB9F285AD60000E48E6F /* StageData.swift in Sources */,
 				4C66290E2850ABB700084711 /* AppFont.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
+				4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */,
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
+				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
+				4CE4DB9A285AD50500E48E6F /* StageManager.swift in Sources */,
+				4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */,
+				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
+				4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
+				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +912,8 @@
 			baseConfigurationReference = 00614C3082AEECBA32C97C42 /* Pods-Foneta-FonetaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GXV96JYG87;
@@ -827,6 +921,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.team16.foneta.FonetaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -839,6 +935,8 @@
 			baseConfigurationReference = 9980663035A79112A1663452 /* Pods-Foneta-FonetaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GXV96JYG87;
@@ -846,6 +944,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.team16.foneta.FonetaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

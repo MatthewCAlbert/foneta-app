@@ -11,7 +11,7 @@ struct HomeView: View {
     let model: HomeViewModel = HomeViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(Font.custom(AppFont.jua.rawValue, size: 24))
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(Font.custom(AppFont.openDyslexicBold.rawValue, size: 24))
     }
 }
 
