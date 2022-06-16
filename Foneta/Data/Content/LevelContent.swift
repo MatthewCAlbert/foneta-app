@@ -9,7 +9,7 @@ import Foundation
 
 class LevelContent {
     
-    public let shared = LevelContent()
+    static let shared = LevelContent()
     
     private init() {}
     
