@@ -24,7 +24,7 @@ struct ThemedButton: View {
     let height: CGFloat
     let fontSize: CGFloat
     let text: String
-    let action: () -> Void
+    var action: () -> Void = {}
     
     @ObservedObject var tts = TextToSpeech()
     @State var isPressed = false
@@ -44,7 +44,7 @@ struct ThemedButton: View {
                     .foregroundColor(.white)
                     .shadow(color: .black, radius: 8, x: 0, y: 0)
             }
-            .frame(width: max(200, width), height: max(50, height), alignment: .center)
+            .frame(width: max(44, width), height: max(44, height), alignment: .center)
         })
         .buttonStyle(ThemedButtonButtonStyle())
     }
@@ -59,7 +59,7 @@ struct ThemedButton: View {
 struct ThemedButton_Previews: PreviewProvider {
     static var previews: some View {
         ThemedButton(
-            width: 0, height: 0, fontSize: 24,
+            width: 200, height: 50, fontSize: 24,
             text: "Hello World",
             action: {
                 print("Pressed")

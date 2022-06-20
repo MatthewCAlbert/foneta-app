@@ -22,6 +22,7 @@ class TextToSpeech: NSObject, ObservableObject {
         utterance.rate = rate
         utterance.volume = volume
 
+        self.speechSynthesizer.stopSpeaking(at: .immediate)
         self.speechSynthesizer.speak(utterance)
     }
 }
