@@ -12,7 +12,7 @@ struct ThemedButtonButtonStyle: ButtonStyle {
         configuration.label
             .foregroundColor(configuration.isPressed ? Color.gray : Color.blue)
             .background(
-                Image(!configuration.isPressed ? "button_1" : "button_1_pressed")
+                Image(!configuration.isPressed ? "Button-1" : "Button-1-Pressed")
                     .resizable()
                     .renderingMode(.original)
             )
