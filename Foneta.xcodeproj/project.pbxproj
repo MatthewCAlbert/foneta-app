@@ -34,7 +34,6 @@
 		4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */; };
 		4CE4DB8E285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */; };
 		4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */; };
-		4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */; };
 		4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */; };
 		4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB93285AD27900E48E6F /* UserData.swift */; };
 		4CE4DB9A285AD50500E48E6F /* StageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB99285AD50500E48E6F /* StageManager.swift */; };
@@ -47,7 +46,7 @@
 		4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */; };
 		4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */; };
 		4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBBB2860057400E48E6F /* TextBox.swift */; };
-		4CE4DBBF2860059100E48E6F /* Dialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBBE2860059100E48E6F /* Dialogue.swift */; };
+		4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBBE2860059100E48E6F /* DialogBubble.swift */; };
 		4CE4DBC1286005CB00E48E6F /* CardPromptOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */; };
 		4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC2286005F100E48E6F /* CaptionBox.swift */; };
 		4CE4DBC5286025D500E48E6F /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC4286025D500E48E6F /* StrokeText.swift */; };
@@ -106,7 +105,6 @@
 		4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLevelSession.swift; sourceTree = "<group>"; };
 		4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
 		4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
-		4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
 		4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
 		4CE4DB93285AD27900E48E6F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		4CE4DB99285AD50500E48E6F /* StageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageManager.swift; sourceTree = "<group>"; };
@@ -119,12 +117,13 @@
 		4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
 		4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedButton.swift; sourceTree = "<group>"; };
 		4CE4DBBB2860057400E48E6F /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
-		4CE4DBBE2860059100E48E6F /* Dialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogue.swift; sourceTree = "<group>"; };
+		4CE4DBBE2860059100E48E6F /* DialogBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBubble.swift; sourceTree = "<group>"; };
 		4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPromptOverlay.swift; sourceTree = "<group>"; };
 		4CE4DBC2286005F100E48E6F /* CaptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBox.swift; sourceTree = "<group>"; };
 		4CE4DBC4286025D500E48E6F /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameOnboardView.swift; sourceTree = "<group>"; };
 		4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,7 +347,7 @@
 			children = (
 				4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */,
 				4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */,
-				4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */,
+				4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */,
 				4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */,
 			);
 			path = OpenDyslexicAltA;
@@ -426,7 +425,7 @@
 		4CE4DBBD2860058400E48E6F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				4CE4DBBE2860059100E48E6F /* Dialogue.swift */,
+				4CE4DBBE2860059100E48E6F /* DialogBubble.swift */,
 				4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */,
 				4CE4DBC2286005F100E48E6F /* CaptionBox.swift */,
 				4CE4DBC4286025D500E48E6F /* StrokeText.swift */,
@@ -571,7 +570,6 @@
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
-				4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */,
 				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
 				4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				4C6628B3285097B500084711 /* Assets.xcassets in Resources */,
@@ -728,7 +726,7 @@
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
 				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
-				4CE4DBBF2860059100E48E6F /* Dialogue.swift in Sources */,
+				4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

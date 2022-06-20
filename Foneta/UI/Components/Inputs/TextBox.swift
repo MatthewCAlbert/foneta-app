@@ -17,11 +17,12 @@ struct TextBox: View {
         )
         .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32))
         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+        .border(.clear, width: 0)
         .foregroundColor(.black)
         .background(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
-                .shadow(color: .black, radius: 4, x: 0, y: 0)
+                .shadow(color: Color.black.opacity(0.4), radius: 4, x: 0, y: 0)
         )
     }
 }

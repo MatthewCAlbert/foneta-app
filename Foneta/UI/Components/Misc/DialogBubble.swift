@@ -1,5 +1,5 @@
 //
-//  Dialogue.swift
+//  DialogBubble.swift
 //  Foneta
 //
 //  Created by Matthew Christopher Albert on 20/06/22.
@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct Dialogue: View {
+struct DialogBubble: View {
     let width: CGFloat
     let height: CGFloat
     let fontSize: CGFloat
     let text: String
+    var soundName: SoundManager.SoundName? = nil
     var extraItem: some View = EmptyView()
     
     @ObservedObject var tts = TextToSpeech()
@@ -19,7 +20,7 @@ struct Dialogue: View {
     
     var body: some View {
         ZStack {
-            Image("Dialogue-Bg")
+            Image("DialogBubble-Bg")
                 .resizable()
                 .renderingMode(.original)
                 .scaleEffect(CGSize(width: isFlipped ? -1.0 : 1.0, height: 1.0))
@@ -43,8 +44,12 @@ struct Dialogue: View {
     }
     
     func voiceover(_ yes: Bool = true) -> some View {
-        // TODO: play a voiceover
         let view = self
+        guard let soundName = soundName else {
+            return view.id(UUID())
+        }
+
+        SoundManager.shared.playSound(soundName)
         return view.id(UUID())
     }
     
@@ -55,9 +60,9 @@ struct Dialogue: View {
     }
 }
 
-struct Dialogue_Previews: PreviewProvider {
+struct DialogBubble_Previews: PreviewProvider {
     static var previews: some View {
-        Dialogue(
+        DialogBubble(
             width: 300, height: 200, fontSize: 24,
             text: "Halo Budi, sampai jumpa!"
         )

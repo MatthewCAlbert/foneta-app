@@ -42,7 +42,7 @@ struct ThemedButton: View {
                     .font(Font.custom(AppFont.openDyslexic.rawValue, size: fontSize))
                     .bold()
                     .foregroundColor(.white)
-                    .shadow(color: .black, radius: 8, x: 0, y: 0)
+                    .shadow(color: Color.black.opacity(0.6), radius: 8, x: 0, y: 0)
             }
             .frame(width: max(44, width), height: max(44, height), alignment: .center)
         })
