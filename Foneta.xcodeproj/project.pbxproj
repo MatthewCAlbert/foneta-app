@@ -34,7 +34,6 @@
 		4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */; };
 		4CE4DB8E285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */; };
 		4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */; };
-		4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */; };
 		4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */; };
 		4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB93285AD27900E48E6F /* UserData.swift */; };
 		4CE4DB9A285AD50500E48E6F /* StageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB99285AD50500E48E6F /* StageManager.swift */; };
@@ -45,6 +44,14 @@
 		4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */; };
 		4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */; };
 		4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */; };
+		4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */; };
+		4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBBB2860057400E48E6F /* TextBox.swift */; };
+		4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBBE2860059100E48E6F /* DialogBubble.swift */; };
+		4CE4DBC1286005CB00E48E6F /* CardPromptOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */; };
+		4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC2286005F100E48E6F /* CaptionBox.swift */; };
+		4CE4DBC5286025D500E48E6F /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC4286025D500E48E6F /* StrokeText.swift */; };
+		4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */; };
+		4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,7 +105,6 @@
 		4CE4DB7C285ACBC200E48E6F /* RMLevelSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLevelSession.swift; sourceTree = "<group>"; };
 		4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
 		4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
-		4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
 		4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
 		4CE4DB93285AD27900E48E6F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		4CE4DB99285AD50500E48E6F /* StageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageManager.swift; sourceTree = "<group>"; };
@@ -109,6 +115,15 @@
 		4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedButton.swift; sourceTree = "<group>"; };
+		4CE4DBBB2860057400E48E6F /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
+		4CE4DBBE2860059100E48E6F /* DialogBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBubble.swift; sourceTree = "<group>"; };
+		4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPromptOverlay.swift; sourceTree = "<group>"; };
+		4CE4DBC2286005F100E48E6F /* CaptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBox.swift; sourceTree = "<group>"; };
+		4CE4DBC4286025D500E48E6F /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
+		4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameOnboardView.swift; sourceTree = "<group>"; };
+		4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,6 +324,7 @@
 		4CE4DB7E285ACC9700E48E6F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DBC62860294000E48E6F /* Stories */,
 				4CE4DB96285AD47F00E48E6F /* Stages */,
 				4CE4DB7F285ACCA300E48E6F /* Home */,
 			);
@@ -320,6 +336,8 @@
 			children = (
 				4C6628DD28509A2000084711 /* HomeView.swift */,
 				4C6628DF28509A2C00084711 /* HomeViewModel.swift */,
+				4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */,
+				4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -329,7 +347,7 @@
 			children = (
 				4CE4DB8A285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf */,
 				4CE4DB8B285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf */,
-				4CE4DB8C285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf */,
+				4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */,
 				4CE4DB8D285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf */,
 			);
 			path = OpenDyslexicAltA;
@@ -354,6 +372,9 @@
 		4CE4DB97285AD49300E48E6F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DBBD2860058400E48E6F /* Misc */,
+				4CE4DBBA2860056700E48E6F /* Inputs */,
+				4CE4DBB7285F0DD200E48E6F /* Button */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -383,6 +404,40 @@
 				4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		4CE4DBB7285F0DD200E48E6F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4CE4DBBA2860056700E48E6F /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBBB2860057400E48E6F /* TextBox.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		4CE4DBBD2860058400E48E6F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBBE2860059100E48E6F /* DialogBubble.swift */,
+				4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */,
+				4CE4DBC2286005F100E48E6F /* CaptionBox.swift */,
+				4CE4DBC4286025D500E48E6F /* StrokeText.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		4CE4DBC62860294000E48E6F /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stories;
 			sourceTree = "<group>";
 		};
 		730B96DFFCB7D4DA83ACF6A2 /* Frameworks */ = {
@@ -515,7 +570,6 @@
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
-				4CE4DB90285ACE4D00E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */,
 				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
 				4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				4C6628B3285097B500084711 /* Assets.xcassets in Resources */,
@@ -648,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE4DBC5286025D500E48E6F /* StrokeText.swift in Sources */,
 				4CE4DB9F285AD60000E48E6F /* StageData.swift in Sources */,
 				4C66290E2850ABB700084711 /* AppFont.swift in Sources */,
 				4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */,
@@ -661,10 +716,17 @@
 				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
 				4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
+				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
+				4CE4DBC1286005CB00E48E6F /* CardPromptOverlay.swift in Sources */,
+				4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */,
+				4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
+				4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
+				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
+				4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +893,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -862,6 +926,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -9,8 +9,9 @@ import Foundation
 
 class UserData {
     let id: String // generated
-    var _name: String?
-    var _lastLevel: String? // level ID
+    private var _name: String?
+    private var _lastLevel: String? // level ID
+    private var _mapFound: Bool
     
     static let shared = UserData()
     
@@ -23,8 +24,9 @@ class UserData {
             self.id = generatedId
         }
         
-        self._name = UserDefaults.standard.string(forKey: "name")
+        self._name = UserDefaults.standard.string(forKey: "userName")
         self._lastLevel = UserDefaults.standard.string(forKey: "lastLevel")
+        self._mapFound = UserDefaults.standard.bool(forKey: "mapFound")
     }
     
     var name: String? {
@@ -33,7 +35,7 @@ class UserData {
         }
         set(newValue) {
             self._name = newValue
-            UserDefaults.standard.set(newValue, forKey: "name")
+            UserDefaults.standard.set(newValue, forKey: "userName")
         }
     }
     
@@ -44,6 +46,16 @@ class UserData {
         set(newValue) {
             self._lastLevel = newValue
             UserDefaults.standard.set(newValue, forKey: "lastLevel")
+        }
+    }
+    
+    var mapFound: Bool {
+        get {
+            return self._mapFound
+        }
+        set(newValue) {
+            self._mapFound = newValue
+            UserDefaults.standard.set(newValue, forKey: "mapFound")
         }
     }
 }

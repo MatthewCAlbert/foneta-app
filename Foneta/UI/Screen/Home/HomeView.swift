@@ -8,15 +8,28 @@
 import SwiftUI
 
 struct HomeView: View {
-    let model: HomeViewModel = HomeViewModel()
+    @ObservedObject var model: HomeViewModel = HomeViewModel()
+    @State var switched: Bool = false
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(Font.custom(AppFont.openDyslexicBold.rawValue, size: 24))
+        ZStack {
+            WelcomeView()
+                .opacity(model.opacity)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        switched = true
+                    }
+                }
+            NavigationLink(destination: InputNameOnboardView(), isActive: $switched) {
+                EmptyView()
+            }
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
