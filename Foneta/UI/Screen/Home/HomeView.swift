@@ -11,7 +11,19 @@ struct HomeView: View {
     let model: HomeViewModel = HomeViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(Font.custom(AppFont.openDyslexicBold.rawValue, size: 24))
+        VStack {
+            Text("Hello, World!").font(
+                Font.custom(AppFont.openDyslexic.rawValue, size: 24)
+            )
+            ThemedButton(
+                width: 0, height: 0, fontSize: 24,
+                text: "Mulai",
+                action: {
+                    print("Pressed")
+                }
+            )
+            .voiced()
+        }
     }
 }
 

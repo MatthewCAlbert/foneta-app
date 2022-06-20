@@ -16,11 +16,11 @@ class TextToSpeech: NSObject, ObservableObject {
         self.speechSynthesizer.delegate = self
     }
     
-    func speakSomething(text: String, rate: Double = 0.3, volume: Double = 1.0) {
+    func speakSomething(text: String, rate: Float = 0.3, volume: Float = 1.0) {
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "id-ID")
-        utterance.rate = 0.3
-        utterance.volume = 1.0
+        utterance.rate = rate
+        utterance.volume = volume
 
         self.speechSynthesizer.speak(utterance)
     }
@@ -29,22 +29,16 @@ class TextToSpeech: NSObject, ObservableObject {
 extension TextToSpeech: AVSpeechSynthesizerDelegate {
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
-        print("speaking")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didPause utterance: AVSpeechUtterance) {
-        print("paused")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didContinue utterance: AVSpeechUtterance) {
-        print("continued")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
-        print("cancelled")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        print("finished")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
-        print("\(characterRange)")
     }
     
 }

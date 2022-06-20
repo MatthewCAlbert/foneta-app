@@ -45,6 +45,7 @@
 		4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */; };
 		4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */; };
 		4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */; };
+		4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +110,7 @@
 		4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedButton.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -354,6 +356,7 @@
 		4CE4DB97285AD49300E48E6F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DBB7285F0DD200E48E6F /* Button */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -383,6 +386,14 @@
 				4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		4CE4DBB7285F0DD200E48E6F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		730B96DFFCB7D4DA83ACF6A2 /* Frameworks */ = {
@@ -664,6 +675,7 @@
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
+				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
