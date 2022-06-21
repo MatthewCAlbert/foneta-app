@@ -53,6 +53,20 @@ struct MiniThreeStoryView: View {
                         cardImage: "Card-3",
                         cardVoiceover: .screen13MiniStart
                     )
+                case 4:
+                    StoryMiniEndView(
+                        nextScene: AnyView(mainStoryLane[nextScreenId].body),
+                        backgroundImage: "Screen15-Bg",
+                        finishMessage: "Rahmat berhasil memanjat pohon kelapa.\nSelamat Rahmat, kamu hebat!",
+                        finishMessageColor: .black,
+                        characterImage: "Neta-MouthOpened",
+                        characterVoiceover: .screen15MiniEnd,
+                        characterBubbleText: "Segar sekali, terima kasih Rahmat!",
+                        characterBubbleTextVoiceover: .screen15MiniEndNeta,
+                        characterBubbleTextVoiceoverDelay: 5.1,
+                        buttonText: "Selanjutnya",
+                        buttonVoiceover: .next
+                    )
                 default:
                     EmptyView()
             }
@@ -63,7 +77,7 @@ struct MiniThreeStoryView: View {
 struct MiniThreeStoryView_Previews: PreviewProvider {
     static var previews: some View {
         MiniThreeStoryView(
-            page: 3,
+            page: 4,
             nextScreenId: "0"
         )
         .previewInterfaceOrientation(.landscapeRight)

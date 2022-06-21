@@ -36,7 +36,6 @@ struct ThemedButton: View {
             HapticManager.shared.impact(style: .medium)
             if (isTTS) {
                 if (voiceover != nil) {
-                    print("heiya")
                     SoundManager.shared.playSound(voiceover!)
                 } else {
                     tts.speakSomething(text: text, rate: 0.4, volume: 0.3)

@@ -31,7 +31,7 @@ struct DialogBubble: View {
                     .multilineTextAlignment(.center)
                 extraItem
             }
-            .frame(width: width * 0.67, height: height * 0.5, alignment: .center)
+            .frame(width: width * 0.67, height: height * 0.67, alignment: .center)
             .padding(EdgeInsets(top: 0, leading: !flipped ? width * 0.067 : 0, bottom: 0, trailing: flipped ? width * 0.067 : 0))
         }
         .frame(width: width, height: height, alignment: .center)
@@ -42,7 +42,11 @@ struct DialogBubble: View {
         return self.id(UUID())
     }
     
-    func voiceover(_ soundName: SoundAssets, delay: Double = 0) -> some View {
+    func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {
+        guard let soundName = soundName else {
+            return self.id(UUID())
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             SoundManager.shared.setChannelQueuePlay(soundName)
         }
@@ -59,7 +63,7 @@ struct DialogBubble_Previews: PreviewProvider {
     static var previews: some View {
         DialogBubble(
             width: 300, height: 200, fontSize: 24,
-            text: "Halo Budi, sampai jumpa!"
+            text: "Halo Budi, sampai jumpa!\nKetiga"
         )
     }
 }

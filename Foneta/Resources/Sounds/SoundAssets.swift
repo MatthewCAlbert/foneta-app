@@ -11,6 +11,7 @@ enum SoundAssets: String {
     case count321 = "321"
     case next = "Selanjutnya"
     case ready = "Siap"
+    case open = "Buka"
     
     // Abc
     case a
@@ -50,12 +51,14 @@ enum SoundAssets: String {
     case screen5 = "Screen 5"
     case screen5MiniStart = "Screen 5 Minigame Start"
     case screen5MiniEnd = "Screen 5 Minigame End"
+    case screen5MiniEndKepi = "Screen 5 Minigame End Kepi"
     case screen6 = "Screen 6"
     case screen7 = "Screen 7"
     case screen7MiniStart = "Screen 7 Minigame Start"
     case screen7Neta = "Screen 7 Neta"
     case screen8Mini2 = "Screen 8 Minigame 2"
     case screen9MiniEnd = "Screen 9 Minigame End"
+    case screen9MiniEndNeta = "Screen 9 Minigame End Neta"
     case screen10 = "Screen 10"
     case screen10Neta = "Screen 10 Neta"
     case screen11 = "Screen 11"

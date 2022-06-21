@@ -47,6 +47,20 @@ struct MiniOneStoryView: View {
                         cardImage: "Card-1",
                         cardVoiceover: .screen4MiniStart
                     )
+                case 4:
+                    StoryMiniEndView(
+                        nextScene: AnyView(mainStoryLane[nextScreenId].body),
+                        backgroundImage: "Screen5-Bg",
+                        finishMessage: "Rahmat berhasil menyelamatkan Kepi.\nSelamat Rahmat, kamu hebat!",
+                        finishMessageColor: .black,
+                        characterImage: "Kepi-Happy",
+                        characterVoiceover: .screen5MiniEnd,
+                        characterBubbleText: "Terima kasih, Rahmat!",
+                        characterBubbleTextVoiceover: .screen5MiniEndKepi,
+                        characterBubbleTextVoiceoverDelay: 5.1,
+                        buttonText: "Selanjutnya",
+                        buttonVoiceover: .next
+                    )
                 default:
                     EmptyView()
             }
@@ -57,7 +71,7 @@ struct MiniOneStoryView: View {
 struct MiniOneStoryView_Previews: PreviewProvider {
     static var previews: some View {
         MiniOneStoryView(
-            page: 3,
+            page: 4,
             nextScreenId: "0"
         )
         .previewInterfaceOrientation(.landscapeRight)

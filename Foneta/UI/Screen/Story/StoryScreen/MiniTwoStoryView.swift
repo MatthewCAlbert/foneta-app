@@ -30,6 +30,20 @@ struct MiniTwoStoryView: View {
                         cardImage: "Card-2",
                         cardVoiceover: .screen7MiniStart
                     )
+                case 3:
+                    StoryMiniEndView(
+                        nextScene: AnyView(mainStoryLane[nextScreenId].body),
+                        backgroundImage: "Screen9-Bg",
+                        finishMessage: "Rahmat berhasil menyelamatkan Neta.\nSelamat Rahmat, kamu hebat!",
+                        finishMessageColor: .black,
+                        characterImage: "Neta-MouthOpened",
+                        characterVoiceover: .screen9MiniEnd,
+                        characterBubbleText: "Terima kasih, Rahmat!",
+                        characterBubbleTextVoiceover: .screen9MiniEndNeta,
+                        characterBubbleTextVoiceoverDelay: 4.5,
+                        buttonText: "Selanjutnya",
+                        buttonVoiceover: .next
+                    )
                 default:
                     EmptyView()
             }
@@ -40,7 +54,7 @@ struct MiniTwoStoryView: View {
 struct MiniTwoStoryView_Previews: PreviewProvider {
     static var previews: some View {
         MiniTwoStoryView(
-            page: 2,
+            page: 3,
             nextScreenId: "0"
         )
         .previewInterfaceOrientation(.landscapeRight)

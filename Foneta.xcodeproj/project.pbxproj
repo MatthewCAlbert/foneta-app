@@ -119,6 +119,7 @@
 		4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */; };
 		4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */; };
 		4CE4DC662862214E00E48E6F /* MiniFourStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */; };
+		4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -258,6 +259,7 @@
 		4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTwoStoryView.swift; sourceTree = "<group>"; };
 		4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniThreeStoryView.swift; sourceTree = "<group>"; };
 		4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourStoryView.swift; sourceTree = "<group>"; };
+		4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMiniEndView.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -599,6 +601,7 @@
 			isa = PBXGroup;
 			children = (
 				4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */,
+				4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -1047,6 +1050,7 @@
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
+				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
 				4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */,

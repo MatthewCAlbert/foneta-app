@@ -53,6 +53,19 @@ struct MiniFourStoryView: View {
                         cardImage: "Card-4",
                         cardVoiceover: .screen19MiniStart
                     )
+                case 4:
+                    StoryMiniEndView(
+                        nextScene: AnyView(mainStoryLane[nextScreenId].body),
+                        backgroundImage: "Screen21-Bg",
+                        finishMessage: "Selamat Rahmat, kamu berhasil\nmendapatkan harta karun!",
+                        finishMessageColor: .white,
+                        characterImage: "Treasure-1",
+                        characterVoiceover: .screen21MiniEnd,
+                        characterBubbleText: nil,
+                        characterBubbleTextVoiceover: nil,
+                        buttonText: "Buka",
+                        buttonVoiceover: .open
+                    )
                 default:
                     EmptyView()
             }
@@ -63,7 +76,7 @@ struct MiniFourStoryView: View {
 struct MiniFourStoryView_Previews: PreviewProvider {
     static var previews: some View {
         MiniFourStoryView(
-            page: 3,
+            page: 4,
             nextScreenId: "0"
         )
         .previewInterfaceOrientation(.landscapeRight)

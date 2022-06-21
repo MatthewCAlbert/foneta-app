@@ -20,7 +20,11 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "3",
-        body: LaneWrapperView(childView: AnyView(MiniOneStoryView(page: 3, nextScreenId: "4")))
+        body: LaneWrapperView(childView: AnyView(MiniOneStoryView(page: 3, nextScreenId: "mini-1-end")))
+    ),
+    LaneItem(
+        id: "mini-1-end",
+        body: LaneWrapperView(childView: AnyView(MiniOneStoryView(page: 4, nextScreenId: "4")))
     ),
     
     // Mini 2
@@ -30,7 +34,11 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "5",
-        body: LaneWrapperView(childView: AnyView(MiniTwoStoryView(page: 2, nextScreenId: "6")))
+        body: LaneWrapperView(childView: AnyView(MiniTwoStoryView(page: 2, nextScreenId: "mini-2-end")))
+    ),
+    LaneItem(
+        id: "mini-2-end",
+        body: LaneWrapperView(childView: AnyView(MiniTwoStoryView(page: 3, nextScreenId: "6")))
     ),
     
     // Mini 3
@@ -44,7 +52,11 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "8",
-        body: LaneWrapperView(childView: AnyView(MiniThreeStoryView(page: 3, nextScreenId: "9")))
+        body: LaneWrapperView(childView: AnyView(MiniThreeStoryView(page: 3, nextScreenId: "mini-3-end")))
+    ),
+    LaneItem(
+        id: "mini-3-end",
+        body: LaneWrapperView(childView: AnyView(MiniThreeStoryView(page: 4, nextScreenId: "9")))
     ),
     
     // Mini 4
@@ -58,6 +70,10 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "11",
-        body: LaneWrapperView(childView: AnyView(MiniFourStoryView(page: 3, nextScreenId: "0")))
+        body: LaneWrapperView(childView: AnyView(MiniFourStoryView(page: 3, nextScreenId: "mini-4-end")))
+    ),
+    LaneItem(
+        id: "mini-4-end",
+        body: LaneWrapperView(childView: AnyView(MiniFourStoryView(page: 4, nextScreenId: "0")))
     ),
 ])
