@@ -11,16 +11,27 @@ struct CaptionBox: View {
     let width: CGFloat
     let height: CGFloat
     let text: String
+    var soundName: SoundAssets? = nil
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             Text(text)
                 .font(Font.custom(AppFont.openDyslexic.rawValue, size: 24))
         }
         .frame(width: width, height: height, alignment: .center)
         .padding(EdgeInsets(top: 20, leading: 30, bottom: 20, trailing: 30))
         .cornerRadius(20)
-        .background(Color.white.opacity(0.2))
+        .background(Color.white.opacity(0.83))
+    }
+    
+    func voiceover(_ yes: Bool = true) -> some View {
+        let view = self
+        guard let soundName = soundName else {
+            return view.id(UUID())
+        }
+
+        SoundManager.shared.playSound(soundName)
+        return view.id(UUID())
     }
 }
 

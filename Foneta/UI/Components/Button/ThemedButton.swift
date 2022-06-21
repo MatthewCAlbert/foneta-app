@@ -32,6 +32,7 @@ struct ThemedButton: View {
     
     var body: some View {
         Button(action: {
+            HapticManager.shared.impact(style: .medium)
             if (isTTS) {
                 tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
             }

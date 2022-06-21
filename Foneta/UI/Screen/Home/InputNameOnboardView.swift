@@ -37,11 +37,14 @@ struct InputNameOnboardView: View {
                         .frame(width: 500)
                         .multilineTextAlignment(.center)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-                    ThemedButton(
-                        width: 280, height: 70, fontSize: 32,
-                        text: "MULAI"
-                    ) {
-                        startAdventure()
+                    NavigationLink(destination: mainStoryLane[0].body) {
+                        ThemedButton(
+                            width: 280, height: 70, fontSize: 32,
+                            text: "MULAI"
+                        ) {
+                            startAdventure()
+                        }
+                        .voiced()
                     }
                 }
             }

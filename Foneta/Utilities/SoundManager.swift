@@ -14,11 +14,7 @@ class SoundManager {
     
     var player: AVAudioPlayer?
     
-    enum SoundName: String {
-        case sample
-    }
-    
-    func playSound(_ filename: SoundName) {
+    func playSound(_ filename: SoundAssets) {
         guard let url = Bundle.main.url(forResource: filename.rawValue, withExtension: "mp3") else { return }
         
         do {
@@ -31,4 +27,16 @@ class SoundManager {
         }
     }
     
+    func playAudioAsset(_ assetName : String) {
+       guard let audioData = NSDataAsset(name: assetName)?.data else {
+          fatalError("Unable to find asset \(assetName)")
+       }
+
+       do {
+           player = try AVAudioPlayer(data: audioData)
+           player?.play()
+       } catch {
+          fatalError(error.localizedDescription)
+       }
+     }
 }

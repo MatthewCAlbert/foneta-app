@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var model: HomeViewModel = HomeViewModel()
-    @State var switched: Bool = false
+    @State var switchedToOnboard: Bool = false
+    @State var switchedToStory: Bool = false
+    @State var switchedToMainMenu: Bool = false
     
     var body: some View {
         ZStack {
@@ -17,10 +19,19 @@ struct HomeView: View {
                 .opacity(model.opacity)
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        switched = true
+                        if ( model.skipNameAsk ) {
+                            switchedToStory = true
+                        } else {
+                            switchedToOnboard = true
+                        }
                     }
                 }
-            NavigationLink(destination: InputNameOnboardView(), isActive: $switched) {
+            NavigationLink(destination: InputNameOnboardView(), isActive: $switchedToOnboard) {
+                EmptyView()
+            }
+            NavigationLink(
+                destination: LaneWrapperView(childView: mainStoryLane[model.lastLevelId].body),
+                isActive: $switchedToStory) {
                 EmptyView()
             }
         }

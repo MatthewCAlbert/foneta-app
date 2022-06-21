@@ -12,7 +12,7 @@ struct DialogBubble: View {
     let height: CGFloat
     let fontSize: CGFloat
     let text: String
-    var soundName: SoundManager.SoundName? = nil
+    var soundName: SoundAssets? = nil
     var extraItem: some View = EmptyView()
     
     @ObservedObject var tts = TextToSpeech()

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SampleStageView: View, StageView {
+struct SampleStageView: View {
     let data: StageData
     
     var body: some View {
