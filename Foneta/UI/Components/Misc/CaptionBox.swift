@@ -24,13 +24,18 @@ struct CaptionBox: View {
         .background(Color.white.opacity(0.83))
     }
     
-    func voiceover(_ yes: Bool = true) -> some View {
+    func voiceover(_ yes: Bool = true, delay: Double = 0) -> some View {
         let view = self
+        
+        if (!yes) { return view.id(UUID()) }
+        
         guard let soundName = soundName else {
             return view.id(UUID())
         }
 
-        SoundManager.shared.playSound(soundName)
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            SoundManager.shared.playSound(soundName)
+        }
         return view.id(UUID())
     }
 }

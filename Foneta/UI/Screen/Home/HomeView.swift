@@ -30,7 +30,7 @@ struct HomeView: View {
                 EmptyView()
             }
             NavigationLink(
-                destination: LaneWrapperView(childView: mainStoryLane[model.lastLevelId].body),
+                destination: mainStoryLane[model.lastLevelId].body,
                 isActive: $switchedToStory) {
                 EmptyView()
             }

@@ -24,6 +24,7 @@ struct ThemedButton: View {
     let height: CGFloat
     let fontSize: CGFloat
     let text: String
+    var voiceover: SoundAssets? = nil
     var action: () -> Void = {}
     
     @ObservedObject var tts = TextToSpeech()
@@ -34,7 +35,12 @@ struct ThemedButton: View {
         Button(action: {
             HapticManager.shared.impact(style: .medium)
             if (isTTS) {
-                tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
+                if (voiceover != nil) {
+                    print("heiya")
+                    SoundManager.shared.playSound(voiceover!)
+                } else {
+                    tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
+                }
             }
             action()
         }, label: {

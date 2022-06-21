@@ -53,7 +53,7 @@
 		4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */; };
 		4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */; };
 		4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBD2286086F300E48E6F /* StoryContainerView.swift */; };
-		4CE4DBDD2860BAE800E48E6F /* ScreenTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBDC2860BAE800E48E6F /* ScreenTwoView.swift */; };
+		4CE4DBDD2860BAE800E48E6F /* MiniOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBDC2860BAE800E48E6F /* MiniOneStoryView.swift */; };
 		4CE4DBE02860BB5700E48E6F /* SceneWithCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */; };
 		4CE4DC012861586500E48E6F /* Screen 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBE42861586400E48E6F /* Screen 11.mp3 */; };
 		4CE4DC022861586500E48E6F /* Screen 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBE52861586400E48E6F /* Screen 4.mp3 */; };
@@ -116,6 +116,9 @@
 		4CE4DC5B2861589100E48E6F /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DC412861589100E48E6F /* j.mp3 */; };
 		4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC5C28615DF400E48E6F /* SoundAssets.swift */; };
 		4CE4DC5F2861D85200E48E6F /* MainStoryLane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC5E2861D85200E48E6F /* MainStoryLane.swift */; };
+		4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */; };
+		4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */; };
+		4CE4DC662862214E00E48E6F /* MiniFourStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -189,7 +192,7 @@
 		4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
 		4CE4DBD2286086F300E48E6F /* StoryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContainerView.swift; sourceTree = "<group>"; };
-		4CE4DBDC2860BAE800E48E6F /* ScreenTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoView.swift; sourceTree = "<group>"; };
+		4CE4DBDC2860BAE800E48E6F /* MiniOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniOneStoryView.swift; sourceTree = "<group>"; };
 		4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneWithCaptionView.swift; sourceTree = "<group>"; };
 		4CE4DBE42861586400E48E6F /* Screen 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Screen 11.mp3"; sourceTree = "<group>"; };
 		4CE4DBE52861586400E48E6F /* Screen 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Screen 4.mp3"; sourceTree = "<group>"; };
@@ -252,6 +255,9 @@
 		4CE4DC412861589100E48E6F /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
 		4CE4DC5C28615DF400E48E6F /* SoundAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAssets.swift; sourceTree = "<group>"; };
 		4CE4DC5E2861D85200E48E6F /* MainStoryLane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryLane.swift; sourceTree = "<group>"; };
+		4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTwoStoryView.swift; sourceTree = "<group>"; };
+		4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniThreeStoryView.swift; sourceTree = "<group>"; };
+		4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourStoryView.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -699,7 +705,10 @@
 		4CE4DC602861DFE500E48E6F /* StoryScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4CE4DBDC2860BAE800E48E6F /* ScreenTwoView.swift */,
+				4CE4DBDC2860BAE800E48E6F /* MiniOneStoryView.swift */,
+				4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */,
+				4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */,
+				4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */,
 			);
 			path = StoryScreen;
 			sourceTree = "<group>";
@@ -1027,13 +1036,15 @@
 			files = (
 				4CE4DBC5286025D500E48E6F /* StrokeText.swift in Sources */,
 				4CE4DBE02860BB5700E48E6F /* SceneWithCaptionView.swift in Sources */,
-				4CE4DBDD2860BAE800E48E6F /* ScreenTwoView.swift in Sources */,
+				4CE4DBDD2860BAE800E48E6F /* MiniOneStoryView.swift in Sources */,
 				4CE4DB9F285AD60000E48E6F /* StageData.swift in Sources */,
 				4C66290E2850ABB700084711 /* AppFont.swift in Sources */,
+				4CE4DC662862214E00E48E6F /* MiniFourStoryView.swift in Sources */,
 				4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
 				4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */,
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
+				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
 				4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */,
@@ -1044,6 +1055,7 @@
 				4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */,
 				4CE4DC5F2861D85200E48E6F /* MainStoryLane.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
+				4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */,
 				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
 				4CE4DBC1286005CB00E48E6F /* CardPromptOverlay.swift in Sources */,

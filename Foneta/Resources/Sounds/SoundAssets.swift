@@ -45,6 +45,7 @@ enum SoundAssets: String {
     case screen3 = "Screen 3"
     case screen3Kepi = "Screen 3 Kepi"
     case screen4 = "Screen 4"
+    case screen4Kepi = "Screen 4 Kepi"
     case screen4MiniStart = "Screen 4 Minigame Start"
     case screen5 = "Screen 5"
     case screen5MiniStart = "Screen 5 Minigame Start"

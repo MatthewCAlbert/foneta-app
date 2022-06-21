@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LaneItem {
     var id: String
-    var body: AnyView
+    var body: LaneWrapperView
 }
 
 struct LaneWrapperView: View {
@@ -21,6 +21,7 @@ struct LaneWrapperView: View {
             childView
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
     }
 }
@@ -33,7 +34,7 @@ class LaneManager {
     }
     subscript(id: String) -> LaneItem {
         let res = lanes.first(where: { $0.id == id })
-        return res != nil ? res! : LaneItem(id: "0", body: AnyView(EmptyView()))
+        return res != nil ? res! : LaneItem(id: "0", body: LaneWrapperView(childView: AnyView(EmptyView())))
     }
     
     init(_ lanes: [LaneItem]) {
