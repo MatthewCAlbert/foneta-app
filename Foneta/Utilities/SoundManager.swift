@@ -20,13 +20,14 @@ class SoundManager {
     
     var playerChannelPlaying: [SoundAssets?] = [nil, nil, nil]
     var playerChannel: [AVAudioPlayer?] = [nil, nil, nil]
+    var playerChannelVolume: [Float] = [0.3, 0.3, 0.3]
     
     func playSound(_ filename: SoundAssets, channel: Int = 0) {
         guard let url = Bundle.main.url(forResource: filename.rawValue, withExtension: "mp3") else { return }
         
         do {
             playerChannel[channel] = try AVAudioPlayer(contentsOf: url)
-            playerChannel[channel]?.volume = 0.3
+            playerChannel[channel]?.volume = playerChannelVolume[channel]
             playerChannel[channel]?.prepareToPlay()
             playerChannel[channel]?.play()
         } catch let error {

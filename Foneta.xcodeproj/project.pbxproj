@@ -52,7 +52,6 @@
 		4CE4DBC5286025D500E48E6F /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC4286025D500E48E6F /* StrokeText.swift */; };
 		4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */; };
 		4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */; };
-		4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBD2286086F300E48E6F /* StoryContainerView.swift */; };
 		4CE4DBDD2860BAE800E48E6F /* MiniOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBDC2860BAE800E48E6F /* MiniOneStoryView.swift */; };
 		4CE4DBE02860BB5700E48E6F /* SceneWithCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */; };
 		4CE4DC012861586500E48E6F /* Screen 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBE42861586400E48E6F /* Screen 11.mp3 */; };
@@ -192,7 +191,6 @@
 		4CE4DBC828602A9200E48E6F /* InputNameOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameOnboardView.swift; sourceTree = "<group>"; };
 		4CE4DBCA28602B2800E48E6F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
-		4CE4DBD2286086F300E48E6F /* StoryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContainerView.swift; sourceTree = "<group>"; };
 		4CE4DBDC2860BAE800E48E6F /* MiniOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniOneStoryView.swift; sourceTree = "<group>"; };
 		4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneWithCaptionView.swift; sourceTree = "<group>"; };
 		4CE4DBE42861586400E48E6F /* Screen 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Screen 11.mp3"; sourceTree = "<group>"; };
@@ -509,7 +507,6 @@
 		4CE4DB97285AD49300E48E6F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4CE4DBD12860868F00E48E6F /* Story */,
 				4CE4DBBD2860058400E48E6F /* Misc */,
 				4CE4DBBA2860056700E48E6F /* Inputs */,
 				4CE4DBB7285F0DD200E48E6F /* Button */,
@@ -564,7 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				4CE4DBBE2860059100E48E6F /* DialogBubble.swift */,
-				4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */,
 				4CE4DBC2286005F100E48E6F /* CaptionBox.swift */,
 				4CE4DBC4286025D500E48E6F /* StrokeText.swift */,
 			);
@@ -576,16 +572,8 @@
 			children = (
 				4CE4DBDE2860BB2700E48E6F /* Story */,
 				4CE4DB99285AD50500E48E6F /* LaneManager.swift */,
-				4CE4DBD2286086F300E48E6F /* StoryContainerView.swift */,
 			);
 			path = Templates;
-			sourceTree = "<group>";
-		};
-		4CE4DBD12860868F00E48E6F /* Story */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Story;
 			sourceTree = "<group>";
 		};
 		4CE4DBD72860AD5B00E48E6F /* Story */ = {
@@ -600,6 +588,7 @@
 		4CE4DBDE2860BB2700E48E6F /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */,
 				4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */,
 				4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */,
 			);
@@ -1051,7 +1040,6 @@
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
 				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
-				4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */,
 				4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */,
