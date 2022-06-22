@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MiniTwoStoryView: View {
+struct MiniTwoStoryView: View, MiniStoryView {
     let page: Int
     let nextScreenId: String
     
@@ -20,6 +20,7 @@ struct MiniTwoStoryView: View {
                     )
                 case 2:
                     SceneWithCaptionView(
+                        prevScene: getPrevView(),
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen7-Bg", captionText: "Dari kejauhan, Rahmat mendengar suara meminta pertolongan. Suara itu berasal dari timbunan pasir, ada yang membutuhkan bantuan!", captionVoiceover: .screen7, childObject: AnyView(
                             ZStack {
                                 DialogBubble(width: geo.size.width * 0.3, height: geo.size.height * 0.3, fontSize: 22, text: "Aku Neta,aku tertimbun pasir, tolong!")

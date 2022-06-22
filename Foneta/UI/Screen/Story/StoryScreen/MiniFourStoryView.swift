@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MiniFourStoryView: View {
+struct MiniFourStoryView: View, MiniStoryView {
     let page: Int
     let nextScreenId: String
     
@@ -32,6 +32,7 @@ struct MiniFourStoryView: View {
                     )
                 case 2:
                     SceneWithCaptionView(
+                        prevScene: getPrevView(),
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen17-Bg", captionText: "Neta dan Rahmat memasuki Gua untuk mencari harta yang tersembunyi. Terdapat sebuah batu besar ditengah Gua. Rahmat tidak sabar untuk melihat dibalik batu!", captionVoiceover: .screen17, childObject: AnyView(
                             ZStack {
                                 Image("Neta-BackView")
@@ -45,6 +46,7 @@ struct MiniFourStoryView: View {
                     )
                 case 3:
                     SceneWithCaptionView(
+                        prevScene: getPrevView(),
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen18-Bg", captionText: "Wah!! Dibalik batu besar itu, terdapat harta karun! Rahmat dan Neta tidak sabar untuk melihat! Tetapi, harta tersebut terhalangi daun-daun dan rerumputan liar.", captionVoiceover: .screen18, childObject: AnyView(
                             ZStack {
                             }

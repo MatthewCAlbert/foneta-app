@@ -10,7 +10,6 @@ import SwiftUI
 struct ThemedButtonButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .foregroundColor(configuration.isPressed ? Color.gray : Color.blue)
             .background(
                 Image(!configuration.isPressed ? "Button-1" : "Button-1-Pressed")
                     .resizable()

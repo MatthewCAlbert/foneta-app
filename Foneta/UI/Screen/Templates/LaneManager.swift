@@ -37,6 +37,18 @@ class LaneManager {
         return res != nil ? res! : LaneItem(id: "0", body: LaneWrapperView(childView: AnyView(EmptyView())))
     }
     
+    func indexOf(_ id: String) -> Int? {
+        return lanes.firstIndex(where: { $0.id == id })
+    }
+    func prevIndexOf(_ id: String, offset: Int = 1) -> Int? {
+        let prevIdx = self.indexOf(id)
+        guard let prevIdx = prevIdx else {
+            return nil
+        }
+
+        return prevIdx - offset < 0 ? nil : prevIdx - offset
+    }
+    
     init(_ lanes: [LaneItem]) {
         self.lanes = lanes
     }
