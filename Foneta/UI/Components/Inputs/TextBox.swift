@@ -15,7 +15,7 @@ struct TextBox: View {
             "",
             text: $value
         )
-        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32))
+        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32).bold())
         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
         .border(.clear, width: 0)
         .foregroundColor(.black)

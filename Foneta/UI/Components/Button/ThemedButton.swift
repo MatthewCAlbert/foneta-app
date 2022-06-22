@@ -37,7 +37,7 @@ struct ThemedButton: View {
                 if (voiceover != nil) {
                     SoundManager.shared.playSound(voiceover!)
                 } else {
-                    tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
+                    tts.speakSomething(text: text, rate: 0.4, volume: 0.6)
                 }
             }
             action()

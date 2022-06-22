@@ -30,6 +30,7 @@ struct StoryMiniEndView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                    .ignoresSafeArea()
                 
                 // MARK: Content Area
                 VStack {

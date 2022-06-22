@@ -124,6 +124,7 @@
 		4CE4DC6E28631D1C00E48E6F /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6D28631D1C00E48E6F /* MuteButton.swift */; };
 		4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */; };
 		4CE4DC722863306700E48E6F /* SceneWithCaptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */; };
+		4CE4DC73286346D600E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -839,6 +840,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE4DC73286346D600E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */,
 				4CE4DC472861589100E48E6F /* e.mp3 in Resources */,
 				4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */,
 				4CE4DC132861586500E48E6F /* Screen 9 Minigame End Neta.mp3 in Resources */,

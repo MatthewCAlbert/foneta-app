@@ -9,9 +9,13 @@ import SwiftUI
 
 struct InputNameOnboardView: View {
     @State var value: String = UserData.shared.name ?? ""
+    @State var nextSceneActive = false
     
     func startAdventure() {
         UserData.shared.name = value
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            nextSceneActive = true
+        }
     }
     
     var body: some View {
@@ -21,14 +25,12 @@ struct InputNameOnboardView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                    .ignoresSafeArea()
                 VStack(spacing: 10) {
-                    Image("Logo")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 800, height: 200, alignment: .center)
                     StrokeText(text: "Cerita petualangan anak", width: 3, color: .white)
                         .foregroundColor(.black)
                         .font(Font.custom(AppFont.openDyslexic.rawValue, size: 36).weight(.bold))
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                     Text("Nama anak:")
                         .foregroundColor(.black)
                         .font(Font.custom(AppFont.openDyslexic.rawValue, size: 36))
@@ -36,20 +38,20 @@ struct InputNameOnboardView: View {
                     TextBox(value: $value)
                         .frame(width: 500)
                         .multilineTextAlignment(.center)
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-                    NavigationLink(destination: mainStoryLane[0].body) {
-                        ThemedButton(
-                            width: 280, height: 70, fontSize: 32,
-                            text: "MULAI"
-                        ) {
-                            startAdventure()
-                        }
-                        .voiced()
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
+                    ThemedButton(
+                        width: 280, height: 70, fontSize: 32,
+                        text: "MULAI"
+                    ) {
+                        startAdventure()
                     }
+                    .voiced()
                 }
-            }
+                .ignoresSafeArea(.keyboard, edges: .bottom)
+            }.overlay(
+                NavigationLink(destination: mainStoryLane[0].body, isActive: $nextSceneActive) { EmptyView() }
+            )
         }
-        .ignoresSafeArea()
         .navigationBarHidden(true)
     }
 }

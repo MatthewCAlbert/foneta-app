@@ -33,6 +33,7 @@ struct CardPromptOverlay: View, CardPromptOverlayInterface {
                 Rectangle()
                     .fill(Color.black.opacity(0.6))
                     .opacity(overlayOpacity)
+                    .ignoresSafeArea()
                     .onAppear {
                         withAnimation(.easeIn(duration: 0.4)) {
                             overlayOpacity += 1.0

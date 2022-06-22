@@ -20,7 +20,6 @@ struct LaneWrapperView: View {
         ZStack {
             childView
         }
-        .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
     }

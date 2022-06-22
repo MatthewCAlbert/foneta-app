@@ -17,14 +17,12 @@ struct CaptionBox: View {
         VStack(alignment: .center) {
             Text(text)
                 .font(Font.custom(AppFont.openDyslexic.rawValue, size: 24))
+                .bold()
         }
         .frame(width: width, height: height, alignment: .center)
         .padding(EdgeInsets(top: 20, leading: 80, bottom: 20, trailing: 80))
         .cornerRadius(20)
         .background(Color.white.opacity(0.83))
-        .onAppear {
-            
-        }
     }
     
     func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {

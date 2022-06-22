@@ -35,6 +35,7 @@ struct SceneWithCaptionView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                    .ignoresSafeArea()
                 
                 // MARK: Objects Area
                 childObject
@@ -109,7 +110,6 @@ struct SceneWithCaptionView: View {
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .topTrailing)
             }
         }
-        .ignoresSafeArea()
     }
 }
 
