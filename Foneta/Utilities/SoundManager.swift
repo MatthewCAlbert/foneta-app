@@ -45,6 +45,8 @@ class SoundManager {
         guard let url = Bundle.main.url(forResource: filename.rawValue, withExtension: "mp3") else { return }
         
         do {
+            playerChannel[channel]?.stop()
+            
             playerChannel[channel] = try AVAudioPlayer(contentsOf: url)
             playerChannel[channel]?.volume = !_globalMuted ? playerChannelVolume[channel] : 0
             playerChannel[channel]?.prepareToPlay()

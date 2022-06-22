@@ -11,6 +11,8 @@ struct MiniThreeStoryView: View, MiniStoryView {
     let page: Int
     let nextScreenId: String
     
+    @State var voiceoverPlayed: Bool = false
+    
     var body: some View {
         GeometryReader { geo in
             switch(page) {
@@ -18,32 +20,37 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     SceneWithCaptionView(
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen10-Bg", captionText: "Neta sangat senang keluar dari timbunan pasir. Neta memutuskan untuk ikut berpetualang bersama Rahmat si petualang pemberani!", captionVoiceover: .screen10, childObject: AnyView(
                             ZStack {
+                                MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen10)
                                 Image("Neta-MouthOpened")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: geo.size.width * 0.3)
                                     .offset(x: geo.size.width * -0.2, y: geo.size.height * 0.01)
-                                DialogBubble(width: geo.size.width * 0.3, height: geo.size.height * 0.3, fontSize: 22, text: "Terima kasih sudah membantu Neta!")
+                                DialogBubble(width: geo.size.width * 0.3, height: geo.size.height * 0.3, fontSize: 22, text: "Terima kasih sudah membantu Neta!", playVoiceover: !voiceoverPlayed)
                                     .voiceover(.screen10Neta, delay: 8.2)
                                     .offset(y: geo.size.height * -0.2)
                             }
                             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                        )
+                        ),
+                        voiceoverPlayed: $voiceoverPlayed
                     )
                 case 2:
                     SceneWithCaptionView(
                         prevScene: getPrevView(),
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen11-Bg", captionText: "Tak terasa hari semakin panas. Teriknya sinar matahari membuat Rahmat dan Neta merasa haus. ", captionVoiceover: .screen11, childObject: AnyView(
                             ZStack {
+                                MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen11)
                             }
                             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                        )
+                        ),
+                        voiceoverPlayed: $voiceoverPlayed
                     )
                 case 3:
                     SceneWithCaptionView(
                         prevScene: getPrevView(),
                         nextScene: AnyView(mainStoryLane[nextScreenId].body), backgroundImage: "Screen12-Bg", captionText: "Ah! Neta menemukan buah kelapa diatas pohon. Buah kelapa berisikan air yang sangat segar. Rahmat perlu memanjat pohon untuk mendapatkan buah kelapa! ", captionVoiceover: .screen12, childObject: AnyView(
                             ZStack {
+                                MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen12)
                                 Image("Neta-Side-2")
                                     .resizable()
                                     .scaledToFit()
@@ -53,7 +60,8 @@ struct MiniThreeStoryView: View, MiniStoryView {
                             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                         ),
                         cardImage: "Card-3",
-                        cardVoiceover: .screen13MiniStart
+                        cardVoiceover: .screen13MiniStart,
+                        voiceoverPlayed: $voiceoverPlayed
                     )
                 case 4:
                     StoryMiniEndView(

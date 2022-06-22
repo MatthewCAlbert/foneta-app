@@ -10,6 +10,26 @@ import SwiftUI
 protocol MiniStoryView {
     var page: Int { get }
     var nextScreenId: String { get }
+    var voiceoverPlayed: Bool { get }
+}
+
+struct MiniStoryCaptionReader: View {
+    var playVoiceover: Bool = true
+    
+    var body: some View {
+        ZStack{}
+    }
+    
+    func voiceover(_ soundName: SoundAssets?, delay: Double = 0.2) -> some View {
+        guard let soundName = soundName else {
+            return self.id(UUID())
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            SoundManager.shared.playSound(soundName)
+        }
+        return self.id(UUID())
+    }
 }
 
 extension MiniStoryView {

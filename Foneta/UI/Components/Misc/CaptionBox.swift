@@ -11,7 +11,7 @@ struct CaptionBox: View {
     let width: CGFloat
     let height: CGFloat
     let text: String
-    var soundName: SoundAssets? = nil
+    var playVoiceover: Bool = true
     
     var body: some View {
         VStack(alignment: .center) {
@@ -22,21 +22,22 @@ struct CaptionBox: View {
         .padding(EdgeInsets(top: 20, leading: 80, bottom: 20, trailing: 80))
         .cornerRadius(20)
         .background(Color.white.opacity(0.83))
+        .onAppear {
+            
+        }
     }
     
-    func voiceover(_ yes: Bool = true, delay: Double = 0) -> some View {
-        let view = self
-        
-        if (!yes) { return view.id(UUID()) }
-        
+    func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {
         guard let soundName = soundName else {
-            return view.id(UUID())
+            return self.id(UUID())
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            SoundManager.shared.playSound(soundName)
+        if (playVoiceover) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                SoundManager.shared.playSound(soundName)
+            }
         }
-        return view.id(UUID())
+        return self.id(UUID())
     }
 }
 

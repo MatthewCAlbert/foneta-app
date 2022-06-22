@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SceneWithCaptionView: View {
+    @ObservedObject var model: SceneWithCaptionViewModel = SceneWithCaptionViewModel()
+    
     var prevScene: AnyView? = nil
     var nextScene: AnyView = AnyView(EmptyView())
     var backgroundImage: String
@@ -17,13 +19,13 @@ struct SceneWithCaptionView: View {
     var cardImage: String? = nil
     var cardVoiceover: SoundAssets? = nil
     
+    @Environment(\.dismiss) var dismiss
+    
+    @Binding var voiceoverPlayed: Bool
+    
     @State var cardOverlayActive = false
     @State var prevSceneActive = false
     @State var nextSceneActive = false
-    
-    func getCaptionBoxHeight(_ geo: GeometryProxy) -> CGFloat {
-        return max(geo.size.height * 0.2, 100)
-    }
     
     var body: some View {
         GeometryReader { geo in
@@ -40,10 +42,9 @@ struct SceneWithCaptionView: View {
                 // MARK: Caption Area
                 HStack {
                     CaptionBox(
-                        width: geo.size.width * 0.8, height: getCaptionBoxHeight(geo),
-                        text: captionText, soundName: captionVoiceover
+                        width: geo.size.width * 0.8, height: model.getCaptionBoxHeight(geo),
+                        text: captionText, playVoiceover: false
                     )
-                    .voiceover(!cardOverlayActive, delay: 0.3)
                     .multilineTextAlignment(.center)
                 }
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .bottom)
@@ -55,10 +56,10 @@ struct SceneWithCaptionView: View {
                             width: 70, height: 70, left: true
                         ) {
                             SoundManager.shared.setChannelQueuePlay(nil)
-                            prevSceneActive = true
+                            dismiss()
                         }
                     }
-                    .padding(EdgeInsets(top: 0, leading: geo.size.width * 0.03, bottom: getCaptionBoxHeight(geo) * 0.5 - 25, trailing: 0))
+                    .padding(EdgeInsets(top: 0, leading: geo.size.width * 0.03, bottom: model.getCaptionBoxHeight(geo) * 0.5 - 25, trailing: 0))
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .bottomLeading)
                     .overlay(
                         NavigationLink(destination: prevScene!, isActive: $prevSceneActive) { EmptyView() }
@@ -78,7 +79,7 @@ struct SceneWithCaptionView: View {
                         }
                     }
                 }
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: getCaptionBoxHeight(geo) * 0.5 - 25, trailing: geo.size.width * 0.03))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: model.getCaptionBoxHeight(geo) * 0.5 - 25, trailing: geo.size.width * 0.03))
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .bottomTrailing)
                 .overlay(
                     NavigationLink(destination: nextScene, isActive: $nextSceneActive) { EmptyView() }
@@ -95,8 +96,14 @@ struct SceneWithCaptionView: View {
                 }
                 
                 // MARK: Control Area
-                HStack {
+                HStack(spacing: 20) {
                     MuteButton(width: 70, height: 70)
+                    ReplayButton(width: 70, height: 70) {
+                        voiceoverPlayed = true
+                        SoundManager.shared.setChannelQueuePlay(nil)
+                        SoundManager.shared.playerChannel[0]?.stop()
+                        voiceoverPlayed = false
+                    }
                 }
                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: geo.size.width * 0.03))
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .topTrailing)
@@ -109,7 +116,8 @@ struct SceneWithCaptionView: View {
 struct SceneWithCaptionView_Previews: PreviewProvider {
     static var previews: some View {
         SceneWithCaptionView(
-            backgroundImage: "Screen1-Bg", captionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis quam nisi, sed sodales ante imperdiet ut. Fusce posuere aliquet viverra. Proin non aliquet ipsum. Fusce non condimentum mi, vel ullamcorper tellus. Aliquam leo ex, vehicula tincidunt semper ac, ullamcorper mollis nisl. Donec commodo dictum nisi, vestibulum dictum libero sodales ut. Maecenas libero velit, ornare nec libero varius, suscipit vehicula urna. Sed eleifend leo ac sapien laoreet, id malesuada ex malesuada. Morbi id gravida mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+            backgroundImage: "Screen1-Bg", captionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis quam nisi, sed sodales ante imperdiet ut. Fusce posuere aliquet viverra. Proin non aliquet ipsum. Fusce non condimentum mi, vel ullamcorper tellus. Aliquam leo ex, vehicula tincidunt semper ac, ullamcorper mollis nisl. Donec commodo dictum nisi, vestibulum dictum libero sodales ut. Maecenas libero velit, ornare nec libero varius, suscipit vehicula urna. Sed eleifend leo ac sapien laoreet, id malesuada ex malesuada. Morbi id gravida mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+            voiceoverPlayed: .constant(false)
         )
             .previewInterfaceOrientation(.landscapeRight)
     }

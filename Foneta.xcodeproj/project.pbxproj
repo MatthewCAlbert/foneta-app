@@ -122,6 +122,8 @@
 		4CE4DC6A2862DBDD00E48E6F /* MiniStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC692862DBDD00E48E6F /* MiniStoryView.swift */; };
 		4CE4DC6C28631AC600E48E6F /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6B28631AC600E48E6F /* NavButton.swift */; };
 		4CE4DC6E28631D1C00E48E6F /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6D28631D1C00E48E6F /* MuteButton.swift */; };
+		4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */; };
+		4CE4DC722863306700E48E6F /* SceneWithCaptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -264,6 +266,8 @@
 		4CE4DC692862DBDD00E48E6F /* MiniStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStoryView.swift; sourceTree = "<group>"; };
 		4CE4DC6B28631AC600E48E6F /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
 		4CE4DC6D28631D1C00E48E6F /* MuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
+		4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
+		4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneWithCaptionViewModel.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -553,6 +557,7 @@
 				4CE4DBB8285F0DE200E48E6F /* ThemedButton.swift */,
 				4CE4DC6B28631AC600E48E6F /* NavButton.swift */,
 				4CE4DC6D28631D1C00E48E6F /* MuteButton.swift */,
+				4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				4CE4DBC0286005CB00E48E6F /* CardPromptOverlay.swift */,
 				4CE4DBDF2860BB5700E48E6F /* SceneWithCaptionView.swift */,
 				4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */,
+				4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -1045,6 +1051,7 @@
 				4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
 				4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */,
+				4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */,
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
@@ -1056,6 +1063,7 @@
 				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
 				4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */,
 				4CE4DC5F2861D85200E48E6F /* MainStoryLane.swift in Sources */,
+				4CE4DC722863306700E48E6F /* SceneWithCaptionViewModel.swift in Sources */,
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */,
 				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,

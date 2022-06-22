@@ -13,6 +13,7 @@ struct DialogBubble: View {
     let fontSize: CGFloat
     let text: String
     var flipped: Bool = false
+    var playVoiceover: Bool = true
     var extraItem: some View = EmptyView()
     
     @ObservedObject var tts = TextToSpeech()
