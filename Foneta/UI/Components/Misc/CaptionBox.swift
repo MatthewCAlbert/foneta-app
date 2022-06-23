@@ -12,7 +12,7 @@ struct CaptionBox: View {
     let height: CGFloat
     let text: String
     var playVoiceover: Bool = true
-    
+
     var body: some View {
         VStack(alignment: .center) {
             Text(text)
@@ -24,13 +24,13 @@ struct CaptionBox: View {
         .cornerRadius(20)
         .background(Color.white.opacity(0.83))
     }
-    
+
     func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {
         guard let soundName = soundName else {
             return self.id(UUID())
         }
 
-        if (playVoiceover) {
+        if playVoiceover {
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                 SoundManager.shared.playSound(soundName)
             }

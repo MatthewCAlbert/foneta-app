@@ -739,6 +739,7 @@
 			buildConfigurationList = 4C6628CF285097B500084711 /* Build configuration list for PBXNativeTarget "Foneta" */;
 			buildPhases = (
 				81410428F46C6D614CF45104 /* [CP] Check Pods Manifest.lock */,
+				4CE4DC742864067200E48E6F /* Run SwiftLint */,
 				4C6628A7285097B400084711 /* Sources */,
 				4C6628A8285097B400084711 /* Frameworks */,
 				4C6628A9285097B400084711 /* Resources */,
@@ -952,6 +953,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foneta-FonetaUITests/Pods-Foneta-FonetaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4CE4DC742864067200E48E6F /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		81410428F46C6D614CF45104 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

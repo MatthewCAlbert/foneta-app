@@ -13,15 +13,15 @@ struct StoryMiniEndView: View {
     let finishMessage: String
     var finishMessageColor: Color = .black
     let characterImage: String
-    var characterVoiceover: SoundAssets? = nil
+    var characterVoiceover: SoundAssets?
     let characterBubbleText: String?
-    var characterBubbleTextVoiceover: SoundAssets? = nil
+    var characterBubbleTextVoiceover: SoundAssets?
     var characterBubbleTextVoiceoverDelay: Double = 0
     let buttonText: String
-    var buttonVoiceover: SoundAssets? = nil
-    
+    var buttonVoiceover: SoundAssets?
+
     @State var nextSceneActive = false
-    
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -31,7 +31,7 @@ struct StoryMiniEndView: View {
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
-                
+
                 // MARK: Content Area
                 VStack {
                     Text(finishMessage)
@@ -40,11 +40,11 @@ struct StoryMiniEndView: View {
                         .foregroundColor(finishMessageColor)
                         .multilineTextAlignment(.center)
                         .onAppear {
-                            if (characterVoiceover != nil) {
+                            if characterVoiceover != nil {
                                 SoundManager.shared.playSound(characterVoiceover!)
                             }
                         }
-                    
+
                     ZStack {
                         Image("Shine")
                             .resizable()
@@ -54,14 +54,19 @@ struct StoryMiniEndView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 300 * 0.9, height: 300 * 0.9, alignment: .center)
-                        if (characterBubbleText != nil) {
-                            DialogBubble(width: geo.size.width * 0.25, height: geo.size.height * 0.23, fontSize: 20, text: characterBubbleText!)
+                        if characterBubbleText != nil {
+                            DialogBubble(
+                                width: geo.size.width * 0.25,
+                                height: geo.size.height * 0.23,
+                                fontSize: 20,
+                                text: characterBubbleText!
+                            )
                                 .voiceover(characterBubbleTextVoiceover, delay: characterBubbleTextVoiceoverDelay)
                                 .offset(x: 200, y: -80)
                         }
                     }
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 40, trailing: 0))
-                    
+
                     HStack {
                         ThemedButton(
                             width: 260, height: 70, fontSize: 32,

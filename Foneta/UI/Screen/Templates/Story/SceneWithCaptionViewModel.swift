@@ -10,7 +10,7 @@ import SwiftUI
 class SceneWithCaptionViewModel: ObservableObject {
     init() {
     }
-    
+
     func getCaptionBoxHeight(_ geo: GeometryProxy) -> CGFloat {
         return max(geo.size.height * 0.2, 100)
     }

@@ -8,11 +8,11 @@
 import Foundation
 
 class LevelContent {
-    
+
     static let shared = LevelContent()
-    
+
     private init() {}
-    
+
     let content: [LevelData] = [
         LevelData(
             id: "1",
@@ -24,5 +24,5 @@ class LevelContent {
             level: .easy
         )
     ]
-    
+
 }

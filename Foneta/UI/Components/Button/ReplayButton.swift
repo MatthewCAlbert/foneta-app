@@ -23,13 +23,13 @@ struct ReplayButton: View {
     let height: CGFloat
     var left: Bool = true
     var action: () -> Void = {}
-    
+
     var body: some View {
         Button(action: {
             HapticManager.shared.impact(style: .medium)
             action()
         }, label: {
-            ZStack{}
+            ZStack {}
                 .frame(width: max(44, width), height: max(44, height), alignment: .center)
         })
         .buttonStyle(ReplayButtonStyle())

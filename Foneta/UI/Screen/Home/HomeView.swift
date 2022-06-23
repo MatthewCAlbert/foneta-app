@@ -12,14 +12,14 @@ struct HomeView: View {
     @State var switchedToOnboard: Bool = false
     @State var switchedToStory: Bool = false
     @State var switchedToMainMenu: Bool = false
-    
+
     var body: some View {
         ZStack {
             WelcomeView()
                 .opacity(model.opacity)
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        if ( model.skipNameAsk ) {
+                        if  model.skipNameAsk {
                             switchedToStory = true
                         } else {
                             switchedToOnboard = true

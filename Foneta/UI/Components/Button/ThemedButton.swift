@@ -23,18 +23,18 @@ struct ThemedButton: View {
     let height: CGFloat
     let fontSize: CGFloat
     let text: String
-    var voiceover: SoundAssets? = nil
+    var voiceover: SoundAssets?
     var action: () -> Void = {}
-    
+
     @ObservedObject var tts = TextToSpeech()
     @State var isPressed = false
     @State var isTTS = false
-    
+
     var body: some View {
         Button(action: {
             HapticManager.shared.impact(style: .medium)
-            if (isTTS) {
-                if (voiceover != nil) {
+            if isTTS {
+                if voiceover != nil {
                     SoundManager.shared.playSound(voiceover!)
                 } else {
                     tts.speakSomething(text: text, rate: 0.4, volume: 0.6)
@@ -53,7 +53,7 @@ struct ThemedButton: View {
         })
         .buttonStyle(ThemedButtonButtonStyle())
     }
-    
+
     func voiced(_ yes: Bool = true) -> some View {
         var view = self
         view._isTTS = State(initialValue: yes)

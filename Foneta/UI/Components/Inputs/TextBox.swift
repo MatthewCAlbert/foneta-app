@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextBox: View {
     @Binding var value: String
-    
+
     var body: some View {
         TextField(
             "",
@@ -29,7 +29,7 @@ struct TextBox: View {
 
 struct TextBox_Previews: PreviewProvider {
     @State static var value = "Example"
-    
+
     static var previews: some View {
         GeometryReader { geo in
             ZStack {

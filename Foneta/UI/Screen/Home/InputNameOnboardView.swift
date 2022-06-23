@@ -10,14 +10,14 @@ import SwiftUI
 struct InputNameOnboardView: View {
     @State var value: String = UserData.shared.name ?? ""
     @State var nextSceneActive = false
-    
+
     func startAdventure() {
         UserData.shared.name = value
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             nextSceneActive = true
         }
     }
-    
+
     var body: some View {
         GeometryReader { geo in
             ZStack {

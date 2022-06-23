@@ -15,16 +15,16 @@ protocol MiniStoryView {
 
 struct MiniStoryCaptionReader: View {
     var playVoiceover: Bool = true
-    
+
     var body: some View {
-        ZStack{}
+        ZStack {}
     }
-    
+
     func voiceover(_ soundName: SoundAssets?, delay: Double = 0.2) -> some View {
         guard let soundName = soundName else {
             return self.id(UUID())
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             SoundManager.shared.playSound(soundName)
         }

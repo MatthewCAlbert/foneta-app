@@ -20,15 +20,15 @@ struct CardOverlayProps: CardPromptOverlayInterface {
 struct CardPromptOverlay: View, CardPromptOverlayInterface {
     let width: CGFloat
     let imageName: String
-    var voiceover: SoundAssets? = nil
+    var voiceover: SoundAssets?
     var nextAction: () -> Void = {}
 
     @State var overlayOpacity: CGFloat = 0
     @State var cardOpacity: CGFloat = 0
     @State var cardScale: CGFloat = 0
-    
+
     var body: some View {
-        GeometryReader { geo in
+        GeometryReader { _ in
             ZStack {
                 Rectangle()
                     .fill(Color.black.opacity(0.6))
@@ -39,7 +39,7 @@ struct CardPromptOverlay: View, CardPromptOverlayInterface {
                             overlayOpacity += 1.0
                         }
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                            if (voiceover != nil && SoundManager.shared.playerChannelPlaying[0] == voiceover) {
+                            if voiceover != nil && SoundManager.shared.playerChannelPlaying[0] == voiceover {
                                 SoundManager.shared.playSound(voiceover!)
                             }
                         }

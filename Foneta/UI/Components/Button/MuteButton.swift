@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MuteButtonStyle: ButtonStyle {
     let active: Bool
-    
+
     init(_ isActive: Bool) {
         active = isActive
     }
-    
+
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .background(
@@ -32,10 +32,10 @@ struct MuteButtonStyle: ButtonStyle {
 struct MuteButton: View {
     let width: CGFloat
     let height: CGFloat
-    
+
     @State var muted = SoundManager.shared.globalMuted
     @State var pressed = true
-    
+
     var body: some View {
         Button(action: {
             HapticManager.shared.impact(style: .medium)
@@ -43,7 +43,7 @@ struct MuteButton: View {
             SoundManager.shared.globalMuted = newVal
             muted = newVal
         }, label: {
-            ZStack{}
+            ZStack {}
                 .frame(width: max(44, width), height: max(44, height), alignment: .center)
         })
         .buttonStyle(MuteButtonStyle(muted))

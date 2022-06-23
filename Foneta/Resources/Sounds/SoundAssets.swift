@@ -5,6 +5,7 @@
 //  Created by Matthew Christopher Albert on 21/06/22.
 //
 
+// swiftlint:disable identifier_name
 import Foundation
 
 enum SoundAssets: String {
@@ -12,7 +13,7 @@ enum SoundAssets: String {
     case next = "Selanjutnya"
     case ready = "Siap"
     case open = "Buka"
-    
+
     // Abc
     case a
     case b
@@ -40,7 +41,7 @@ enum SoundAssets: String {
     case x
     case y
     case z
-    
+
     // Screen
     case screen2 = "Screen 2"
     case screen3 = "Screen 3"

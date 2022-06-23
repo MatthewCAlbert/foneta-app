@@ -15,7 +15,7 @@ struct LaneItem {
 
 struct LaneWrapperView: View {
     var childView: AnyView
-    
+
     var body: some View {
         ZStack {
             childView
@@ -35,7 +35,7 @@ class LaneManager {
         let res = lanes.first(where: { $0.id == id })
         return res != nil ? res! : LaneItem(id: "0", body: LaneWrapperView(childView: AnyView(EmptyView())))
     }
-    
+
     func indexOf(_ id: String) -> Int? {
         return lanes.firstIndex(where: { $0.id == id })
     }
@@ -47,7 +47,7 @@ class LaneManager {
 
         return prevIdx - offset < 0 ? nil : prevIdx - offset
     }
-    
+
     init(_ lanes: [LaneItem]) {
         self.lanes = lanes
     }

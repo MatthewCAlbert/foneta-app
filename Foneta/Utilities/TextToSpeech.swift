@@ -10,12 +10,12 @@ import AVFoundation
 
 class TextToSpeech: NSObject, ObservableObject {
     private var speechSynthesizer = AVSpeechSynthesizer()
-    
+
     override init() {
         super.init()
         self.speechSynthesizer.delegate = self
     }
-    
+
     func speakSomething(text: String, rate: Float = 0.3, volume: Float = 1.0) {
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "id-ID")
@@ -28,7 +28,7 @@ class TextToSpeech: NSObject, ObservableObject {
 }
 
 extension TextToSpeech: AVSpeechSynthesizerDelegate {
-    
+
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didPause utterance: AVSpeechUtterance) {
@@ -39,7 +39,8 @@ extension TextToSpeech: AVSpeechSynthesizerDelegate {
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
     }
+    // swiftlint:disable:next line_length
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
     }
-    
+
 }
