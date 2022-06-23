@@ -25,12 +25,16 @@ struct MiniFourStoryView: View, MiniStoryView {
                     captionVoiceover: .screen16,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen16)
                             Image("Neta-Wink")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: geo.size.width * 0.3)
                                 .offset(x: geo.size.width * -0.2, y: geo.size.height * 0.01)
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
                             DialogBubble(width: geo.size.width * 0.3,
                                          height: geo.size.height * 0.3,
                                          fontSize: 22,
@@ -54,7 +58,6 @@ struct MiniFourStoryView: View, MiniStoryView {
                     captionVoiceover: .screen17,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen17)
                             Image("Neta-BackView")
                                 .resizable()
                                 .scaledToFit()
@@ -75,7 +78,6 @@ struct MiniFourStoryView: View, MiniStoryView {
                     captionVoiceover: .screen18,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen18)
                         }
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     ),

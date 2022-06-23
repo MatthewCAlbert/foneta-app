@@ -13,6 +13,7 @@ struct DialogBubble: View {
     let fontSize: CGFloat
     let text: String
     var flipped: Bool = false
+    var voiceover: SoundAssets?
     var playVoiceover: Bool = true
     var extraItem: some View = EmptyView()
 
@@ -41,6 +42,22 @@ struct DialogBubble: View {
             )
         }
         .frame(width: width, height: height, alignment: .center)
+        .onTapGesture {
+            if ( voiceover != nil ) {
+                playVO(voiceover!, delay: 0)
+            }
+        }
+    }
+
+    private func playVO(_ soundName: SoundAssets, delay: Double = 0) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            SoundManager.shared.setChannelQueuePlay(soundName)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay + 0.2) {
+            if SoundManager.shared.playerChannelPlaying[0] == soundName {
+                SoundManager.shared.playSound(soundName)
+            }
+        }
     }
 
     func read(_ yes: Bool = true) -> some View {
@@ -53,15 +70,10 @@ struct DialogBubble: View {
             return self.id(UUID())
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            SoundManager.shared.setChannelQueuePlay(soundName)
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay + 0.2) {
-            if SoundManager.shared.playerChannelPlaying[0] == soundName {
-                SoundManager.shared.playSound(soundName)
-            }
-        }
-        return self.id(UUID())
+        var view = self
+        view.voiceover = soundName
+        playVO(soundName, delay: delay)
+        return view.id(UUID())
     }
 }
 

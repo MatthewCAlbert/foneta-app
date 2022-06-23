@@ -24,7 +24,14 @@ struct MiniOneStoryView: View, MiniStoryView {
                     captionText: "Rahmat adalah seorang petualang pemberani. Hari ini, Rahmat menjelajahi pantai tersembunyi. Pantainya indah sekali!",
                     captionVoiceover: .screen2,
                     childObject: AnyView(
-                        MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen2)
+                        ZStack {
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
+                        }
+                        .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     ),
                     voiceoverPlayed: $voiceoverPlayed
                 )
@@ -38,7 +45,6 @@ struct MiniOneStoryView: View, MiniStoryView {
                     captionVoiceover: .screen3,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen3)
                             Image("Kepi-Happy")
                                 .resizable()
                                 .scaledToFit()
@@ -65,7 +71,11 @@ struct MiniOneStoryView: View, MiniStoryView {
                     captionVoiceover: .screen4,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen4)
+                            Image("Kepi-Scared")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.2)
+                                .offset(x: geo.size.width * -0.2, y: geo.size.height * 0.05)
                             DialogBubble(width: geo.size.width * 0.2,
                                          height: geo.size.height * 0.2,
                                          fontSize: 24,
@@ -105,7 +115,7 @@ struct MiniOneStoryView: View, MiniStoryView {
 struct MiniOneStoryView_Previews: PreviewProvider {
     static var previews: some View {
         MiniOneStoryView(
-            page: 4,
+            page: 1,
             nextScreenId: "0"
         )
         .previewInterfaceOrientation(.landscapeRight)

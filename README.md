@@ -6,6 +6,7 @@ By Team 16 Morning
 
 - SwiftUI
 - Realm
+- SwiftLint
 - CocoaPods
 
 ## Development

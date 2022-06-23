@@ -47,6 +47,13 @@ struct SceneWithCaptionView: View {
                         text: captionText, playVoiceover: false
                     )
                     .multilineTextAlignment(.center)
+                    .onAppear {
+                        if ( captionVoiceover != nil ) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                SoundManager.shared.playSound(captionVoiceover!)
+                            }
+                        }
+                    }
                 }
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .bottom)
 
@@ -109,6 +116,15 @@ struct SceneWithCaptionView: View {
                         voiceoverPlayed = true
                         SoundManager.shared.setChannelQueuePlay(nil)
                         SoundManager.shared.playerChannel[0]?.stop()
+                        if ( cardOverlayActive ) {
+                            if ( cardVoiceover != nil ) {
+                                SoundManager.shared.playSound(cardVoiceover!)
+                            }
+                        } else {
+                            if ( captionVoiceover != nil ) {
+                                SoundManager.shared.playSound(captionVoiceover!)
+                            }
+                        }
                         voiceoverPlayed = false
                     }
                 }

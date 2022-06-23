@@ -25,12 +25,16 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     captionVoiceover: .screen10,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen10)
                             Image("Neta-MouthOpened")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: geo.size.width * 0.3)
                                 .offset(x: geo.size.width * -0.2, y: geo.size.height * 0.01)
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
                             DialogBubble(width: geo.size.width * 0.3,
                                          height: geo.size.height * 0.3,
                                          fontSize: 22,
@@ -53,7 +57,11 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     captionVoiceover: .screen11,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen11)
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
                         }
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     ),
@@ -69,7 +77,6 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     captionVoiceover: .screen12,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen12)
                             Image("Neta-Side-2")
                                 .resizable()
                                 .scaledToFit()

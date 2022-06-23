@@ -25,7 +25,15 @@ struct MiniTwoStoryView: View,
                     captionText: "Rahmat si petualang pemberani berpamitan dengan Kepi dan melanjutkan petualangannya. Hari mulai siang dan terasa panas.",
                     captionVoiceover: .screen6,
                     childObject: AnyView(
-                        MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen6)),
+                        ZStack {
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
+                        }
+                        .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                    ),
                     voiceoverPlayed: $voiceoverPlayed
                 )
             case 2:
@@ -38,7 +46,11 @@ struct MiniTwoStoryView: View,
                     captionVoiceover: .screen7,
                     childObject: AnyView(
                         ZStack {
-                            MiniStoryCaptionReader(playVoiceover: !voiceoverPlayed).voiceover(.screen7)
+                            Image("Hand-3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: geo.size.width * 0.8)
+                                .offset(y: geo.size.height * 0.2)
                             DialogBubble(width: geo.size.width * 0.3,
                                          height: geo.size.height * 0.3,
                                          fontSize: 22,
