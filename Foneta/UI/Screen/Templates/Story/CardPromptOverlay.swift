@@ -37,6 +37,7 @@ struct CardPromptOverlay: View, CardPromptOverlayInterface {
                         withAnimation(.easeIn(duration: 0.4)) {
                             overlayOpacity += 1.0
                         }
+                        
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                             if (voiceover != nil && SoundManager.shared.playerChannelPlaying[0] == voiceover) {
                                 SoundManager.shared.playSound(voiceover!)
