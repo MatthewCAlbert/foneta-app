@@ -9,7 +9,7 @@ import SwiftUI
 
 func randomString(length: Int) -> String {
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    return String((0..<length).map{ _ in letters.randomElement()! })
+    return String((0..<length).map { _ in letters.randomElement()! })
 }
 
 enum PaddingType {
@@ -30,10 +30,8 @@ func enumParserPaddingType(paddingTypes:[PaddingType]) -> Edge.Set {
             return .top
         case .bottom:
             return .bottom
-            
+
         }
     }
     return .leading
 }
-
-

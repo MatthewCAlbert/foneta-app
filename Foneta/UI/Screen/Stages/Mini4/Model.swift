@@ -1,14 +1,12 @@
 import Foundation
 import SwiftUI
-struct ImageContent:Hashable{
+struct ImageContent:Hashable {
     let id=UUID()
     var name:String?
     var firstLetter:Character?
     init(name: String) {
         self.name = name
         self.firstLetter = name.first
-        
-
         }
 }
 let mini4Asset:[String:ImageContent] = [
@@ -37,7 +35,5 @@ let mini4Asset:[String:ImageContent] = [
     "wortel" : ImageContent(name: "Wortel"),
     "xilofon" : ImageContent(name: "Xilofon"),
     "yoyo" : ImageContent(name: "Yoyo"),
-    "zebra" : ImageContent(name: "Zebra"),
+    "zebra" : ImageContent(name: "Zebra")
 ]
-
-

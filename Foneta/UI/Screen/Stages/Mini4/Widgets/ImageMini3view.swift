@@ -1,21 +1,19 @@
 import Foundation
 import SwiftUI
 
-struct ImageMini4View:View{
-    
+struct ImageMini4View:View {
     var imageContent:ImageContent
     var onClick:(() -> Void)
-//    var imageName:String
-    var body: some View{
-    Button(action:{
+    var body: some View {
+    Button(action: {
         onClick()
-    }){
-        VStack{
+    }) {
+        VStack {
         RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
                 .frame(width: 150, height: 150)
                 .padding(.all,10)
-                .overlay(VStack{
+                .overlay(VStack {
                     Image(imageContent.name!)
                         .resizable()
                         .imageScale(.large)
@@ -33,4 +31,3 @@ struct ImageMini4View:View{
         }
     }
 }
-

@@ -5,33 +5,32 @@
 //  Created by Evan Susanto on 23/06/22.
 //
 
-
 import SwiftUI
 
-struct GestureDemo:View{
+struct GestureDemo:View {
     @GestureState var locationState=CGPoint(x: 10, y: 10)
     @State var location=CGPoint(x: 10, y: 10)
-    var body: some View{
-        ZStack{
+    var body: some View {
+        ZStack {
             Color.white
             Circle()
                 .fill(.red)
                 .frame(width: 100, height: 100)
                 .position(location)
                 .gesture(DragGesture()
-                            .onChanged{state in
+                            .onChanged {state in
                                 location=state.location
                                 print(location)
-                            }.onEnded{state in
-                                withAnimation{
+                            }.onEnded {_ in
+                                withAnimation {
 //                                    location=CGPoint(x: 100, y: 100)
                                     print("last Position:")
                                     print(location)
                                 }
-                            }.updating($locationState){
+                            }.updating($locationState) {
                                 currentState,pastLocation,transaction in pastLocation=currentState.location; transaction.animation = .easeInOut
                             })
-            
+
         }
     }
 }
@@ -42,7 +41,6 @@ struct GestureDemo_Previews: PreviewProvider {
     }
 }
 
-//import SwiftUI
+// import SwiftUI
 
-
-//PlaygroundPage.current.setLiveView(GestureDemo())
+// PlaygroundPage.current.setLiveView(GestureDemo())

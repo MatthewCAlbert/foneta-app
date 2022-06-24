@@ -10,7 +10,7 @@ struct LeafView: View,Hashable {
     var imageSize:CGFloat
     var paddingSize:CGFloat
     var paddingType:[PaddingType]
-    var body: some View{
+    var body: some View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -19,7 +19,4 @@ struct LeafView: View,Hashable {
     }
 }
 
-
-
-
-//switch
+// switch
