@@ -12,6 +12,6 @@ class RMStageSession: Object, ObjectKeyIdentifiable {
     @Persisted var stageId = ""
     @Persisted var wrongAttempt = 0
     @Persisted var correctAttempt = 0
-    @Persisted var startedAt: Date? = nil
-    @Persisted var endedAt: Date? = nil
+    @Persisted var startedAt: Date?
+    @Persisted var endedAt: Date?
 }

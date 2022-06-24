@@ -10,6 +10,6 @@ import RealmSwift
 class RMLevelSession: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var levelId = ""
-    @Persisted var startedAt: Date? = nil
-    @Persisted var endedAt: Date? = nil
+    @Persisted var startedAt: Date?
+    @Persisted var endedAt: Date?
 }
