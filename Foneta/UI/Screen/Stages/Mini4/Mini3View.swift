@@ -6,13 +6,6 @@
 //
 import SwiftUI
 
-class Data {
-    init() {
-        random = Int.random(in: 0..<10)
-    }
-    var random :Int
-}
-
 struct Mini4View: View {
 //    @State var text=""
     @State var guessLetter=randomString(length: 1)

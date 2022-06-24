@@ -524,7 +524,7 @@
 		4CE4DB96285AD47F00E48E6F /* Stages */ = {
 			isa = PBXGroup;
 			children = (
-				FA1886FA28647C490043F2EA /* New Group */,
+				FA1886FA28647C490043F2EA /* Mini2 */,
 				FA18867F2862D37F0043F2EA /* Mini4 */,
 				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
 			);
@@ -767,13 +767,13 @@
 			path = Widgets;
 			sourceTree = "<group>";
 		};
-		FA1886FA28647C490043F2EA /* New Group */ = {
+		FA1886FA28647C490043F2EA /* Mini2 */ = {
 			isa = PBXGroup;
 			children = (
 				FA1886FB28647C9E0043F2EA /* MiniGame2View.swift */,
 				FA1886FD2864D9510043F2EA /* Mini2View.swift */,
 			);
-			path = "New Group";
+			path = Mini2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

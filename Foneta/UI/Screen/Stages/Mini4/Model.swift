@@ -1,32 +1,16 @@
 import Foundation
 import SwiftUI
-
-struct warnaColor{
-    let id  =  UUID()
-    var nama:String
-    var name:String
-    var warna:Color
-}
-
 struct ImageContent:Hashable{
     let id=UUID()
     var name:String?
-//    var imageName:String?
     var firstLetter:Character?
-    
     init(name: String) {
         self.name = name
         self.firstLetter = name.first
         
 
         }
-    
-//    firstLetter=self.name.prefix(1)
 }
-
-//ImageContent Ayam=ImageContent(name:"Ayam")
-//print(mini4Asset["ayam"])
-
 let mini4Asset:[String:ImageContent] = [
     "ayam" : ImageContent(name: "Ayam"),
     "bola" : ImageContent(name: "Bola"),
