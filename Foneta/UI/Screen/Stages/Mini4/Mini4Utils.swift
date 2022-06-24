@@ -1,9 +1,10 @@
 //
-//  ControllerMini4.swift
+//  Mini4Utils.swift
 //  Foneta
 //
 //  Created by Evan Susanto on 22/06/22.
 //
+
 import Foundation
 import SwiftUI
 
@@ -30,7 +31,6 @@ func enumParserPaddingType(paddingTypes:[PaddingType]) -> Edge.Set {
             return .top
         case .bottom:
             return .bottom
-
         }
     }
     return .leading

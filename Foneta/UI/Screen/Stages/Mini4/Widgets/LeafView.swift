@@ -1,15 +1,17 @@
 //
-//  File.swift
+//  LeafView.swift
 //  Foneta
 //
 //  Created by Evan Susanto on 22/06/22.
 //
+
 import SwiftUI
-struct LeafView: View,Hashable {
-    var imageName:String
-    var imageSize:CGFloat
-    var paddingSize:CGFloat
-    var paddingType:[PaddingType]
+
+struct LeafView: View, Hashable {
+    var imageName: String
+    var imageSize: CGFloat
+    var paddingSize: CGFloat
+    var paddingType: [PaddingType]
     var body: some View {
         Image(imageName)
             .resizable()
@@ -18,5 +20,3 @@ struct LeafView: View,Hashable {
             .padding(enumParserPaddingType(paddingTypes: paddingType),paddingSize)
     }
 }
-
-// switch
