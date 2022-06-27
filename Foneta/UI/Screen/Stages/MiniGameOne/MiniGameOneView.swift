@@ -57,7 +57,7 @@ struct MiniGameOneView: View {
 					HStack {
 						if (!isFinishedCountdown && !isFinishedPlaying) {
 							Text(countDown > 0 ? "\( countDown)" : "Mulai")
-								.MiniOneGamePlayFont()
+								.miniOneGamePlayFont()
 								.onAppear() {
 									Timer
 										.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
@@ -83,7 +83,7 @@ struct MiniGameOneView: View {
 							HStack {
 								ForEach(displayedLetter, id: \.self) { dpLetter in
 									ZStack {
-										Text(dpLetter.letter.letterName).MiniOneGamePlayFont()
+										Text(dpLetter.letter.letterName).miniOneGamePlayFont()
 									}
 									.transition(.asymmetric(insertion: .scale, removal: .opacity))
 									.padding(.trailing, 100)
@@ -94,13 +94,14 @@ struct MiniGameOneView: View {
 											displayedLetter.remove(at: 0)
 											numberOfDisplayedLetter = displayedLetter.count
 
-											if (dpLetter.letter.letterName == "z") {
+											if (dpLetter.letter.letterName == "a") {
 												isFinishedPlaying = true
 											} else {
 												lastDisplayedLetter += 1
 											}
 										} else {
 											SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
+											HapticManager.shared.impact(style: .medium)
 										}
 									}
 								}
@@ -110,14 +111,12 @@ struct MiniGameOneView: View {
 										manageDisplayedLetters()
 									}
 							}
-						} else {
-
 						}
 					}
 					.frame(width: geo.size.width, height: geo.size.height * 0.9, alignment: .center)
 
 					ZStack {
-						BottomBoardLetter(letters: letters)
+						BottomBoardLetter(letters: letters, isFinished: isFinishedPlaying ? true : false)
 					}.frame(width: geo.size.width * 0.95, height: geo.size.height * 0.1, alignment: .center)
 						.background(Color.white.opacity(0.83))
 				}
@@ -125,7 +124,7 @@ struct MiniGameOneView: View {
 		}
 	}
 
-	func manageDisplayedLetters(){
+	func manageDisplayedLetters() {
 		if (numberOfDisplayedLetter <= 1) {
 			var i = 0;
 			for letter in letters {
