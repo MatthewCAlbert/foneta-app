@@ -15,7 +15,7 @@ struct Mini4View: View {
     @State var guessLetter1: String = "B"
     @State var guessLetter2: String = "A"
     @State var guessLetter: String = "D"
-    @State var leafViewCount=0
+    @State var leafViewCount = 0
 
     func random() {
         let randomNum = Int.random(in: 0..<3)
@@ -221,19 +221,19 @@ struct Mini4View: View {
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
-                HStack(spacing:50){
+                HStack(spacing:50) {
                     ZStack {
                         Image("Treasure-1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                        if(leafViewCount<leafViewCollection.count){leafViewCollection[leafViewCount]}
+                        if(leafViewCount<leafViewCollection.count) {leafViewCollection[leafViewCount]}
                     }
                     VStack {
                         Text(guessLetter)
                             .padding(.all)
                             .font(Font.custom(AppFont.openDyslexic.rawValue, size: 120))
                             .foregroundColor(.white)
-                        HStack(spacing:50){
+                        HStack(spacing:50) {
                             imageViewCollection[guessLetter0]
                             imageViewCollection[guessLetter1]
                         }

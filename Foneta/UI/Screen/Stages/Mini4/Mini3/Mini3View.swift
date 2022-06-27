@@ -135,22 +135,25 @@ struct Mini3View: View {
                     }
                     Spacer()
                         .frame(width: 400)
-                    
-                    VStack{
+
+                    VStack {
                         ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
                         HStack {
                                                    Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
                                                              onClick: { click(
-                                                               imageText: imageContentMini4Dictionary[guessNumber0].name!)})
+                                                               imageText:
+                                                                imageContentMini4Dictionary[guessNumber0].name!)})
                                                    Mini3Card(
                                                        text: imageContentMini4Dictionary[guessNumber1].name,
                                                              onClick: { click(
-                                                               imageText: imageContentMini4Dictionary[guessNumber1].name!)})
+                                                               imageText:
+                                                                imageContentMini4Dictionary[guessNumber1].name!)})
                                                }
                         Mini3Card(
                                                         text: imageContentMini4Dictionary[guessNumber2].name,
                                                         onClick: { click(
-                                                            imageText: imageContentMini4Dictionary[guessNumber2].name!)})
+                                                            imageText:
+                                                                imageContentMini4Dictionary[guessNumber2].name!)})
                     }
 //                    VStack {
 //                        ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)

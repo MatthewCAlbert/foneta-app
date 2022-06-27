@@ -11,7 +11,7 @@ struct Mini2View: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                
+
                 Image("Screen8-Bg")
                     .resizable()
                     .scaledToFill()
@@ -21,9 +21,7 @@ struct Mini2View: View {
                     Text("Ayam")
                        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 100))
                        .foregroundColor(.black)
-                    
-                    
-                    
+
                 HStack {
                         Image("Ayam")
                             .resizable()
@@ -40,13 +38,13 @@ struct Mini2View: View {
                         path.addLine(to: CGPoint(x: 100, y: 300))
                         path.addLine(to: CGPoint(x: 200, y: 100))
                         path.addLine(to: CGPoint(x: 300, y: 300))
-                        
+
 //                        path.addLine(to: CGPoint(x: 300, y: 300))
 //                        path.addLine(to: CGPoint(x: 250, y: 250))
                         path.closeSubpath()
                     }
                     .stroke(.blue, lineWidth: 10)
-                    
+
                     }
                     GestureDemo()
                 }

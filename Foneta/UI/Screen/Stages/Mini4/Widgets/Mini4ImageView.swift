@@ -15,7 +15,7 @@ struct Mini4ImageView: View {
 //                    .frame(width: 150, height: 150)
 //                    .padding(.all,10)
 //                    .overlay(VStack {
-                ZStack{
+                ZStack {
                     Image(imageContent.name!)
                             .resizable()
                             .imageScale(.large)
@@ -25,7 +25,7 @@ struct Mini4ImageView: View {
                             .frame(width: 120, height: 120)
                             .cornerRadius(50)
                             .overlay(Circle().stroke(Color.white,lineWidth: 5))
-                VStack{
+                VStack {
                     Spacer()
                         .frame(height:120)
                 RoundedRectangle(cornerRadius: 25)
