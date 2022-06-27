@@ -20,4 +20,3 @@ struct NetaLocation: View, Hashable {
             .frame(width: 150)
     }
 }
-

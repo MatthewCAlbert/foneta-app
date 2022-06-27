@@ -2,7 +2,6 @@ import Foundation
 import SwiftUI
 
 struct Mini3Card: View {
-//    var imageContent: ImageContent
     var text:String!
     var onClick: (() -> Void)
 

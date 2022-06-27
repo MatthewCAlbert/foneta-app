@@ -52,7 +52,11 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "8",
-        body: LaneWrapperView(childView: AnyView(MiniThreeStoryView(page: 3, nextScreenId: "mini-3-end")))
+        body: LaneWrapperView(childView: AnyView(MiniThreeStoryView(page: 3, nextScreenId: "mini-3-game")))
+    ),
+    LaneItem(
+        id: "mini-3-game",
+        body: LaneWrapperView(childView: AnyView(Mini3View(nextScreenId: "mini-3-end")))
     ),
     LaneItem(
         id: "mini-3-end",

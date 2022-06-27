@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct ImageContentMini3: Hashable {
     let id = UUID()
     var name: String?
@@ -42,5 +43,3 @@ let imageContentMini3: [String: ImageContent] = [
     "yoghurt": ImageContent(name: "Yoghurt"),
     "zebra": ImageContent(name: "Zebra")
 ]
-
-

@@ -16,28 +16,26 @@ struct Mini2View: View {
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
-                VStack{
+                VStack {
                     Text("Ayam")
                        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 100))
-                       
+
                        .foregroundColor(.black)
                 HStack {
-                    
+
                         Image("Ayam")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                        
-                    
+
                     Spacer()
                         .frame(width: 100)
-                    
+
                         Text("a")
                         .padding([.trailing],100)
                         .padding(.bottom,100)
                             .font(Font.custom(AppFont.openDyslexic.rawValue, size: 500))
                             .foregroundColor(.white)
-                            
-                        
+
                 }
                 }
             }
@@ -74,7 +72,6 @@ struct Mini2View: View {
                 }
     }
 }
-        
 
 struct Mini2View_Previews: PreviewProvider {
     static var previews: some View {

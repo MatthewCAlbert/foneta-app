@@ -228,7 +228,7 @@ struct Mini4View: View {
                         ForEach((leafViewCollection), id: \.self) {leaf in
                             leaf
                         }
-                        
+
                     }
                     Spacer()
                         .frame(width: 100)
@@ -240,12 +240,11 @@ struct Mini4View: View {
                         HStack {
                             imageViewCollection[guessLetter0]
                             imageViewCollection[guessLetter1]
-                        
-                            
+
                         }
                         imageViewCollection[guessLetter2]
                     }
-                    
+
                 }
             }
             if ( nextScreenId != nil ) {
