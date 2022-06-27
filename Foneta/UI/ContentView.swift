@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            HomeView()
+//            HomeView()
+			MiniGameOneView()
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .navigationBarHidden(true)
@@ -19,6 +20,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+		ContentView()
+			.previewInterfaceOrientation(.landscapeLeft)
     }
 }
