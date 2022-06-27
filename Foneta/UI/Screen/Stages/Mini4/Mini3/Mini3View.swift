@@ -146,15 +146,10 @@ struct Mini3View: View {
                                       onClick: { click(
                                         imageText: imageContentMini4Dictionary[guessNumber1].name!)})
                         }
-                        HStack {
-                            Mini3Card(
-                                text: imageContentMini4Dictionary[guessNumber2].name,
-                                onClick: { click(
-                                    imageText: imageContentMini4Dictionary[guessNumber2].name!)})
-                        }
-                        if ( indexNeta < netaLocationCollection.count ) {
-                            netaLocationCollection[indexNeta]
-                        }
+                        Mini3Card(
+                            text: imageContentMini4Dictionary[guessNumber2].name,
+                            onClick: { click(
+                                imageText: imageContentMini4Dictionary[guessNumber2].name!)})
                     }
                 }
             }
