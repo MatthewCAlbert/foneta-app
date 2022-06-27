@@ -21,7 +21,7 @@ struct MiniFourStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen16-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Setelah minum air kelapa, Neta membawa Rahmat menuju harta tersembunyi di pulau sebagai rasa terima kasih. Rahmat sangat senang!",
+                    captionText: "Setelah minum air kelapa, Neta membawa \(userName) menuju harta tersembunyi di pulau sebagai rasa terima kasih. \(userName) sangat senang!",
                     captionVoiceover: .screen16,
                     childObject: AnyView(
                         ZStack {
@@ -54,7 +54,7 @@ struct MiniFourStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen17-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Neta dan Rahmat memasuki Gua untuk mencari harta yang tersembunyi. Terdapat sebuah batu besar ditengah Gua. Rahmat tidak sabar untuk melihat dibalik batu!",
+                    captionText: "Neta dan \(userName) memasuki Gua untuk mencari harta yang tersembunyi. Terdapat sebuah batu besar ditengah Gua. \(userName) tidak sabar untuk melihat dibalik batu!",
                     captionVoiceover: .screen17,
                     childObject: AnyView(
                         ZStack {
@@ -74,7 +74,7 @@ struct MiniFourStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen18-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Wah!! Dibalik batu besar itu, terdapat harta karun! Rahmat dan Neta tidak sabar untuk melihat! Tetapi, harta tersebut terhalangi daun-daun dan rerumputan liar.",
+                    captionText: "Wah!! Dibalik batu besar itu, terdapat harta karun! \(userName) dan Neta tidak sabar untuk melihat! Tetapi, harta tersebut terhalangi daun-daun dan rerumputan liar.",
                     captionVoiceover: .screen18,
                     childObject: AnyView(
                         ZStack {
@@ -89,7 +89,7 @@ struct MiniFourStoryView: View, MiniStoryView {
                 StoryMiniEndView(
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen21-Bg",
-                    finishMessage: "Selamat Rahmat, kamu berhasil\nmendapatkan harta karun!",
+                    finishMessage: "Selamat \(userName), kamu berhasil\nmendapatkan harta karun!",
                     finishMessageColor: .white,
                     characterImage: "Treasure-1",
                     characterVoiceover: .screen21MiniEnd,

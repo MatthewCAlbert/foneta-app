@@ -21,7 +21,7 @@ struct MiniOneStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen2-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Rahmat adalah seorang petualang pemberani. Hari ini, Rahmat menjelajahi pantai tersembunyi. Pantainya indah sekali!",
+                    captionText: "\(userName) adalah seorang petualang pemberani. Hari ini, \(userName) menjelajahi pantai tersembunyi. Pantainya indah sekali!",
                     captionVoiceover: .screen2,
                     childObject: AnyView(
                         ZStack {
@@ -41,7 +41,7 @@ struct MiniOneStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen3-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Di pantai, rahmat disambut oleh Kepi si Kepiting. Kepi sangat senang bertemu Rahmat si petualang pemberani!",
+                    captionText: "Di pantai, \(userName) disambut oleh Kepi si Kepiting. Kepi sangat senang bertemu \(userName) si petualang pemberani!",
                     captionVoiceover: .screen3,
                     childObject: AnyView(
                         ZStack {
@@ -52,7 +52,7 @@ struct MiniOneStoryView: View, MiniStoryView {
                             DialogBubble(width: geo.size.width * 0.25,
                                          height: geo.size.height * 0.25,
                                          fontSize: 24,
-                                         text: "Halo, Rahmat! Aku Kepi.",
+                                         text: "Halo, \(userName)! Aku Kepi.",
                                          playVoiceover: !voiceoverPlayed)
                                 .voiceover(.screen3Kepi, delay: 8.0)
                                 .offset(x: geo.size.width * 0.27, y: geo.size.height * -0.3)
@@ -95,11 +95,11 @@ struct MiniOneStoryView: View, MiniStoryView {
                 StoryMiniEndView(
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen5-Bg",
-                    finishMessage: "Rahmat berhasil menyelamatkan Kepi.\nSelamat Rahmat, kamu hebat!",
+                    finishMessage: "\(userName) berhasil menyelamatkan Kepi.\nSelamat \(userName), kamu hebat!",
                     finishMessageColor: .black,
                     characterImage: "Kepi-Happy",
                     characterVoiceover: .screen5MiniEnd,
-                    characterBubbleText: "Terima kasih, Rahmat!",
+                    characterBubbleText: "Terima kasih, \(userName)!",
                     characterBubbleTextVoiceover: .screen5MiniEndKepi,
                     characterBubbleTextVoiceoverDelay: 5.1,
                     buttonText: "Selanjutnya",

@@ -22,7 +22,7 @@ struct MiniTwoStoryView: View,
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen6-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Rahmat si petualang pemberani berpamitan dengan Kepi dan melanjutkan petualangannya. Hari mulai siang dan terasa panas.",
+                    captionText: "\(userName) si petualang pemberani berpamitan dengan Kepi dan melanjutkan petualangannya. Hari mulai siang dan terasa panas.",
                     captionVoiceover: .screen6,
                     childObject: AnyView(
                         ZStack {
@@ -42,7 +42,7 @@ struct MiniTwoStoryView: View,
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen7-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Dari kejauhan, Rahmat mendengar suara meminta pertolongan. Suara itu berasal dari timbunan pasir, ada yang membutuhkan bantuan!",
+                    captionText: "Dari kejauhan, \(userName) mendengar suara meminta pertolongan. Suara itu berasal dari timbunan pasir, ada yang membutuhkan bantuan!",
                     captionVoiceover: .screen7,
                     childObject: AnyView(
                         ZStack {
@@ -71,11 +71,11 @@ struct MiniTwoStoryView: View,
                 StoryMiniEndView(
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen9-Bg",
-                    finishMessage: "Rahmat berhasil menyelamatkan Neta.\nSelamat Rahmat, kamu hebat!",
+                    finishMessage: "\(userName) berhasil menyelamatkan Neta.\nSelamat \(userName), kamu hebat!",
                     finishMessageColor: .black,
                     characterImage: "Neta-MouthOpened",
                     characterVoiceover: .screen9MiniEnd,
-                    characterBubbleText: "Terima kasih, Rahmat!",
+                    characterBubbleText: "Terima kasih, \(userName)!",
                     characterBubbleTextVoiceover: .screen9MiniEndNeta,
                     characterBubbleTextVoiceoverDelay: 4.5,
                     buttonText: "Selanjutnya",

@@ -21,7 +21,7 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen10-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Neta sangat senang keluar dari timbunan pasir. Neta memutuskan untuk ikut berpetualang bersama Rahmat si petualang pemberani!",
+                    captionText: "Neta sangat senang keluar dari timbunan pasir. Neta memutuskan untuk ikut berpetualang bersama \(userName) si petualang pemberani!",
                     captionVoiceover: .screen10,
                     childObject: AnyView(
                         ZStack {
@@ -53,7 +53,7 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen11-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Tak terasa hari semakin panas. Teriknya sinar matahari membuat Rahmat dan Neta merasa haus. ",
+                    captionText: "Tak terasa hari semakin panas. Teriknya sinar matahari membuat \(userName) dan Neta merasa haus. ",
                     captionVoiceover: .screen11,
                     childObject: AnyView(
                         ZStack {
@@ -73,7 +73,7 @@ struct MiniThreeStoryView: View, MiniStoryView {
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen12-Bg",
                     // swiftlint:disable:next line_length
-                    captionText: "Ah! Neta menemukan buah kelapa diatas pohon. Buah kelapa berisikan air yang sangat segar. Rahmat perlu memanjat pohon untuk mendapatkan buah kelapa! ",
+                    captionText: "Ah! Neta menemukan buah kelapa diatas pohon. Buah kelapa berisikan air yang sangat segar. \(userName) perlu memanjat pohon untuk mendapatkan buah kelapa! ",
                     captionVoiceover: .screen12,
                     childObject: AnyView(
                         ZStack {
@@ -93,11 +93,11 @@ struct MiniThreeStoryView: View, MiniStoryView {
                 StoryMiniEndView(
                     nextScene: AnyView(mainStoryLane[nextScreenId].body),
                     backgroundImage: "Screen15-Bg",
-                    finishMessage: "Rahmat berhasil memanjat pohon kelapa.\nSelamat Rahmat, kamu hebat!",
+                    finishMessage: "\(userName) berhasil memanjat pohon kelapa.\nSelamat \(userName), kamu hebat!",
                     finishMessageColor: .black,
                     characterImage: "Neta-MouthOpened",
                     characterVoiceover: .screen15MiniEnd,
-                    characterBubbleText: "Segar sekali, terima kasih Rahmat!",
+                    characterBubbleText: "Segar sekali, terima kasih \(userName)!",
                     characterBubbleTextVoiceover: .screen15MiniEndNeta,
                     characterBubbleTextVoiceoverDelay: 5.1,
                     buttonText: "Selanjutnya",
