@@ -25,11 +25,6 @@ struct MiniOneStoryView: View, MiniStoryView {
                     captionVoiceover: .screen2,
                     childObject: AnyView(
                         ZStack {
-                            Image("Hand-3")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: geo.size.width * 0.8)
-                                .offset(y: geo.size.height * 0.2)
                         }
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     ),

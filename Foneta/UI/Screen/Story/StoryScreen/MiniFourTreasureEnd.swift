@@ -1,5 +1,5 @@
 //
-//  Mini4TreasureEnd.swift
+//  MiniFourTreasureEnd.swift
 //  Foneta
 //
 //  Created by Matthew Christopher Albert on 27/06/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Mini4TreasureEnd: View {
+struct MiniFourTreasureEnd: View {
     var nextScene: AnyView = AnyView(EmptyView())
     let backgroundImage: String = "Screen21-Bg"
     let finishMessage: String = "Selamat Rahmat, kamu berhasil\nmendapatkan harta karun!"
@@ -19,15 +19,21 @@ struct Mini4TreasureEnd: View {
 
     @State var nextSceneActive = false
     @State var currentIndex = 0
+    @State var showTreasure: [Bool] = [true, false, false, false, false]
     @State var flashbangOpacity: Double = 0
-    @State var treasureOpacity: [Double] = [0, 0, 0, 0]
+    @State var treasureOpacity: [Double] = [0, 0, 0, 0, 0]
 
-    func animateTreasure(index: Int, duration: Double, delay: Double) {
-        withAnimation(.easeIn(duration: duration).delay(delay)) {
+    func animateTreasure(index: Int) {
+        withAnimation(.easeIn(duration: 1)) {
             treasureOpacity[index] += 1
         }
-        withAnimation(.easeIn(duration: duration).delay(duration + delay - 0.5)) {
+        withAnimation(.easeIn(duration: 1).delay(1)) {
             treasureOpacity[index] -= 1
+        }
+        if ( index+1 < showTreasure.count ) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                showTreasure[index+1] = true
+            }
         }
     }
 
@@ -82,50 +88,46 @@ struct Mini4TreasureEnd: View {
                         // First Sequence
                         ZStack {
                             // Locked Chest
-                            Image("Treasure-1")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 300, height: 300, alignment: .center)
-                                .opacity(treasureOpacity[0])
-                                .onAppear {
-                                    animateTreasure(index: 0, duration: 1, delay: 0)
-                                }
+                            if (showTreasure[0]) {
+                                Image("Treasure-1")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 300, height: 300, alignment: .center)
+                                    .opacity(treasureOpacity[0])
+                                    .onAppear {
+                                        animateTreasure(index: 0)
+                                    }
+                            }
 
                             // Unlocked Chest
-                            Image("Treasure-1")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 300, height: 300, alignment: .center)
-                                .opacity(treasureOpacity[1])
-                                .onAppear {
-                                    animateTreasure(index: 1, duration: 1, delay: 2)
-                                }
+                            if (showTreasure[1]) {
+                                Image("Treasure-1")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 300, height: 300, alignment: .center)
+                                    .opacity(treasureOpacity[1])
+                                    .onAppear {
+                                        animateTreasure(index: 1)
+                                    }
+                            }
 
                             // Opened Chest
-                            Image("Treasure-Open-1")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 300, height: 300, alignment: .center)
-                                .opacity(treasureOpacity[2])
-                                .onAppear {
-                                    animateTreasure(index: 2, duration: 1, delay: 4)
-                                    withAnimation(.easeIn(duration: 1.0).delay(6)) {
-                                        treasureOpacity[3] += 1
+                            if (showTreasure[2]) {
+                                Image("Treasure-Open-1")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 300, height: 300, alignment: .center)
+                                    .opacity(treasureOpacity[2])
+                                    .onAppear {
+                                        animateTreasure(index: 2)
                                     }
-                                }
+                            }
 
                             // Opened Chest Angled + Treasure Map Folded
-                            if (treasureOpacity[3] > 0) {
+                            if (showTreasure[3]) {
                                 Button(action: {
                                     SoundManager.shared.setChannelQueuePlay(nil)
-
-                                    withAnimation(.easeIn(duration: 3.0)) {
-                                        flashbangOpacity += 1
-                                    }
-
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                        nextSceneActive = true
-                                    }
+                                    showTreasure[4] = true
                                 }, label: {
                                     ZStack {
                                         Image("Treasure-4")
@@ -140,16 +142,26 @@ struct Mini4TreasureEnd: View {
                                     }
                                 })
                                 .opacity(treasureOpacity[3])
+                                .onAppear {
+                                    withAnimation(.easeIn(duration: 1)) {
+                                        treasureOpacity[3] += 1
+                                    }
+                                }
                             }
 
-                            if ( flashbangOpacity > 0 ) {
+                            if ( showTreasure[4] ) {
                                 Rectangle()
                                     .fill(Color(hex: "FFFEEA").opacity(flashbangOpacity))
                                     .ignoresSafeArea()
                                     .onAppear {
+                                        withAnimation(.easeIn(duration: 2)) {
+                                            flashbangOpacity += 1
+                                        }
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                            nextSceneActive = true
+                                        }
                                     }
                             }
-
                         }
                         .overlay(
                             NavigationLink(destination: nextScene, isActive: $nextSceneActive) { EmptyView() }
@@ -162,9 +174,9 @@ struct Mini4TreasureEnd: View {
     }
 }
 
-struct Mini4TreasureEnd_Previews: PreviewProvider {
+struct MiniFourTreasureEnd_Previews: PreviewProvider {
     static var previews: some View {
-        Mini4TreasureEnd()
+        MiniFourTreasureEnd()
         .previewInterfaceOrientation(.landscapeRight)
     }
 }

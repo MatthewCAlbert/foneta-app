@@ -26,11 +26,6 @@ struct MiniTwoStoryView: View,
                     captionVoiceover: .screen6,
                     childObject: AnyView(
                         ZStack {
-                            Image("Hand-3")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: geo.size.width * 0.8)
-                                .offset(y: geo.size.height * 0.2)
                         }
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     ),
@@ -46,11 +41,6 @@ struct MiniTwoStoryView: View,
                     captionVoiceover: .screen7,
                     childObject: AnyView(
                         ZStack {
-                            Image("Hand-3")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: geo.size.width * 0.8)
-                                .offset(y: geo.size.height * 0.2)
                             DialogBubble(width: geo.size.width * 0.3,
                                          height: geo.size.height * 0.3,
                                          fontSize: 22,

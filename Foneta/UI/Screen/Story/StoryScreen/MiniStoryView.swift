@@ -23,8 +23,6 @@ extension MiniStoryView {
     }
 
     var userName: String {
-        get {
-            return UserData.shared.name ?? "Rahmat"
-        }
+        return UserData.shared.name ?? "Rahmat"
     }
 }

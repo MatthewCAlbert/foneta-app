@@ -30,11 +30,6 @@ struct MiniFourStoryView: View, MiniStoryView {
                                 .scaledToFit()
                                 .frame(width: geo.size.width * 0.3)
                                 .offset(x: geo.size.width * -0.2, y: geo.size.height * 0.01)
-                            Image("Hand-3")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: geo.size.width * 0.8)
-                                .offset(y: geo.size.height * 0.2)
                             DialogBubble(width: geo.size.width * 0.3,
                                          height: geo.size.height * 0.3,
                                          fontSize: 22,
@@ -86,17 +81,8 @@ struct MiniFourStoryView: View, MiniStoryView {
                     voiceoverPlayed: $voiceoverPlayed
                 )
             case 4:
-                StoryMiniEndView(
-                    nextScene: AnyView(mainStoryLane[nextScreenId].body),
-                    backgroundImage: "Screen21-Bg",
-                    finishMessage: "Selamat \(userName), kamu berhasil\nmendapatkan harta karun!",
-                    finishMessageColor: .white,
-                    characterImage: "Treasure-1",
-                    characterVoiceover: .screen21MiniEnd,
-                    characterBubbleText: nil,
-                    characterBubbleTextVoiceover: nil,
-                    buttonText: "Buka",
-                    buttonVoiceover: .open
+                MiniFourTreasureEnd(
+                    nextScene: AnyView(mainStoryLane[nextScreenId].body)
                 )
             default:
                 EmptyView()
