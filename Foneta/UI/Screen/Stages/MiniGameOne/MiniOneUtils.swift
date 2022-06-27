@@ -30,8 +30,6 @@ struct Letter:Hashable {
 	var letterName: String
 	var isFinded = false
 	var isDisplayed = false
-	var xPosition = 0.0
-	var yPosition = 0.0
 }
 
 struct DisplayedLetters:Hashable {

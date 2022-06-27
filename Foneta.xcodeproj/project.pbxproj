@@ -120,8 +120,6 @@
 		4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */; };
 		4CE4DC662862214E00E48E6F /* MiniFourStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */; };
 		4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */; };
-		680486B72862E70900820A2A /* MiniGame1MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680486B62862E70900820A2A /* MiniGame1MainView.swift */; };
-		682784A62862F34900CBA198 /* MiniUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682784A52862F34900CBA198 /* MiniUtils.swift */; };
 		685ABBF7286970BE00606A93 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF3286970BE00606A93 /* 3.mp3 */; };
 		685ABBF8286970BE00606A93 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF4286970BE00606A93 /* 2.mp3 */; };
 		685ABBF9286970BE00606A93 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF5286970BE00606A93 /* 1.mp3 */; };
@@ -129,7 +127,6 @@
 		685ABBFC2869973100606A93 /* Mulai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFB2869973100606A93 /* Mulai.mp3 */; };
 		685ABBFF2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */; };
 		685ABC002869B76C00606A93 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFE2869B76C00606A93 /* Click.mp3 */; };
-		686A24ED2867FE44003ECA2C /* AnimateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24EC2867FE44003ECA2C /* AnimateTest.swift */; };
 		686A24F02868030D003ECA2C /* MiniGameOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24EF2868030D003ECA2C /* MiniGameOneView.swift */; };
 		686A24F228680E21003ECA2C /* MiniOneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24F128680E21003ECA2C /* MiniOneUtils.swift */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
@@ -274,8 +271,6 @@
 		4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMiniEndView.swift; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
-		680486B62862E70900820A2A /* MiniGame1MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGame1MainView.swift; sourceTree = "<group>"; };
-		682784A52862F34900CBA198 /* MiniUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniUtils.swift; sourceTree = "<group>"; };
 		685ABBF3286970BE00606A93 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 		685ABBF4286970BE00606A93 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		685ABBF5286970BE00606A93 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
@@ -283,7 +278,6 @@
 		685ABBFB2869973100606A93 /* Mulai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mulai.mp3; sourceTree = "<group>"; };
 		685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mini Game 1 - Bubble.mp3"; sourceTree = "<group>"; };
 		685ABBFE2869B76C00606A93 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
-		686A24EC2867FE44003ECA2C /* AnimateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateTest.swift; sourceTree = "<group>"; };
 		686A24EF2868030D003ECA2C /* MiniGameOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameOneView.swift; sourceTree = "<group>"; };
 		686A24F128680E21003ECA2C /* MiniOneUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniOneUtils.swift; sourceTree = "<group>"; };
 		78DD2301FFE7ADCFF87D6775 /* Pods_Foneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -526,7 +520,6 @@
 			isa = PBXGroup;
 			children = (
 				686A24EE286802CA003ECA2C /* MiniGameOne */,
-				680486B52862E69F00820A2A /* MiniGame1Backup */,
 				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
 			);
 			path = Stages;
@@ -747,16 +740,6 @@
 				4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */,
 			);
 			path = StoryScreen;
-			sourceTree = "<group>";
-		};
-		680486B52862E69F00820A2A /* MiniGame1Backup */ = {
-			isa = PBXGroup;
-			children = (
-				680486B62862E70900820A2A /* MiniGame1MainView.swift */,
-				682784A52862F34900CBA198 /* MiniUtils.swift */,
-				686A24EC2867FE44003ECA2C /* AnimateTest.swift */,
-			);
-			path = MiniGame1Backup;
 			sourceTree = "<group>";
 		};
 		686A24EE286802CA003ECA2C /* MiniGameOne */ = {
@@ -1109,9 +1092,7 @@
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
-				680486B72862E70900820A2A /* MiniGame1MainView.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
-				682784A62862F34900CBA198 /* MiniUtils.swift in Sources */,
 				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
 				4CE4DBD3286086F300E48E6F /* StoryContainerView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
@@ -1130,7 +1111,6 @@
 				4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 				4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */,
-				686A24ED2867FE44003ECA2C /* AnimateTest.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
 				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
