@@ -1,8 +1,9 @@
-// Mini3View.swift
+//  Mini3View.swift
 //  Foneta
 //  Created by Evan Susanto on 24/06/22.
 
 import SwiftUI
+
 struct Mini3View: View {
     var nextScreenId: String?
 
@@ -13,18 +14,19 @@ struct Mini3View: View {
     @State var guessNumber2: Int = 3
     @State var guessNumber: Int = 1
 
-    @State var netaLocationCollection:[NetaLocation]=[
+    @State var netaLocationCollection: [NetaLocation] = [
         NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 500, paddingSizeHorizontal: 50),
         NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 400, paddingSizeHorizontal: 60),
-        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: 300, paddingSizeHorizontal: 65),
+        NetaLocation(imageName: "Neta-Climbing-3", paddingSize: 300, paddingSizeHorizontal: 65),
         NetaLocation(imageName: "Neta-Climbing-4", paddingSize: 200, paddingSizeHorizontal: 70),
         NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 100, paddingSizeHorizontal: 70),
         NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 0, paddingSizeHorizontal: 60),
-        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: -100, paddingSizeHorizontal: 50),
+        NetaLocation(imageName: "Neta-Climbing-3", paddingSize: -100, paddingSizeHorizontal: 50),
         NetaLocation(imageName: "Neta-Climbing-4", paddingSize: -200, paddingSizeHorizontal: 40)
     ]
 
     func finishGame() {
+        SoundManager.shared.playerChannel[2]?.stop()
         nextSceneActive = true
     }
 
@@ -105,8 +107,10 @@ struct Mini3View: View {
         ImageContent(name: "Zebra")
     ]
 
-    func click(imageText:String) {
-        if(imageText==imageContentMini4Dictionary[guessNumber].name) {
+    func click(imageText: String) {
+        print(imageText)
+        SoundManager.shared.playSound(imageText)
+        if(imageText == imageContentMini4Dictionary[guessNumber].name) {
             indexNeta += 1
             print(indexNeta)
             random()
@@ -116,7 +120,7 @@ struct Mini3View: View {
             }
         } else {
             random()
-            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
+            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
             HapticManager.shared.impact(style: .medium)
         }
     }
@@ -139,45 +143,28 @@ struct Mini3View: View {
                     VStack {
                         ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
                         HStack {
-                                                   Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
-                                                             onClick: { click(
-                                                               imageText:
-                                                                imageContentMini4Dictionary[guessNumber0].name!)})
-                                                   Mini3Card(
-                                                       text: imageContentMini4Dictionary[guessNumber1].name,
-                                                             onClick: { click(
-                                                               imageText:
-                                                                imageContentMini4Dictionary[guessNumber1].name!)})
-                                               }
+                           Mini3Card(
+                            text: imageContentMini4Dictionary[guessNumber0].name,
+                            onClick: {
+                                click(imageText: imageContentMini4Dictionary[guessNumber0].name!)
+                            })
+                           Mini3Card(
+                            text: imageContentMini4Dictionary[guessNumber1].name,
+                            onClick: {
+                                click(imageText: imageContentMini4Dictionary[guessNumber1].name!)
+                            })
+                        }
                         Mini3Card(
-                                                        text: imageContentMini4Dictionary[guessNumber2].name,
-                                                        onClick: { click(
-                                                            imageText:
-                                                                imageContentMini4Dictionary[guessNumber2].name!)})
+                            text: imageContentMini4Dictionary[guessNumber2].name,
+                            onClick: {
+                                click(imageText: imageContentMini4Dictionary[guessNumber2].name!)
+                        })
                     }
-//                    VStack {
-//                        ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
-//                        HStack {
-//                            Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
-//                                      onClick: { click(
-//                                        imageText: imageContentMini4Dictionary[guessNumber0].name!)})
-//                            Mini3Card(
-//                                text: imageContentMini4Dictionary[guessNumber1].name,
-//                                      onClick: { click(
-//                                        imageText: imageContentMini4Dictionary[guessNumber1].name!)})
-//                        }
-//
-//                            Mini3Card(
-//                                text: imageContentMini4Dictionary[guessNumber2].name,
-//                                onClick: { click(
-//                                    imageText: imageContentMini4Dictionary[guessNumber2].name!)})
-//
-//                        if ( indexNeta < netaLocationCollection.count ) {
-//                            netaLocationCollection[indexNeta]
-//                        }
-//                    }
                 }
             }
+        }
+        .onAppear {
+            SoundManager.shared.playSound(.mini3Bgm, channel: 2, loop: -1)
         }
         if (nextScreenId != nil ) {
             HStack {}

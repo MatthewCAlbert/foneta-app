@@ -67,7 +67,7 @@ struct Mini4View: View {
         }
     }
 
-   var leafViewCollection:[LeafView]=[
+   var leafViewCollection: [LeafView] = [
         LeafView(imageName: "daun1"),
         LeafView(imageName: "daun2"),
         LeafView(imageName: "daun3"),
@@ -80,16 +80,16 @@ struct Mini4View: View {
         LeafView(imageName: "daun10")
     ]
 
-    func click(imageText:String) {
+    func click(imageText: String) {
+        SoundManager.shared.playSound(imageText)
         if(imageText.prefix(1) == guessLetter) {
             print("True")
-            leafViewCount+=1
+            leafViewCount += 1
             guessLetter = randomString(length: 1)
             guessLetter1 = randomString(length: 1)
             guessLetter2 = randomString(length: 1)
-            if ( leafViewCount==leafViewCollection.count ) {
+            if ( leafViewCount == leafViewCollection.count ) {
                 finishGame()
-
             }
             random()
         } else {
@@ -98,122 +98,124 @@ struct Mini4View: View {
             guessLetter1 = randomString(length: 1)
             guessLetter2 = randomString(length: 1)
             random()
-            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
+            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
             HapticManager.shared.impact(style: .medium)
         }
     }
 
     func finishGame() {
+        SoundManager.shared.playerChannel[2]?.stop()
         nextSceneActive = true
     }
 
     var body: some View {
         let imageViewCollection: [String: Mini4ImageView] = [
             "A": Mini4ImageView(
-                imageContent:mini4Asset["ayam"]!,
+                imageContent: mini4Asset["ayam"]!,
                 onClick: { click(imageText: (mini4Asset["ayam"]?.name)!)}
             ),
             "B": Mini4ImageView(
-                imageContent:mini4Asset["bola"]!,
+                imageContent: mini4Asset["bola"]!,
                 onClick: { click(imageText: (mini4Asset["bola"]?.name)!)}
             ),
             "C": Mini4ImageView(
-                imageContent:mini4Asset["cacing"]!,
+                imageContent: mini4Asset["cacing"]!,
                 onClick: { click(imageText: (mini4Asset["cacing"]?.name)!)}
             ),
             "D": Mini4ImageView(
-                imageContent:mini4Asset["domba"]!,
+                imageContent: mini4Asset["domba"]!,
                 onClick: { click(imageText: (mini4Asset["domba"]?.name)!)}
             ),
             "E": Mini4ImageView(
-                imageContent:mini4Asset["elang"]!,
+                imageContent: mini4Asset["elang"]!,
                 onClick: { click(imageText: (mini4Asset["elang"]?.name)!)}
             ),
             "F": Mini4ImageView(
-                imageContent:mini4Asset["foto"]!,
+                imageContent: mini4Asset["foto"]!,
                 onClick: { click(imageText: (mini4Asset["foto"]?.name)!)}
             ),
             "G": Mini4ImageView(
-                imageContent:mini4Asset["gajah"]!,
+                imageContent: mini4Asset["gajah"]!,
                 onClick: { click(imageText: (mini4Asset["gajah"]?.name)!)}
             ),
             "H": Mini4ImageView(
-                imageContent:mini4Asset["harimau"]!,
+                imageContent: mini4Asset["harimau"]!,
                 onClick: { click(imageText: (mini4Asset["harimau"]?.name)!)}
             ),
             "I": Mini4ImageView(
-                imageContent:mini4Asset["ikan"]!,
+                imageContent: mini4Asset["ikan"]!,
                 onClick: { click(imageText: (mini4Asset["ikan"]?.name)!)}
             ),
             "J": Mini4ImageView(
-                imageContent:mini4Asset["jerapah"]!,
+                imageContent: mini4Asset["jerapah"]!,
                 onClick: { click(imageText: (mini4Asset["jerapah"]?.name)!)}
             ),
             "K": Mini4ImageView(
-                imageContent:mini4Asset["kucing"]!,
+                imageContent: mini4Asset["kucing"]!,
                 onClick: { click(imageText: (mini4Asset["kucing"]?.name)!)}
             ),
             "L": Mini4ImageView(
-                imageContent:mini4Asset["lemon"]!,
+                imageContent: mini4Asset["lemon"]!,
                 onClick: { click(imageText: (mini4Asset["lemon"]?.name)!)}
             ),
             "M": Mini4ImageView(
-                imageContent:mini4Asset["monyet"]!,
+                imageContent: mini4Asset["monyet"]!,
                 onClick: { click(imageText: (mini4Asset["monyet"]?.name)!)}
             ),
             "N": Mini4ImageView(
-                imageContent:mini4Asset["nyamuk"]!,
+                imageContent: mini4Asset["nyamuk"]!,
                 onClick: { click(imageText: (mini4Asset["nyamuk"]?.name)!)}
             ),
             "O": Mini4ImageView(
-                imageContent:mini4Asset["obat"]!,
+                imageContent: mini4Asset["obat"]!,
                 onClick: { click(imageText: (mini4Asset["obat"]?.name)!)}
             ),
             "P": Mini4ImageView(
-                imageContent:mini4Asset["panda"]!,
+                imageContent: mini4Asset["panda"]!,
                 onClick: { click(imageText: (mini4Asset["panda"]?.name)!)}
             ),
             "Q": Mini4ImageView(
-                imageContent:mini4Asset["quran"]!,
+                imageContent: mini4Asset["quran"]!,
                 onClick: { click(imageText: (mini4Asset["quran"]?.name)!)}
             ),
             "R": Mini4ImageView(
-                imageContent:mini4Asset["rusa"]!,
+                imageContent: mini4Asset["rusa"]!,
                 onClick: { click(imageText: (mini4Asset["rusa"]?.name)!)}
             ),
             "S": Mini4ImageView(
-                imageContent:mini4Asset["sapi"]!,
+                imageContent: mini4Asset["sapi"]!,
                 onClick: { click(imageText: (mini4Asset["sapi"]?.name)!)}
             ),
             "T": Mini4ImageView(
-                imageContent:mini4Asset["tikus"]!,
+                imageContent: mini4Asset["tikus"]!,
                 onClick: { click(imageText: (mini4Asset["tikus"]?.name)!)}
             ),
             "U": Mini4ImageView(
-                imageContent:mini4Asset["udang"]!,
+                imageContent: mini4Asset["udang"]!,
                 onClick: { click(imageText: (mini4Asset["udang"]?.name)!)}
             ),
             "V": Mini4ImageView(
-                imageContent:mini4Asset["vas"]!,
+                imageContent: mini4Asset["vas"]!,
                 onClick: { click(imageText: (mini4Asset["vas"]?.name)!)}
             ),
             "W": Mini4ImageView(
-                imageContent:mini4Asset["wortel"]!,
+                imageContent: mini4Asset["wortel"]!,
                 onClick: { click(imageText: (mini4Asset["wortel"]?.name)!)}
             ),
             "X": Mini4ImageView(
-                imageContent:mini4Asset["xilofon"]!,
+                imageContent: mini4Asset["xilofon"]!,
                 onClick: { click(imageText: (mini4Asset["xilofon"]?.name)!)}
             ),
             "Y": Mini4ImageView(
-                imageContent:mini4Asset["yoyo"]!,
+                imageContent: mini4Asset["yoyo"]!,
                 onClick: { click(imageText: (mini4Asset["yoyo"]?.name)!)}
             ),
             "Z": Mini4ImageView(
-                imageContent:mini4Asset["zebra"]!,
+                imageContent: mini4Asset["zebra"]!,
                 onClick: { click(imageText: (mini4Asset["zebra"]?.name)!)}
             )
         ]
+
         GeometryReader { geo in
             ZStack {
                 Image("Screen20-Bg")
@@ -250,6 +252,9 @@ struct Mini4View: View {
                                    isActive: $nextSceneActive) { EmptyView() }
                 )
             }
+        }
+        .onAppear {
+            SoundManager.shared.playSound(.mini4Bgm, channel: 2, loop: -1)
         }
     }
 }

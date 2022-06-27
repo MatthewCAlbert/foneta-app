@@ -39,9 +39,9 @@ class SoundManager {
 
     var playerChannelPlaying: [SoundAssets?] = [nil, nil, nil]
     var playerChannel: [AVAudioPlayer?] = [nil, nil, nil]
-    var playerChannelVolume: [Float] = [0.3, 0.3, 0.3]
+    var playerChannelVolume: [Float] = [0.3, 0.3, 0.02]
 
-    func playSound(_ filename: SoundAssets, channel: Int = 0) {
+    func playSound(_ filename: SoundAssets, channel: Int = 0, loop: Int = 0 ) {
         guard let url = Bundle.main.url(forResource: filename.rawValue, withExtension: "mp3") else { return }
 
         do {
@@ -49,6 +49,7 @@ class SoundManager {
 
             playerChannel[channel] = try AVAudioPlayer(contentsOf: url)
             playerChannel[channel]?.volume = !_globalMuted ? playerChannelVolume[channel] : 0
+            playerChannel[channel]?.numberOfLoops = loop
             playerChannel[channel]?.prepareToPlay()
             playerChannel[channel]?.play()
         } catch let error {
@@ -56,17 +57,19 @@ class SoundManager {
         }
     }
 
-    func playAudioAsset(_ assetName: String, channel: Int = 0) {
-       guard let audioData = NSDataAsset(name: assetName)?.data else {
-          fatalError("Unable to find asset \(assetName)")
-       }
+    func playSound(_ assetName: String, channel: Int = 0, loop: Int = 0 ) {
+        guard let url = Bundle.main.url(forResource: assetName, withExtension: "mp3") else { return }
 
        do {
-           playerChannel[channel] = try AVAudioPlayer(data: audioData)
+           playerChannel[channel]?.stop()
+
+           playerChannel[channel] = try AVAudioPlayer(contentsOf: url)
            playerChannel[channel]?.volume = !_globalMuted ? playerChannelVolume[channel] : 0
+           playerChannel[channel]?.numberOfLoops = loop
+           playerChannel[channel]?.prepareToPlay()
            playerChannel[channel]?.play()
-       } catch {
-          fatalError(error.localizedDescription)
+       } catch let error {
+           print("Error playing sound. \(error.localizedDescription)")
        }
      }
 
