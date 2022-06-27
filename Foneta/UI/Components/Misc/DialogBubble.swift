@@ -13,10 +13,12 @@ struct DialogBubble: View {
     let fontSize: CGFloat
     let text: String
     var flipped: Bool = false
+    var voiceover: SoundAssets?
+    var playVoiceover: Bool = true
     var extraItem: some View = EmptyView()
-    
+
     @ObservedObject var tts = TextToSpeech()
-    
+
     var body: some View {
         ZStack {
             Image("DialogBubble-Bg")
@@ -32,30 +34,46 @@ struct DialogBubble: View {
                 extraItem
             }
             .frame(width: width * 0.67, height: height * 0.67, alignment: .center)
-            .padding(EdgeInsets(top: 0, leading: !flipped ? width * 0.067 : 0, bottom: 0, trailing: flipped ? width * 0.067 : 0))
+            .padding(
+                EdgeInsets(top: 0,
+                           leading: !flipped ? width * 0.067 : 0,
+                           bottom: 0,
+                           trailing: flipped ? width * 0.067 : 0)
+            )
         }
         .frame(width: width, height: height, alignment: .center)
-    }
-    
-    func read(_ yes: Bool = true) -> some View {
-        tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
-        return self.id(UUID())
-    }
-    
-    func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {
-        guard let soundName = soundName else {
-            return self.id(UUID())
+        .onTapGesture {
+            if ( voiceover != nil ) {
+                playVO(voiceover!, delay: 0)
+            }
         }
-        
+    }
+
+    private func playVO(_ soundName: SoundAssets, delay: Double = 0) {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             SoundManager.shared.setChannelQueuePlay(soundName)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + delay + 0.2) {
-            if (SoundManager.shared.playerChannelPlaying[0] == soundName) {
+            if SoundManager.shared.playerChannelPlaying[0] == soundName {
                 SoundManager.shared.playSound(soundName)
             }
         }
+    }
+
+    func read(_ yes: Bool = true) -> some View {
+        tts.speakSomething(text: text, rate: 0.4, volume: 0.3)
         return self.id(UUID())
+    }
+
+    func voiceover(_ soundName: SoundAssets?, delay: Double = 0) -> some View {
+        guard let soundName = soundName else {
+            return self.id(UUID())
+        }
+
+        var view = self
+        view.voiceover = soundName
+        playVO(soundName, delay: delay)
+        return view.id(UUID())
     }
 }
 

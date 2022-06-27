@@ -5,20 +5,21 @@
 //  Created by Matthew Christopher Albert on 21/06/22.
 //
 
+// swiftlint:disable identifier_name
 import Foundation
 
 enum SoundAssets: String {
-	case count321 = "321"
-	case tiga = "3"
-	case dua = "2"
-	case satu = "1"
-	case mulai = "Mulai"
-	case wrongSoundEffect = "wrongSoundEffect"
+    case count321 = "321"
+    case tiga = "3"
+    case dua = "2"
+    case satu = "1"
+    case mulai = "Mulai"
+    case wrongSoundEffect = "wrongSoundEffect"
     case next = "Selanjutnya"
     case ready = "Siap"
     case open = "Buka"
-	case click = "Click"
-	case miniGame1Bubble = "Mini Game 1 - Bubble"
+	  case click = "Click"
+	  case miniGame1Bubble = "Mini Game 1 - Bubble"
     
     // Abc
     case a
@@ -47,7 +48,7 @@ enum SoundAssets: String {
     case x
     case y
     case z
-    
+
     // Screen
     case screen2 = "Screen 2"
     case screen3 = "Screen 3"

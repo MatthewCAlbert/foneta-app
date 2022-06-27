@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @State var charaOpacity: CGFloat = 0
     @State var charaOffsetY: CGFloat = 200
-    
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -68,4 +68,3 @@ struct WelcomeView_Previews: PreviewProvider {
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
-

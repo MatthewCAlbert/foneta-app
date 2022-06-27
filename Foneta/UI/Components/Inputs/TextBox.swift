@@ -9,13 +9,13 @@ import SwiftUI
 
 struct TextBox: View {
     @Binding var value: String
-    
+
     var body: some View {
         TextField(
             "",
             text: $value
         )
-        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32))
+        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32).bold())
         .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
         .border(.clear, width: 0)
         .foregroundColor(.black)
@@ -29,7 +29,7 @@ struct TextBox: View {
 
 struct TextBox_Previews: PreviewProvider {
     @State static var value = "Example"
-    
+
     static var previews: some View {
         GeometryReader { geo in
             ZStack {
