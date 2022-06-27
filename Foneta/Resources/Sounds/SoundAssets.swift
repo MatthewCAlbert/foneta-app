@@ -8,10 +8,17 @@
 import Foundation
 
 enum SoundAssets: String {
-    case count321 = "321"
+	case count321 = "321"
+	case tiga = "3"
+	case dua = "2"
+	case satu = "1"
+	case mulai = "Mulai"
+	case wrongSoundEffect = "wrongSoundEffect"
     case next = "Selanjutnya"
     case ready = "Siap"
     case open = "Buka"
+	case click = "Click"
+	case miniGame1Bubble = "Mini Game 1 - Bubble"
     
     // Abc
     case a

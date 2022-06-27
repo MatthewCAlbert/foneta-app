@@ -1,9 +1,9 @@
-//
-//  MiniGameOneView.swift
-//  Foneta
-//
-//  Created by Rahmat Afriyanton on 26/06/22.
-//
+	//
+	//  MiniGameOneView.swift
+	//  Foneta
+	//
+	//  Created by Rahmat Afriyanton on 26/06/22.
+	//
 
 import SwiftUI
 
@@ -47,7 +47,7 @@ struct MiniGameOneView: View {
 	@State var numberOfDisplayedLetter = 0
 	@State var lastDisplayedLetter = 0
 	
-    var body: some View {
+	var body: some View {
 		GeometryReader { geo in
 			ZStack {
 				FullBackgroundImage(image: "Screen5-Bg")
@@ -59,34 +59,34 @@ struct MiniGameOneView: View {
 							Text(countDown > 0 ? "\( countDown)" : "Mulai")
 								.MiniOneGamePlayFont()
 								.onAppear() {
-								Timer
-									.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
-										if (countDown < -1) {
-											manageDisplayedLetters()
-											isFinishedCountdown = true
-										} else {
+									Timer
+										.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
 											countDown -= 1
-//											SoundManager.shared.playSound(SoundAssets.count321)
+											if (countDown == -1) {
+												manageDisplayedLetters()
+												isFinishedCountdown = true
+												timer.invalidate()
+											} else {
+												if (countDown == 3) {
+													SoundManager.shared.playSound(SoundAssets.tiga)
+												} else if (countDown == 2) {
+													SoundManager.shared.playSound(SoundAssets.dua)
+												} else if (countDown == 1) {
+													SoundManager.shared.playSound(SoundAssets.satu)
+												} else {
+													SoundManager.shared.playSound(SoundAssets.mulai)
+												}
+											}
 										}
-									}
-							}
+								}
 						} else if (isFinishedCountdown && !isFinishedPlaying) {
 							HStack {
 								ForEach(displayedLetter, id: \.self) { dpLetter in
 									ZStack {
 										Text(dpLetter.letter.letterName).MiniOneGamePlayFont()
 									}
-									.position(x: letters[dpLetter.id].xPosition, y: letters[dpLetter.id].yPosition)
-
-									.onAppear() {
-										Timer
-											.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
-												withAnimation() {
-													letters[dpLetter.id].xPosition = CGFloat.random(in: 0...geo.size.width)
-													letters[dpLetter.id].yPosition = CGFloat.random(in: 0...geo.size.height)
-												}
-											}
-									}
+									.transition(.asymmetric(insertion: .scale, removal: .opacity))
+									.padding(.trailing, 100)
 									.onTapGesture {
 										SoundManager.shared.playSound(SoundAssets(rawValue: dpLetter.letter.letterName) ?? .a)
 										if (dpLetter.letter.letterName == letters[lastDisplayedLetter].letterName) {
@@ -99,7 +99,8 @@ struct MiniGameOneView: View {
 											} else {
 												lastDisplayedLetter += 1
 											}
-
+										} else {
+											SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
 										}
 									}
 								}
@@ -108,7 +109,7 @@ struct MiniGameOneView: View {
 									.scheduledTimer(withTimeInterval: 3, repeats: true) { (timer) in
 										manageDisplayedLetters()
 									}
-								}
+							}
 						} else {
 
 						}
@@ -122,7 +123,7 @@ struct MiniGameOneView: View {
 				}
 			}
 		}
-    }
+	}
 
 	func manageDisplayedLetters(){
 		if (numberOfDisplayedLetter <= 1) {
@@ -132,6 +133,8 @@ struct MiniGameOneView: View {
 					displayedLetter.append( DisplayedLetters(id: i, letter: letter))
 					letters[i].isDisplayed = true
 					numberOfDisplayedLetter += 1
+
+					SoundManager.shared.playSound(SoundAssets.miniGame1Bubble)
 					break
 				}
 				i += 1
@@ -141,9 +144,9 @@ struct MiniGameOneView: View {
 }
 
 struct MiniGameOneView_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		MiniGameOneView()
 			.previewInterfaceOrientation(.landscapeRight)
-    }
+	}
 }
 

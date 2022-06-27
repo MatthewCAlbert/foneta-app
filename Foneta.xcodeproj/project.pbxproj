@@ -122,6 +122,13 @@
 		4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC67286228CD00E48E6F /* StoryMiniEndView.swift */; };
 		680486B72862E70900820A2A /* MiniGame1MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680486B62862E70900820A2A /* MiniGame1MainView.swift */; };
 		682784A62862F34900CBA198 /* MiniUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682784A52862F34900CBA198 /* MiniUtils.swift */; };
+		685ABBF7286970BE00606A93 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF3286970BE00606A93 /* 3.mp3 */; };
+		685ABBF8286970BE00606A93 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF4286970BE00606A93 /* 2.mp3 */; };
+		685ABBF9286970BE00606A93 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF5286970BE00606A93 /* 1.mp3 */; };
+		685ABBFA286970BE00606A93 /* wrongSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBF6286970BE00606A93 /* wrongSoundEffect.mp3 */; };
+		685ABBFC2869973100606A93 /* Mulai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFB2869973100606A93 /* Mulai.mp3 */; };
+		685ABBFF2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */; };
+		685ABC002869B76C00606A93 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 685ABBFE2869B76C00606A93 /* Click.mp3 */; };
 		686A24ED2867FE44003ECA2C /* AnimateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24EC2867FE44003ECA2C /* AnimateTest.swift */; };
 		686A24F02868030D003ECA2C /* MiniGameOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24EF2868030D003ECA2C /* MiniGameOneView.swift */; };
 		686A24F228680E21003ECA2C /* MiniOneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A24F128680E21003ECA2C /* MiniOneUtils.swift */; };
@@ -269,6 +276,13 @@
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		680486B62862E70900820A2A /* MiniGame1MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGame1MainView.swift; sourceTree = "<group>"; };
 		682784A52862F34900CBA198 /* MiniUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniUtils.swift; sourceTree = "<group>"; };
+		685ABBF3286970BE00606A93 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		685ABBF4286970BE00606A93 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		685ABBF5286970BE00606A93 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		685ABBF6286970BE00606A93 /* wrongSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSoundEffect.mp3; sourceTree = "<group>"; };
+		685ABBFB2869973100606A93 /* Mulai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mulai.mp3; sourceTree = "<group>"; };
+		685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mini Game 1 - Bubble.mp3"; sourceTree = "<group>"; };
+		685ABBFE2869B76C00606A93 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
 		686A24EC2867FE44003ECA2C /* AnimateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateTest.swift; sourceTree = "<group>"; };
 		686A24EF2868030D003ECA2C /* MiniGameOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameOneView.swift; sourceTree = "<group>"; };
 		686A24F128680E21003ECA2C /* MiniOneUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniOneUtils.swift; sourceTree = "<group>"; };
@@ -676,6 +690,13 @@
 		4CE4DC262861587E00E48E6F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				685ABBFE2869B76C00606A93 /* Click.mp3 */,
+				685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */,
+				685ABBFB2869973100606A93 /* Mulai.mp3 */,
+				685ABBF5286970BE00606A93 /* 1.mp3 */,
+				685ABBF4286970BE00606A93 /* 2.mp3 */,
+				685ABBF3286970BE00606A93 /* 3.mp3 */,
+				685ABBF6286970BE00606A93 /* wrongSoundEffect.mp3 */,
 				4CE4DC202861587300E48E6F /* 321.mp3 */,
 				4CE4DC212861587300E48E6F /* Buka.mp3 */,
 				4CE4DC1F2861587300E48E6F /* Selanjutnya.mp3 */,
@@ -869,6 +890,7 @@
 				4CE4DC472861589100E48E6F /* e.mp3 in Resources */,
 				4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */,
 				4CE4DC132861586500E48E6F /* Screen 9 Minigame End Neta.mp3 in Resources */,
+				685ABBFF2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 in Resources */,
 				4CE4DC122861586500E48E6F /* Screen 21 Minigame End.mp3 in Resources */,
 				4CE4DC4D2861589100E48E6F /* p.mp3 in Resources */,
 				4C6628E32850A4F600084711 /* README.md in Resources */,
@@ -881,8 +903,10 @@
 				4CE4DC532861589100E48E6F /* m.mp3 in Resources */,
 				4C6628FF2850A67A00084711 /* Inter-Thin.ttf in Resources */,
 				4CE4DC012861586500E48E6F /* Screen 11.mp3 in Resources */,
+				685ABBFC2869973100606A93 /* Mulai.mp3 in Resources */,
 				4CE4DC252861587300E48E6F /* Buka.mp3 in Resources */,
 				4CE4DC0B2861586500E48E6F /* Screen 5 Minigame End Kepi.mp3 in Resources */,
+				685ABBFA286970BE00606A93 /* wrongSoundEffect.mp3 in Resources */,
 				4CE4DC232861587300E48E6F /* Selanjutnya.mp3 in Resources */,
 				4CE4DC062861586500E48E6F /* Screen 3 Kepi.mp3 in Resources */,
 				4CE4DC0E2861586500E48E6F /* Screen 7.mp3 in Resources */,
@@ -899,6 +923,7 @@
 				4CE4DC5B2861589100E48E6F /* j.mp3 in Resources */,
 				4CE4DC512861589100E48E6F /* y.mp3 in Resources */,
 				4CE4DC222861587300E48E6F /* Siap.mp3 in Resources */,
+				685ABBF8286970BE00606A93 /* 2.mp3 in Resources */,
 				4CE4DC0D2861586500E48E6F /* Screen 14 Minigame 3.mp3 in Resources */,
 				4CE4DC0A2861586500E48E6F /* Screen 4 Kepi.mp3 in Resources */,
 				4CE4DC172861586500E48E6F /* Screen 7 Minigame Start.mp3 in Resources */,
@@ -916,6 +941,7 @@
 				4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */,
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4CE4DC1D2861586500E48E6F /* Screen 13 Minigame Start.mp3 in Resources */,
+				685ABBF7286970BE00606A93 /* 3.mp3 in Resources */,
 				4CE4DC482861589100E48E6F /* l.mp3 in Resources */,
 				4CE4DC592861589100E48E6F /* v.mp3 in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
@@ -924,6 +950,7 @@
 				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
 				4CE4DC422861589100E48E6F /* n.mp3 in Resources */,
 				4CE4DC042861586500E48E6F /* Screen 10 Neta.mp3 in Resources */,
+				685ABBF9286970BE00606A93 /* 1.mp3 in Resources */,
 				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
 				4CE4DC452861589100E48E6F /* q.mp3 in Resources */,
 				4CE4DC4A2861589100E48E6F /* w.mp3 in Resources */,
@@ -941,6 +968,7 @@
 				4CE4DC0F2861586500E48E6F /* Screen 16.mp3 in Resources */,
 				4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */,
 				4CE4DC4E2861589100E48E6F /* r.mp3 in Resources */,
+				685ABC002869B76C00606A93 /* Click.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
