@@ -133,6 +133,13 @@
 		FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18868328631F8F0043F2EA /* Mini4Utils.swift */; };
 		FA1886FC28647C9E0043F2EA /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FB28647C9E0043F2EA /* GestureDemo.swift */; };
 		FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FD2864D9510043F2EA /* Mini2View.swift */; };
+		FA188702286598BD0043F2EA /* Mini3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188701286598BD0043F2EA /* Mini3View.swift */; };
+		FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188704286598EF0043F2EA /* Mini3Asset.swift */; };
+		FA188707286599020043F2EA /* Mini3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188706286599020043F2EA /* Mini3Utils.swift */; };
+		FA18870928659D760043F2EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* CardView.swift */; };
+		FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870A2865A27E0043F2EA /* ImageGuessView.swift */; };
+		FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870C286932D40043F2EA /* NetaLocation.swift */; };
+		FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -290,6 +297,13 @@
 		FA18868328631F8F0043F2EA /* Mini4Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini4Utils.swift; sourceTree = "<group>"; };
 		FA1886FB28647C9E0043F2EA /* GestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
 		FA1886FD2864D9510043F2EA /* Mini2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View.swift; sourceTree = "<group>"; };
+		FA188701286598BD0043F2EA /* Mini3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3View.swift; sourceTree = "<group>"; };
+		FA188704286598EF0043F2EA /* Mini3Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Asset.swift; sourceTree = "<group>"; };
+		FA188706286599020043F2EA /* Mini3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Utils.swift; sourceTree = "<group>"; };
+		FA18870828659D760043F2EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA18870A2865A27E0043F2EA /* ImageGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuessView.swift; sourceTree = "<group>"; };
+		FA18870C286932D40043F2EA /* NetaLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetaLocation.swift; sourceTree = "<group>"; };
+		FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSoundEffect.mp3; sourceTree = "<group>"; };
 		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -525,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1886FA28647C490043F2EA /* Mini2 */,
+				FA1887002865982E0043F2EA /* Mini3 */,
 				FA18867F2862D37F0043F2EA /* Mini4 */,
 				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
 			);
@@ -687,6 +702,7 @@
 				4CE4DC202861587300E48E6F /* 321.mp3 */,
 				4CE4DC212861587300E48E6F /* Buka.mp3 */,
 				4CE4DC1F2861587300E48E6F /* Selanjutnya.mp3 */,
+				FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */,
 				4CE4DC1E2861587300E48E6F /* Siap.mp3 */,
 			);
 			path = Misc;
@@ -774,6 +790,28 @@
 				FA1886FD2864D9510043F2EA /* Mini2View.swift */,
 			);
 			path = Mini2;
+			sourceTree = "<group>";
+		};
+		FA1887002865982E0043F2EA /* Mini3 */ = {
+			isa = PBXGroup;
+			children = (
+				FA188703286598C40043F2EA /* Widgets */,
+				FA188701286598BD0043F2EA /* Mini3View.swift */,
+				FA188704286598EF0043F2EA /* Mini3Asset.swift */,
+				FA188706286599020043F2EA /* Mini3Utils.swift */,
+			);
+			name = Mini3;
+			path = Mini4/Mini3;
+			sourceTree = "<group>";
+		};
+		FA188703286598C40043F2EA /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FA18870828659D760043F2EA /* CardView.swift */,
+				FA18870A2865A27E0043F2EA /* ImageGuessView.swift */,
+				FA18870C286932D40043F2EA /* NetaLocation.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -938,6 +976,7 @@
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4CE4DC1D2861586500E48E6F /* Screen 13 Minigame Start.mp3 in Resources */,
 				4CE4DC482861589100E48E6F /* l.mp3 in Resources */,
+				FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */,
 				4CE4DC592861589100E48E6F /* v.mp3 in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4CE4DC542861589100E48E6F /* x.mp3 in Resources */,
@@ -1118,6 +1157,7 @@
 				4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
 				4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */,
+				FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */,
 				4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */,
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
@@ -1126,6 +1166,7 @@
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
 				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
+				FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */,
 				4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */,
 				4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */,
 				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
@@ -1135,12 +1176,15 @@
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */,
 				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,
+				FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */,
+				FA188707286599020043F2EA /* Mini3Utils.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
 				FA18867C2862C88D0043F2EA /* Mini4View.swift in Sources */,
 				4CE4DBC1286005CB00E48E6F /* CardPromptOverlay.swift in Sources */,
 				4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */,
 				FA18867E2862C88D0043F2EA /* Mini4Asset.swift in Sources */,
 				4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */,
+				FA18870928659D760043F2EA /* CardView.swift in Sources */,
 				4CE4DC6A2862DBDD00E48E6F /* MiniStoryView.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 				FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */,
@@ -1148,6 +1192,7 @@
 				FA18867D2862C88D0043F2EA /* Mini4ImageView.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
 				FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */,
+				FA188702286598BD0043F2EA /* Mini3View.swift in Sources */,
 				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
 				4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */,

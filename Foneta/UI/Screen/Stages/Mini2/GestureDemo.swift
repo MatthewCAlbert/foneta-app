@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct GestureDemo: View {
-    @GestureState var locationState = CGPoint(x: 10, y: 10)
-    @State var location = CGPoint(x: 10, y: 10)
-
+    @GestureState var locationState = CGPoint(x: 0, y: 0)
+    @State var location = CGPoint(x: 0, y: 0)
     var body: some View {
         ZStack {
             Color.white
