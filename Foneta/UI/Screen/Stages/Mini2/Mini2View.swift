@@ -11,64 +11,48 @@ struct Mini2View: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
+                
                 Image("Screen8-Bg")
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
-                VStack {
+                VStack(spacing:0) {
                     Text("Ayam")
                        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 100))
-
                        .foregroundColor(.black)
+                    
+                    
+                    
                 HStack {
-
                         Image("Ayam")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-
+                            .frame(height:300)
                     Spacer()
                         .frame(width: 100)
-
-                        Text("a")
-                        .padding([.trailing],100)
-                        .padding(.bottom,100)
-                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 500))
-                            .foregroundColor(.white)
-
+//                    print(CGPoint)
+                    Text("A")
+                        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 300))
+                                                    .foregroundColor(.white)
+                    Path { path in
+                        path.move(to: CGPoint(x: 200, y: 100))
+                        path.addLine(to: CGPoint(x: 100, y: 300))
+                        path.addLine(to: CGPoint(x: 200, y: 100))
+                        path.addLine(to: CGPoint(x: 300, y: 300))
+                        
+//                        path.addLine(to: CGPoint(x: 300, y: 300))
+//                        path.addLine(to: CGPoint(x: 250, y: 250))
+                        path.closeSubpath()
+                    }
+                    .stroke(.blue, lineWidth: 10)
+                    
+                    }
+                    GestureDemo()
                 }
-                }
+//                GestureDemo()
             }
-//        ZStack {
-//            Image("Screen8-Bg")
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .ignoresSafeArea()
-//            VStack {
-//                Text("Ayam")
-//                    .font(Font.custom(AppFont.openDyslexic.rawValue, size: 100))
-//                    .foregroundColor(.black)
-//
-//                HStack {
-//                        Image("Treasure-1")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-////                            .padding([.trailing],150)
-////                            .padding(.bottom,100)
-//                            .frame(width: 500, height: 500)
-////                            .aspectRatio(contentMode: .fit)
-//                    Spacer()
-//                        .frame(width: 200)
-//                        Text("a")
-////                        .padding([.trailing],100)
-//                        .padding(.bottom,100)
-//                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 500))
-//                            .foregroundColor(.white)
-//
-//                }
-//            }
-//        }
-//        GestureDemo()
+
                 }
     }
 }

@@ -110,12 +110,14 @@ struct Mini3View: View {
             indexNeta += 1
             print(indexNeta)
             random()
-            if ( indexNeta == netaLocationCollection.count ) {
+            if ( indexNeta == netaLocationCollection.count-1 ) {
                 print("Finish")
                 finishGame()
             }
         } else {
             random()
+            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
+            HapticManager.shared.impact(style: .medium)
         }
     }
 
@@ -128,34 +130,49 @@ struct Mini3View: View {
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
                 HStack {
-                    ZStack {
                         if ( indexNeta < netaLocationCollection.count ) {
                             netaLocationCollection[indexNeta]
-                        }
                     }
                     Spacer()
                         .frame(width: 400)
-                    VStack {
+                    
+                    VStack{
                         ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
                         HStack {
-                            Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
-                                      onClick: { click(
-                                        imageText: imageContentMini4Dictionary[guessNumber0].name!)})
-                            Mini3Card(
-                                text: imageContentMini4Dictionary[guessNumber1].name,
-                                      onClick: { click(
-                                        imageText: imageContentMini4Dictionary[guessNumber1].name!)})
-                        }
-                        HStack {
-                            Mini3Card(
-                                text: imageContentMini4Dictionary[guessNumber2].name,
-                                onClick: { click(
-                                    imageText: imageContentMini4Dictionary[guessNumber2].name!)})
-                        }
-                        if ( indexNeta < netaLocationCollection.count ) {
-                            netaLocationCollection[indexNeta]
-                        }
+                                                   Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
+                                                             onClick: { click(
+                                                               imageText: imageContentMini4Dictionary[guessNumber0].name!)})
+                                                   Mini3Card(
+                                                       text: imageContentMini4Dictionary[guessNumber1].name,
+                                                             onClick: { click(
+                                                               imageText: imageContentMini4Dictionary[guessNumber1].name!)})
+                                               }
+                        Mini3Card(
+                                                        text: imageContentMini4Dictionary[guessNumber2].name,
+                                                        onClick: { click(
+                                                            imageText: imageContentMini4Dictionary[guessNumber2].name!)})
                     }
+//                    VStack {
+//                        ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
+//                        HStack {
+//                            Mini3Card(text: imageContentMini4Dictionary[guessNumber0].name,
+//                                      onClick: { click(
+//                                        imageText: imageContentMini4Dictionary[guessNumber0].name!)})
+//                            Mini3Card(
+//                                text: imageContentMini4Dictionary[guessNumber1].name,
+//                                      onClick: { click(
+//                                        imageText: imageContentMini4Dictionary[guessNumber1].name!)})
+//                        }
+//
+//                            Mini3Card(
+//                                text: imageContentMini4Dictionary[guessNumber2].name,
+//                                onClick: { click(
+//                                    imageText: imageContentMini4Dictionary[guessNumber2].name!)})
+//
+//                        if ( indexNeta < netaLocationCollection.count ) {
+//                            netaLocationCollection[indexNeta]
+//                        }
+//                    }
                 }
             }
         }

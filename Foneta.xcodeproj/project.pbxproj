@@ -139,6 +139,7 @@
 		FA18870928659D760043F2EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* CardView.swift */; };
 		FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870A2865A27E0043F2EA /* ImageGuessView.swift */; };
 		FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870C286932D40043F2EA /* NetaLocation.swift */; };
+		FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +303,7 @@
 		FA18870828659D760043F2EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA18870A2865A27E0043F2EA /* ImageGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuessView.swift; sourceTree = "<group>"; };
 		FA18870C286932D40043F2EA /* NetaLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetaLocation.swift; sourceTree = "<group>"; };
+		FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSoundEffect.mp3; sourceTree = "<group>"; };
 		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -700,6 +702,7 @@
 				4CE4DC202861587300E48E6F /* 321.mp3 */,
 				4CE4DC212861587300E48E6F /* Buka.mp3 */,
 				4CE4DC1F2861587300E48E6F /* Selanjutnya.mp3 */,
+				FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */,
 				4CE4DC1E2861587300E48E6F /* Siap.mp3 */,
 			);
 			path = Misc;
@@ -973,6 +976,7 @@
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4CE4DC1D2861586500E48E6F /* Screen 13 Minigame Start.mp3 in Resources */,
 				4CE4DC482861589100E48E6F /* l.mp3 in Resources */,
+				FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */,
 				4CE4DC592861589100E48E6F /* v.mp3 in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4CE4DC542861589100E48E6F /* x.mp3 in Resources */,

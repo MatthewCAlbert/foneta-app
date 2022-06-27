@@ -9,26 +9,37 @@ struct Mini4ImageView: View {
         Button(action: {
             onClick()
         }, label: {
-            VStack {
-            RoundedRectangle(cornerRadius: 25)
-                    .fill(.white)
-                    .frame(width: 150, height: 150)
-                    .padding(.all,10)
-                    .overlay(VStack {
-                        Image(imageContent.name!)
+            VStack(spacing:0) {
+//            RoundedRectangle(cornerRadius: 25)
+//                    .fill(.white)
+//                    .frame(width: 150, height: 150)
+//                    .padding(.all,10)
+//                    .overlay(VStack {
+                ZStack{
+                    Image(imageContent.name!)
                             .resizable()
                             .imageScale(.large)
                             .foregroundColor(.accentColor)
                             .padding()
-                            .background(.red)
-                            .frame(width: 100.0, height: 100.0)
+                            .background(.cyan)
+                            .frame(width: 120, height: 120)
                             .cornerRadius(50)
-                            .overlay(Circle().stroke(Color.black,lineWidth: 5))
-                        Text(imageContent.name!)
-                                .foregroundColor(.black)
-                                .font(.system(size: 20))
-                    })
+                            .overlay(Circle().stroke(Color.white,lineWidth: 5))
+                VStack{
+                    Spacer()
+                        .frame(height:120)
+                RoundedRectangle(cornerRadius: 25)
+                                    .fill(.white)
+                                    .frame(width: 150, height: 50)
+                                    .padding(.all,10)
+                                    .overlay(
+                                        Text(imageContent.name!)
+                                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 30))
+                                            .foregroundColor(.black)
+                    )}
+                }
             }
-        })
+            }
+               )
     }
 }
