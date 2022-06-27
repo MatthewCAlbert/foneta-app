@@ -136,7 +136,7 @@
 		FA188702286598BD0043F2EA /* Mini3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188701286598BD0043F2EA /* Mini3View.swift */; };
 		FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188704286598EF0043F2EA /* Mini3Asset.swift */; };
 		FA188707286599020043F2EA /* Mini3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188706286599020043F2EA /* Mini3Utils.swift */; };
-		FA18870928659D760043F2EA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* SwiftUIView.swift */; };
+		FA18870928659D760043F2EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* CardView.swift */; };
 		FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870A2865A27E0043F2EA /* ImageGuessView.swift */; };
 		FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870C286932D40043F2EA /* NetaLocation.swift */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
@@ -299,7 +299,7 @@
 		FA188701286598BD0043F2EA /* Mini3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3View.swift; sourceTree = "<group>"; };
 		FA188704286598EF0043F2EA /* Mini3Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Asset.swift; sourceTree = "<group>"; };
 		FA188706286599020043F2EA /* Mini3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Utils.swift; sourceTree = "<group>"; };
-		FA18870828659D760043F2EA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		FA18870828659D760043F2EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA18870A2865A27E0043F2EA /* ImageGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuessView.swift; sourceTree = "<group>"; };
 		FA18870C286932D40043F2EA /* NetaLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetaLocation.swift; sourceTree = "<group>"; };
 		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -804,7 +804,7 @@
 		FA188703286598C40043F2EA /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				FA18870828659D760043F2EA /* SwiftUIView.swift */,
+				FA18870828659D760043F2EA /* CardView.swift */,
 				FA18870A2865A27E0043F2EA /* ImageGuessView.swift */,
 				FA18870C286932D40043F2EA /* NetaLocation.swift */,
 			);
@@ -1180,7 +1180,7 @@
 				4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */,
 				FA18867E2862C88D0043F2EA /* Mini4Asset.swift in Sources */,
 				4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */,
-				FA18870928659D760043F2EA /* SwiftUIView.swift in Sources */,
+				FA18870928659D760043F2EA /* CardView.swift in Sources */,
 				4CE4DC6A2862DBDD00E48E6F /* MiniStoryView.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 				FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */,

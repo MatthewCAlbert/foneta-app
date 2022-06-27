@@ -12,15 +12,18 @@ struct Mini3View: View {
     @State var guessNumber2: Int=3
     @State var guessNumber:Int=1
     @State var netaLocationCollection:[NetaLocation]=[
-        NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 500, paddingSizeHorizontal: 70),
-        NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 400, paddingSizeHorizontal: 70),
-        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: 300, paddingSizeHorizontal: 70),
+        NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 500, paddingSizeHorizontal: 50),
+        NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 400, paddingSizeHorizontal: 60),
+        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: 300, paddingSizeHorizontal: 65),
         NetaLocation(imageName: "Neta-Climbing-4", paddingSize: 200, paddingSizeHorizontal: 70),
         NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 100, paddingSizeHorizontal: 70),
-        NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 0, paddingSizeHorizontal: 70),
-        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: -100, paddingSizeHorizontal: 70),
-        NetaLocation(imageName: "Neta-Climbing-4", paddingSize: -200, paddingSizeHorizontal: 70)
+        NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 0, paddingSizeHorizontal: 60),
+        NetaLocation(imageName:"Neta-Climbing-3", paddingSize: -100, paddingSizeHorizontal: 50),
+        NetaLocation(imageName: "Neta-Climbing-4", paddingSize: -200, paddingSizeHorizontal: 40)
     ]
+    func finishGame() {
+        nextSceneActive = true
+    }
     func random() {
             let randomNum = Int.random(in: 0..<3)
             guessNumber = randomNumbers()
@@ -97,13 +100,15 @@ struct Mini3View: View {
          ImageContent(name: "Zebra")
     ]
     func click(imageText:String) {
-//        print(imageText)
         if(imageText==imageContentMini4Dictionary[guessNumber].name){
-            print("Benar")
             indexNeta+=1
+            print(indexNeta)
             random()
+            if ( indexNeta==netaLocationCollection.count ) {
+                print("Finish")
+                finishGame()
+                }
         }else{
-            print("Salah")
             random()
         }
 
@@ -121,7 +126,7 @@ struct Mini3View: View {
                                 netaLocationCollection[indexNeta]
                             }
                             Spacer()
-                                .frame(width: 300)
+                                .frame(width: 400)
                             VStack{
                                 ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
                                 HStack {

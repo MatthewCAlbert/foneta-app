@@ -11,7 +11,6 @@ struct Mini4View: View {
     var nextScreenId: String?
 
     @State var nextSceneActive = false
-
     @State var guessLetter0: String = "D"
     @State var guessLetter1: String = "B"
     @State var guessLetter2: String = "A"
@@ -229,7 +228,10 @@ struct Mini4View: View {
                         ForEach((leafViewCollection), id: \.self) {leaf in
                             leaf
                         }
+                        
                     }
+                    Spacer()
+                        .frame(width: 100)
                     VStack {
                         Text(guessLetter)
                             .padding(.all)
@@ -238,9 +240,12 @@ struct Mini4View: View {
                         HStack {
                             imageViewCollection[guessLetter0]
                             imageViewCollection[guessLetter1]
-                            imageViewCollection[guessLetter2]
+                        
+                            
                         }
+                        imageViewCollection[guessLetter2]
                     }
+                    
                 }
             }
             if ( nextScreenId != nil ) {

@@ -21,27 +21,3 @@ struct NetaLocation: View, Hashable {
     }
 }
 
-//Image("Neta-Climbing-1")
-//    .resizable()
-//    .aspectRatio(contentMode: .fit)
-//    .padding(.top,500)
-//    .padding(.trailing,120)
-//    .frame(width: 300),
-//Image("Neta-Climbing-2")
-//    .resizable()
-//    .aspectRatio(contentMode: .fit)
-//    .padding(.top,300)
-//    .padding(.trailing,120)
-//    .frame(width: 300),
-//Image("Neta-Climbing-3")
-//    .resizable()
-//    .aspectRatio(contentMode: .fit)
-//    .padding(.top,100)
-//    .padding(.trailing,120)
-//    .frame(width: 300),
-//Image("Neta-Climbing-4")
-//    .resizable()
-//    .aspectRatio(contentMode: .fit)
-//    .padding(.bottom,150)
-//    .padding(.trailing,120)
-//    .frame(width: 300),
