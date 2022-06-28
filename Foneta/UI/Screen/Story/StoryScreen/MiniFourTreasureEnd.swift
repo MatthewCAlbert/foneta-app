@@ -119,6 +119,7 @@ struct MiniFourTreasureEnd: View {
                                     .frame(width: 300, height: 300, alignment: .center)
                                     .opacity(treasureOpacity[2])
                                     .onAppear {
+                                        SoundManager.shared.playSound(.sparkle, channel: 1)
                                         animateTreasure(index: 2)
                                     }
                             }
@@ -154,6 +155,7 @@ struct MiniFourTreasureEnd: View {
                                     .fill(Color(hex: "FFFEEA").opacity(flashbangOpacity))
                                     .ignoresSafeArea()
                                     .onAppear {
+                                        SoundManager.shared.playSound(.sparkle, channel: 1)
                                         withAnimation(.easeIn(duration: 2)) {
                                             flashbangOpacity += 1
                                         }

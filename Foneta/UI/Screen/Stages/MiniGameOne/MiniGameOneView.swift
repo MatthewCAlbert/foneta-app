@@ -109,7 +109,7 @@ struct MiniGameOneView: View {
 											displayedLetter.remove(at: 0)
 											numberOfDisplayedLetter = displayedLetter.count
 
-											if (dpLetter.letter.letterName == "a") {
+											if (dpLetter.letter.letterName == "z") {
 												finishGame()
 											} else {
 												lastDisplayedLetter += 1
@@ -122,7 +122,7 @@ struct MiniGameOneView: View {
 								}
 							}.onAppear {
 								Timer
-									.scheduledTimer(withTimeInterval: 3, repeats: true) { (_) in
+									.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
 										manageDisplayedLetters()
 									}
 							}

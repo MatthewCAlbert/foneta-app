@@ -20,12 +20,14 @@ enum SoundAssets: String {
     case open = "Buka"
     case click = "Click"
     case miniGame1Bubble = "Mini Game 1 - Bubble"
+    case sparkle = "Sparkle"
 
     // BGM
     case mini1Bgm = "Sailing Down The Aurora - Mini Game 1"
     case mini2Bgm = "Ups and Downs - Mini Game 2"
     case mini3Bgm = "Garden in Bloom - Mini Game 3"
     case mini4Bgm = "Sugar Spun - Mini Game 4"
+
     // Abc
     case a
     case b

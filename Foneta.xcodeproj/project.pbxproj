@@ -127,6 +127,7 @@
 		4CE4DC73286346D600E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */; };
 		4CFB7D0F286AAD54003CBE91 /* MiniOneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D0D286AAD54003CBE91 /* MiniOneUtils.swift */; };
 		4CFB7D10286AAD54003CBE91 /* MiniGameOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D0E286AAD54003CBE91 /* MiniGameOneView.swift */; };
+		4CFB7D12286ABF7D003CBE91 /* Sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */; };
 		4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */; };
 		4CFFBF172869524200FC4F9F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF162869524200FC4F9F /* Color+Ext.swift */; };
 		4CFFBF1D286A2A0200FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */; };
@@ -374,6 +375,7 @@
 		4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneWithCaptionViewModel.swift; sourceTree = "<group>"; };
 		4CFB7D0D286AAD54003CBE91 /* MiniOneUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniOneUtils.swift; sourceTree = "<group>"; };
 		4CFB7D0E286AAD54003CBE91 /* MiniGameOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGameOneView.swift; sourceTree = "<group>"; };
+		4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sparkle.mp3; sourceTree = "<group>"; };
 		4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourTreasureEnd.swift; sourceTree = "<group>"; };
 		4CFFBF162869524200FC4F9F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sailing Down The Aurora - Mini Game 1.mp3"; sourceTree = "<group>"; };
@@ -881,6 +883,7 @@
 		4CE4DC262861587E00E48E6F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */,
 				685ABBFE2869B76C00606A93 /* Click.mp3 */,
 				685ABBFD2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 */,
 				685ABBFB2869973100606A93 /* Mulai.mp3 */,
@@ -1238,6 +1241,7 @@
 				4CFFBF8A286A369900FC4F9F /* Mobil.mp3 in Resources */,
 				4CFFBFA7286A369900FC4F9F /* Ikan.mp3 in Resources */,
 				4CE4DC0C2861586500E48E6F /* Screen 12.mp3 in Resources */,
+				4CFB7D12286ABF7D003CBE91 /* Sparkle.mp3 in Resources */,
 				4CFFBF84286A369900FC4F9F /* Flamingo.mp3 in Resources */,
 				4CE4DC092861586500E48E6F /* Screen 17.mp3 in Resources */,
 				4CFFBF98286A369900FC4F9F /* Zaitun.mp3 in Resources */,
