@@ -9,14 +9,11 @@ import SwiftUI
 
 struct LeafView: View, Hashable {
     var imageName: String
-//    var imageSize: CGFloat
-//    var paddingSize: CGFloat
-//    var paddingType: [PaddingType]
+
     var body: some View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 500, height: 500)
-//            .padding(enumParserPaddingType(paddingTypes: paddingType),paddingSize)
+            .frame(width: 750, height: 750)
     }
 }

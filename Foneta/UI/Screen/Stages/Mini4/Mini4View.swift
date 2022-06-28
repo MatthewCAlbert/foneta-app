@@ -16,6 +16,10 @@ struct Mini4View: View {
     @State var guessLetter2: String = "A"
     @State var guessLetter: String = "D"
     @State var leafViewCount = 0
+    @State var color0:Color=Color(.white)
+    @State var color1:Color=Color(.white)
+    @State var color2:Color=Color(.white)
+    @State var checker:Bool=true
 
     func random() {
         let randomNum = Int.random(in: 0..<3)
@@ -81,6 +85,7 @@ struct Mini4View: View {
     ]
 
     func click(imageText: String) {
+        checker=false
         SoundManager.shared.playSound(imageText)
         if(imageText.prefix(1) == guessLetter) {
             print("True")
@@ -88,16 +93,14 @@ struct Mini4View: View {
             guessLetter = randomString(length: 1)
             guessLetter1 = randomString(length: 1)
             guessLetter2 = randomString(length: 1)
+            checker=true
             if ( leafViewCount == leafViewCollection.count ) {
                 finishGame()
             }
             random()
         } else {
+            checker=false
             print("False")
-            guessLetter = randomString(length: 1)
-            guessLetter1 = randomString(length: 1)
-            guessLetter2 = randomString(length: 1)
-            random()
             SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
             HapticManager.shared.impact(style: .medium)
         }
@@ -107,6 +110,18 @@ struct Mini4View: View {
         SoundManager.shared.playerChannel[2]?.stop()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             nextSceneActive = true
+        }
+    }
+
+    func getColor(imageText: String) -> Color {
+        if(imageText.prefix(1) == guessLetter && checker) {
+            print("BLUE")
+            return Color(.white)
+        } else if(imageText.prefix(1) == guessLetter && !checker) {
+            print("Merah")
+            return Color("redFalse")
+        } else {
+            return(.white)
         }
     }
 
