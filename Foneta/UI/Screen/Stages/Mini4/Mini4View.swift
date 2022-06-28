@@ -106,21 +106,19 @@ struct Mini4View: View {
         SoundManager.shared.playerChannel[2]?.stop()
         nextSceneActive = true
     }
-    
-    func getColor(imageText: String) -> Color{
+
+    func getColor(imageText: String) -> Color {
         if(imageText.prefix(1) == guessLetter && checker) {
             print("BLUE")
             return Color(.white)
-            checker=false
-        }else if(imageText.prefix(1) == guessLetter && !checker) {
+        } else if(imageText.prefix(1) == guessLetter && !checker) {
             print("Merah")
             return Color("redFalse")
-            checker=true
-        }else{
+        } else {
             return(.white)
         }
     }
-    
+
     var body: some View {
         let imageViewCollection: [String: Mini4ImageView] = [
             "A": Mini4ImageView(

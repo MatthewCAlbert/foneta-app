@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct Mini2View3: View {
     var body: some View {
         GeometryReader { geo in
@@ -30,7 +29,6 @@ struct Mini2View3: View {
                             .frame(height:300)
                     Spacer()
                         .frame(width: 100)
-//                    print(CGPoint)
                     RoundedRectangle(cornerRadius: 25)
                                       .fill(.white)
                                       .frame(width: 400, height: 400)

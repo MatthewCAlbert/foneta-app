@@ -7,17 +7,18 @@
 
 import SwiftUI
 import PencilKit
-struct Home:View{
-    @State var canvas=PKCanvasView()
+
+struct Home: View {
+    @State var canvas = PKCanvasView()
     @State var isDraw = true
-    @State var color:Color=Color.black
-    var body: some View{
+    @State var color: Color = Color.black
+    var body: some View {
             DrawingView(canvas: $canvas)
         }
     }
-struct DrawingView:UIViewRepresentable{
-    @Binding var canvas:PKCanvasView
-    let ink=PKInkingTool(.pencil,color: .black)
+struct DrawingView: UIViewRepresentable {
+    @Binding var canvas: PKCanvasView
+    let ink = PKInkingTool(.pencil,color: .black)
     let erase = PKEraserTool(.bitmap)
     func makeUIView(context: Context) -> PKCanvasView {
         canvas.drawingPolicy = PKCanvasViewDrawingPolicy.anyInput
@@ -28,13 +29,10 @@ struct DrawingView:UIViewRepresentable{
     }
 }
 
-
-
 struct Mini2View1: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-
                 Image("Screen8-Bg")
                     .resizable()
                     .scaledToFill()
@@ -52,7 +50,6 @@ struct Mini2View1: View {
                             .frame(height:300)
                     Spacer()
                         .frame(width: 100)
-//                    print(CGPoint)
                     RoundedRectangle(cornerRadius: 25)
                                       .fill(.white)
                                       .frame(width: 400, height: 400)
