@@ -42,8 +42,6 @@ struct MiniGameOneView: View {
 	let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     @State var nextSceneActive = false
-	@State private var countDown = 3
-	@State private var isFinishedCountdown = false
 	@State private var isFinishedPlaying = false
 
 	@State var displayedLetter: [DisplayedLetters] = []
@@ -66,72 +64,56 @@ struct MiniGameOneView: View {
 
 				VStack {
 					HStack {
-						if (!isFinishedCountdown && !isFinishedPlaying) {
-							Text(countDown > 0 ? "\( countDown)" : "Mulai")
-                                .font(Font.custom(AppFont.openDyslexic.rawValue, size: 150))
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-								.onAppear {
-                                    SoundManager.shared.playSound(SoundAssets.tiga)
-									Timer
-                                        .scheduledTimer(withTimeInterval: 1.1, repeats: true) { (timer) in
-											countDown -= 1
-											if (countDown == -1) {
-												manageDisplayedLetters()
-												isFinishedCountdown = true
-												timer.invalidate()
-											} else {
-												if (countDown == 2) {
-													SoundManager.shared.playSound(SoundAssets.dua)
-												} else if (countDown == 1) {
-													SoundManager.shared.playSound(SoundAssets.satu)
-												} else {
-													SoundManager.shared.playSound(SoundAssets.mulai)
-												}
-											}
-										}
-								}
-						} else if (isFinishedCountdown && !isFinishedPlaying) {
-							HStack {
-								ForEach(displayedLetter, id: \.self) { dpLetter in
-									ZStack {
-										Text(dpLetter.letter.letterName)
-                                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 150))
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.white)
-									}
-									.transition(.asymmetric(insertion: .scale, removal: .opacity))
-									.padding(.trailing, 100)
-									.onTapGesture {
-										SoundManager.shared.playSound(SoundAssets(rawValue: dpLetter.letter.letterName) ?? .a)
-										if (dpLetter.letter.letterName == letters[lastDisplayedLetter].letterName) {
-											letters[dpLetter.id].isFinded = true
-											displayedLetter.remove(at: 0)
-											numberOfDisplayedLetter = displayedLetter.count
+                        MiniGameCountdown(finishCallback: {
+                            manageDisplayedLetters()
+                        }, content: AnyView(
+                            ZStack {
+                                if (!isFinishedPlaying) {
+                                    HStack {
+                                        ForEach(displayedLetter, id: \.self) { dpLetter in
+                                            ZStack {
+                                                Text(dpLetter.letter.letterName)
+                                                    .font(Font.custom(AppFont.openDyslexic.rawValue, size: 150))
+                                                    .fontWeight(.bold)
+                                                    .foregroundColor(.white)
+                                            }
+                                            .transition(.asymmetric(insertion: .scale, removal: .opacity))
+                                            .padding(.trailing, 100)
+                                            .onTapGesture {
+                                                SoundManager.shared
+                                                    .playSound(SoundAssets(rawValue: dpLetter.letter.letterName) ?? .a)
+                                                if (dpLetter.letter.letterName ==
+                                                        letters[lastDisplayedLetter].letterName) {
+                                                    letters[dpLetter.id].isFinded = true
+                                                    displayedLetter.remove(at: 0)
+                                                    numberOfDisplayedLetter = displayedLetter.count
 
-											if (dpLetter.letter.letterName == "z") {
-												finishGame()
-											} else {
-												lastDisplayedLetter += 1
-											}
-										} else {
-											SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
-											HapticManager.shared.impact(style: .medium)
-										}
-									}
-								}
-							}.onAppear {
-								Timer
-									.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
-										manageDisplayedLetters()
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                            manageDisplayedLetters()
+                                                    if (dpLetter.letter.letterName == "z") {
+                                                        finishGame()
+                                                    } else {
+                                                        lastDisplayedLetter += 1
+                                                    }
+                                                } else {
+                                                    SoundManager.shared
+                                                        .playSound(SoundAssets.wrongSoundEffect, channel: 1)
+                                                    HapticManager.shared.impact(style: .medium)
+                                                }
+                                            }
                                         }
-									}
-							}
-						}
+                                    }.onAppear {
+                                        Timer
+                                            .scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+                                                manageDisplayedLetters()
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                    manageDisplayedLetters()
+                                                }
+                                            }
+                                    }
+                                }
+                            }
+                            .frame(width: geo.size.width, height: geo.size.height * 0.9, alignment: .center)
+                        ))
 					}
-					.frame(width: geo.size.width, height: geo.size.height * 0.9, alignment: .center)
 
 					ZStack {
                         BottomBoardLetter(
