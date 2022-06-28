@@ -39,7 +39,6 @@
 		4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB99285AD50500E48E6F /* LaneManager.swift */; };
 		4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB9C285AD5DC00E48E6F /* LevelData.swift */; };
 		4CE4DB9F285AD60000E48E6F /* StageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DB9E285AD60000E48E6F /* StageData.swift */; };
-		4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */; };
 		4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */; };
 		4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */; };
 		4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */; };
@@ -130,6 +129,7 @@
 		4CFB7D12286ABF7D003CBE91 /* Sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */; };
 		4CFB7D16286B6F9D003CBE91 /* MiniGameCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D15286B6F9D003CBE91 /* MiniGameCountdown.swift */; };
 		4CFB7D19286B8687003CBE91 /* StoryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D18286B8687003CBE91 /* StoryMapView.swift */; };
+		4CFB7D1B286B93B0003CBE91 /* Mini2EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D1A286B93B0003CBE91 /* Mini2EntryView.swift */; };
 		4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */; };
 		4CFFBF172869524200FC4F9F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF162869524200FC4F9F /* Color+Ext.swift */; };
 		4CFFBF1D286A2A0200FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */; };
@@ -291,7 +291,6 @@
 		4CE4DB99285AD50500E48E6F /* LaneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaneManager.swift; sourceTree = "<group>"; };
 		4CE4DB9C285AD5DC00E48E6F /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
 		4CE4DB9E285AD60000E48E6F /* StageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageData.swift; sourceTree = "<group>"; };
-		4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStageView.swift; sourceTree = "<group>"; };
 		4CE4DBA4285AD6FD00E48E6F /* LevelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelContent.swift; sourceTree = "<group>"; };
 		4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
@@ -382,6 +381,7 @@
 		4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sparkle.mp3; sourceTree = "<group>"; };
 		4CFB7D15286B6F9D003CBE91 /* MiniGameCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameCountdown.swift; sourceTree = "<group>"; };
 		4CFB7D18286B8687003CBE91 /* StoryMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMapView.swift; sourceTree = "<group>"; };
+		4CFB7D1A286B93B0003CBE91 /* Mini2EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2EntryView.swift; sourceTree = "<group>"; };
 		4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourTreasureEnd.swift; sourceTree = "<group>"; };
 		4CFFBF162869524200FC4F9F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sailing Down The Aurora - Mini Game 1.mp3"; sourceTree = "<group>"; };
@@ -730,7 +730,6 @@
 				FA1886FA28647C490043F2EA /* Mini2 */,
 				FA1887002865982E0043F2EA /* Mini3 */,
 				FA18867F2862D37F0043F2EA /* Mini4 */,
-				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
 			);
 			path = Stages;
 			sourceTree = "<group>";
@@ -1102,6 +1101,7 @@
 				FA1886FD2864D9510043F2EA /* Mini2View1.swift */,
 				FA48093A286B8B5D00691406 /* Mini2View2.swift */,
 				FA48093C286B8B9E00691406 /* Mini2View3.swift */,
+				4CFB7D1A286B93B0003CBE91 /* Mini2EntryView.swift */,
 			);
 			path = Mini2;
 			sourceTree = "<group>";
@@ -1572,8 +1572,8 @@
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */,
 				4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */,
+				4CFB7D1B286B93B0003CBE91 /* Mini2EntryView.swift in Sources */,
 				4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */,
-				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
 				4CE4DB9D285AD5DC00E48E6F /* LevelData.swift in Sources */,
 				4CE4DC5F2861D85200E48E6F /* MainStoryLane.swift in Sources */,
 				4CE4DC722863306700E48E6F /* SceneWithCaptionViewModel.swift in Sources */,

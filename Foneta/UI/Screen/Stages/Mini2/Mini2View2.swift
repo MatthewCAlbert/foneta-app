@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Mini2View2: View {
+    @Binding var stageIndex: Int
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -38,7 +40,9 @@ struct Mini2View2: View {
                     }
                     Spacer()
                         .frame(height:20)
-                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check")
+                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check") {
+                        stageIndex += 1
+                    }
                 }
             }
         }
@@ -47,6 +51,6 @@ struct Mini2View2: View {
 
 struct Mini2View2_Previews: PreviewProvider {
     static var previews: some View {
-        Mini2View3()
+        Mini2View2(stageIndex: .constant(1))
     }
 }

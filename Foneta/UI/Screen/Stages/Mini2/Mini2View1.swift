@@ -15,7 +15,8 @@ struct Home: View {
     var body: some View {
             DrawingView(canvas: $canvas)
         }
-    }
+}
+
 struct DrawingView: UIViewRepresentable {
     @Binding var canvas: PKCanvasView
     let ink = PKInkingTool(.pencil,color: .black)
@@ -30,6 +31,8 @@ struct DrawingView: UIViewRepresentable {
 }
 
 struct Mini2View1: View {
+    @Binding var stageIndex: Int
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -60,7 +63,9 @@ struct Mini2View1: View {
                     }
                     Spacer()
                         .frame(height:20)
-                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check")
+                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check") {
+                        stageIndex += 1
+                    }
                 }
             }
         }
@@ -69,6 +74,6 @@ struct Mini2View1: View {
 
 struct Mini2View1_Previews: PreviewProvider {
     static var previews: some View {
-        Mini2View1()
+        Mini2View1(stageIndex: .constant(1))
     }
 }

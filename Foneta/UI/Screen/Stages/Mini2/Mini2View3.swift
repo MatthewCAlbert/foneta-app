@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Mini2View3: View {
+    var finishGame: () -> Void = {}
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -18,12 +20,12 @@ struct Mini2View3: View {
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .ignoresSafeArea()
                 VStack(spacing:0) {
-                    Text("Ayam")
+                    Text("Cacing")
                        .font(Font.custom(AppFont.openDyslexic.rawValue, size: 100))
                        .foregroundColor(.black)
 
                 HStack {
-                        Image("Ayam")
+                        Image("Cacing")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height:300)
@@ -39,7 +41,9 @@ struct Mini2View3: View {
                     }
                     Spacer()
                         .frame(height:20)
-                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check")
+                    ThemedButton(width: 400, height: 100, fontSize: 40, text: "Check") {
+                        finishGame()
+                    }
                 }
             }
         }

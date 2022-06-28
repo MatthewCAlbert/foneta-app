@@ -158,7 +158,6 @@ struct Mini3View: View {
     }
 
     var body: some View {
-
         GeometryReader { geo in
             ZStack {
                 Image("Screen14-Bg")
