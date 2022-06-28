@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+struct DrawingView:UIViewRepresentable{
+    @Binding var canvas:PKCanvasView
+    func makeUIView(context: Context) -> PKCanvasView {
+        canvas.drawingPolicy = PKCanvasViewDrawingPolicy.anyInput
+        return canvas
+    }
+    func updateUIView(_ uiView: PKCanvasView, context: Context) {
+        return
+    }
+}
+
+
 struct Mini2View: View {
     var body: some View {
         GeometryReader { geo in
@@ -46,7 +58,7 @@ struct Mini2View: View {
                     .stroke(.blue, lineWidth: 10)
 
                     }
-                    GestureDemo()
+//                    GestureDemo()
                 }
 //                GestureDemo()
             }

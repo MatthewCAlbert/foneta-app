@@ -11,7 +11,7 @@ struct ImageGuessView: View {
     var imageName: String!
     var body: some View {
         Circle()
-            .fill(.blue)
+            .fill(Color(.cyan))
             .frame(width: 350, height: 350)
             .padding(.bottom,50)
             .overlay(

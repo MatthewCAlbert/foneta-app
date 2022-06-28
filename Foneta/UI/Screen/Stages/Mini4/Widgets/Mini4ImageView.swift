@@ -3,6 +3,7 @@ import SwiftUI
 
 struct Mini4ImageView: View {
     var imageContent: ImageContent
+    @Binding var colorContent:Color=Color(.white)
     var onClick: (() -> Void)
 
     var body: some View {
@@ -19,22 +20,22 @@ struct Mini4ImageView: View {
                     Image(imageContent.name!)
                             .resizable()
                             .imageScale(.large)
-                            .foregroundColor(.accentColor)
+                            .foregroundColor(Color(colorContent))
                             .padding()
-                            .background(.cyan)
-                            .frame(width: 120, height: 120)
-                            .cornerRadius(50)
+                            .background(Color("trueBlue"))
+                            .frame(width: 150, height: 150)
+                            .cornerRadius(70)
                             .overlay(Circle().stroke(Color.white,lineWidth: 5))
                 VStack {
                     Spacer()
-                        .frame(height:120)
+                        .frame(height:130)
                 RoundedRectangle(cornerRadius: 25)
                                     .fill(.white)
-                                    .frame(width: 150, height: 50)
+                                    .frame(width: 200, height: 50)
                                     .padding(.all,10)
                                     .overlay(
                                         Text(imageContent.name!)
-                                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 30))
+                                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 45))
                                             .foregroundColor(.black)
                     )}
                 }
