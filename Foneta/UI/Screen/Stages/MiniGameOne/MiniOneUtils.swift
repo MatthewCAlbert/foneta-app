@@ -39,15 +39,21 @@ struct DisplayedLetters: Hashable {
 struct BottomBoardLetter: View {
 	var letters: [Letter]
 	var isFinished = true
+    let endingDuration: Double
+
 	@State var kepiX: CGFloat = 0.0
 	@State var kepiY: CGFloat = 0.0
 	@State var kepiHeight: CGFloat = 50
 	@State var kepiWidth: CGFloat = 50
+
 	var body: some View {
 		HStack {
 			ForEach(letters, id: \.self) {letter in
 				Text(letter.letterName)
-					.miniOneBottomBoardBold(fontColor: letter.isFinded ? .black : .gray)
+                    .font(Font.custom(AppFont.openDyslexic.rawValue, size: 32))
+                    .foregroundColor(letter.isFinded ? .black : .gray)
+                    .fontWeight(.bold)
+                    .padding(.trailing, 5)
 			}
 
 			if (isFinished) {
@@ -61,43 +67,18 @@ struct BottomBoardLetter: View {
 							alignment: .trailing)
 						.offset(x: kepiX, y: kepiY)
 				}.onAppear {
-					Timer
-						.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-							withAnimation {
-
-								if (kepiY > -350) {
-									kepiX -= 70
-									kepiY -= 70
-
-									SoundManager.shared.playSound(SoundAssets.miniGame1Bubble)
-								} else {
-									kepiWidth = 300 * 0.9
-									kepiHeight = 300 * 0.9
-								}
-							}
-						}
+                    // 5 * 0.75
+                    DispatchQueue.main.asyncAfter(deadline: .now() + endingDuration) {
+                        SoundManager.shared.playSound(SoundAssets.miniGame1Bubble, channel: 1)
+                    }
+                    withAnimation(.linear(duration: endingDuration)) {
+                        kepiX -= 350
+                        kepiY -= 350
+                        kepiWidth = 300 * 0.9
+                        kepiHeight = 300 * 0.9
+                    }
 				}
 			}
 		}
 	}
-}
-
-extension Text {
-	func miniOneBottomBoardBold(fontColor: Color) -> some View {
-		self.font(
-			Font.custom(AppFont.openDyslexic.rawValue,
-						size: 20))
-		.foregroundColor(fontColor)
-		.fontWeight(.bold)
-		.padding(.trailing, 5)
-	}
-
-	func miniOneGamePlayFont() -> some View {
-		self.font(Font
-			.custom(AppFont.openDyslexic.rawValue,
-					size: 100))
-		.fontWeight(.bold)
-		.foregroundColor(.white)
-	}
-
 }

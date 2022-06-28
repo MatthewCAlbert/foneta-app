@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MiniGameOneView: View {
+    var nextScreenId: String?
+
 	@State private var letters = [
 		Letter(letterName: "a"),
 		Letter(letterName: "b"),
@@ -38,6 +40,8 @@ struct MiniGameOneView: View {
 	]
 
 	let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+    @State var nextSceneActive = false
 	@State private var countDown = 3
 	@State private var isFinishedCountdown = false
 	@State private var isFinishedPlaying = false
@@ -45,6 +49,14 @@ struct MiniGameOneView: View {
 	@State var displayedLetter: [DisplayedLetters] = []
 	@State var numberOfDisplayedLetter = 0
 	@State var lastDisplayedLetter = 0
+
+    func finishGame() {
+        SoundManager.shared.playerChannel[2]?.stop()
+        isFinishedPlaying = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+            nextSceneActive = true
+        }
+    }
 
 	var body: some View {
 		GeometryReader { geo in
@@ -56,19 +68,20 @@ struct MiniGameOneView: View {
 					HStack {
 						if (!isFinishedCountdown && !isFinishedPlaying) {
 							Text(countDown > 0 ? "\( countDown)" : "Mulai")
-								.miniOneGamePlayFont()
+                                .font(Font.custom(AppFont.openDyslexic.rawValue, size: 150))
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
 								.onAppear {
+                                    SoundManager.shared.playSound(SoundAssets.tiga)
 									Timer
-										.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+                                        .scheduledTimer(withTimeInterval: 1.1, repeats: true) { (timer) in
 											countDown -= 1
 											if (countDown == -1) {
 												manageDisplayedLetters()
 												isFinishedCountdown = true
 												timer.invalidate()
 											} else {
-												if (countDown == 3) {
-													SoundManager.shared.playSound(SoundAssets.tiga)
-												} else if (countDown == 2) {
+												if (countDown == 2) {
 													SoundManager.shared.playSound(SoundAssets.dua)
 												} else if (countDown == 1) {
 													SoundManager.shared.playSound(SoundAssets.satu)
@@ -82,7 +95,10 @@ struct MiniGameOneView: View {
 							HStack {
 								ForEach(displayedLetter, id: \.self) { dpLetter in
 									ZStack {
-										Text(dpLetter.letter.letterName).miniOneGamePlayFont()
+										Text(dpLetter.letter.letterName)
+                                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 150))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
 									}
 									.transition(.asymmetric(insertion: .scale, removal: .opacity))
 									.padding(.trailing, 100)
@@ -94,12 +110,12 @@ struct MiniGameOneView: View {
 											numberOfDisplayedLetter = displayedLetter.count
 
 											if (dpLetter.letter.letterName == "a") {
-												isFinishedPlaying = true
+												finishGame()
 											} else {
 												lastDisplayedLetter += 1
 											}
 										} else {
-											SoundManager.shared.playSound(SoundAssets.wrongSoundEffect)
+											SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
 											HapticManager.shared.impact(style: .medium)
 										}
 									}
@@ -115,12 +131,26 @@ struct MiniGameOneView: View {
 					.frame(width: geo.size.width, height: geo.size.height * 0.9, alignment: .center)
 
 					ZStack {
-						BottomBoardLetter(letters: letters, isFinished: isFinishedPlaying ? true : false)
+                        BottomBoardLetter(
+                            letters: letters,
+                            isFinished: isFinishedPlaying ? true : false,
+                            endingDuration: 2.0
+                        )
 					}.frame(width: geo.size.width * 0.95, height: geo.size.height * 0.1, alignment: .center)
 						.background(Color.white.opacity(0.83))
 				}
+                if (nextScreenId != nil ) {
+                    HStack {}
+                    .overlay(
+                        NavigationLink(destination: mainStoryLane[nextScreenId!].body,
+                                       isActive: $nextSceneActive) { EmptyView() }
+                    )
+                }
 			}
-		}
+        }
+        .onAppear {
+            SoundManager.shared.playSound(.mini1Bgm, channel: 2, loop: -1)
+        }
 	}
 
 	func manageDisplayedLetters() {
@@ -133,7 +163,7 @@ struct MiniGameOneView: View {
 					letters[i].isDisplayed = true
 					numberOfDisplayedLetter += 1
 
-					SoundManager.shared.playSound(SoundAssets.miniGame1Bubble)
+					SoundManager.shared.playSound(SoundAssets.miniGame1Bubble, channel: 1)
 					break
 				}
 				i += 1
