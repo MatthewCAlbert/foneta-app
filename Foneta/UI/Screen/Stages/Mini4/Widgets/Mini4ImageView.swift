@@ -3,7 +3,7 @@ import SwiftUI
 
 struct Mini4ImageView: View {
     var imageContent: ImageContent
-    @Binding var colorContent:Color=Color(.white)
+//    @Binding var colorContent:Color
     var onClick: (() -> Void)
 
     var body: some View {
@@ -20,7 +20,7 @@ struct Mini4ImageView: View {
                     Image(imageContent.name!)
                             .resizable()
                             .imageScale(.large)
-                            .foregroundColor(Color(colorContent))
+//                            .foregroundColor(colorContent)
                             .padding()
                             .background(Color("trueBlue"))
                             .frame(width: 150, height: 150)

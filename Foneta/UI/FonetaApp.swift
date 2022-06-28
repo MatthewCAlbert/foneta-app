@@ -11,7 +11,7 @@ import SwiftUI
 struct FonetaApp: App {
     var body: some Scene {
         WindowGroup {
-            Mini2View()
+            Mini4View()
         }
     }
 }
