@@ -21,4 +21,8 @@ extension MiniStoryView {
         }
         return AnyView(mainStoryLane[prevScreenIndex].body)
     }
+
+    var userName: String {
+        return UserData.shared.name ?? "Rahmat"
+    }
 }

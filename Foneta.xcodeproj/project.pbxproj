@@ -134,6 +134,87 @@
 		4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */; };
 		4CE4DC722863306700E48E6F /* SceneWithCaptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */; };
 		4CE4DC73286346D600E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE4DBCE28607D8800E48E6F /* OpenDyslexicAlta-Bold.otf */; };
+		4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */; };
+		4CFFBF172869524200FC4F9F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF162869524200FC4F9F /* Color+Ext.swift */; };
+		4CFFBF1D286A2A0200FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */; };
+		4CFFBF1E286A2A0200FC4F9F /* Sugar Spun - Mini Game 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1A286A2A0100FC4F9F /* Sugar Spun - Mini Game 4.mp3 */; };
+		4CFFBF1F286A2A0200FC4F9F /* Garden in Bloom - Mini Game 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1B286A2A0200FC4F9F /* Garden in Bloom - Mini Game 3.mp3 */; };
+		4CFFBF20286A2A0200FC4F9F /* Ups and Downs - Mini Game 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1C286A2A0200FC4F9F /* Ups and Downs - Mini Game 2.mp3 */; };
+		4CFFBF6D286A369900FC4F9F /* Gergaji.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF22286A369600FC4F9F /* Gergaji.mp3 */; };
+		4CFFBF6E286A369900FC4F9F /* Mikrofon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF23286A369600FC4F9F /* Mikrofon.mp3 */; };
+		4CFFBF6F286A369900FC4F9F /* Ubi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF24286A369600FC4F9F /* Ubi.mp3 */; };
+		4CFFBF70286A369900FC4F9F /* Tikus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF25286A369600FC4F9F /* Tikus.mp3 */; };
+		4CFFBF71286A369900FC4F9F /* Jendela.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF26286A369600FC4F9F /* Jendela.mp3 */; };
+		4CFFBF72286A369900FC4F9F /* Lemon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF27286A369600FC4F9F /* Lemon.mp3 */; };
+		4CFFBF73286A369900FC4F9F /* Uang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF28286A369600FC4F9F /* Uang.mp3 */; };
+		4CFFBF74286A369900FC4F9F /* Tepung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF29286A369600FC4F9F /* Tepung.mp3 */; };
+		4CFFBF75286A369900FC4F9F /* Lemari.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2A286A369600FC4F9F /* Lemari.mp3 */; };
+		4CFFBF76286A369900FC4F9F /* Rusa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2B286A369600FC4F9F /* Rusa.mp3 */; };
+		4CFFBF77286A369900FC4F9F /* Nanas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2C286A369600FC4F9F /* Nanas.mp3 */; };
+		4CFFBF78286A369900FC4F9F /* Yogurt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2D286A369600FC4F9F /* Yogurt.mp3 */; };
+		4CFFBF79286A369900FC4F9F /* Domba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2E286A369600FC4F9F /* Domba.mp3 */; };
+		4CFFBF7A286A369900FC4F9F /* Kambing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF2F286A369600FC4F9F /* Kambing.mp3 */; };
+		4CFFBF7B286A369900FC4F9F /* Zebra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF30286A369600FC4F9F /* Zebra.mp3 */; };
+		4CFFBF7C286A369900FC4F9F /* Topi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF31286A369600FC4F9F /* Topi.mp3 */; };
+		4CFFBF7D286A369900FC4F9F /* Harimau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF32286A369700FC4F9F /* Harimau.mp3 */; };
+		4CFFBF7E286A369900FC4F9F /* Woll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF33286A369700FC4F9F /* Woll.mp3 */; };
+		4CFFBF7F286A369900FC4F9F /* Kerbau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF34286A369700FC4F9F /* Kerbau.mp3 */; };
+		4CFFBF80286A369900FC4F9F /* Dadu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF35286A369700FC4F9F /* Dadu.mp3 */; };
+		4CFFBF81286A369900FC4F9F /* Istana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF36286A369700FC4F9F /* Istana.mp3 */; };
+		4CFFBF82286A369900FC4F9F /* Otak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF37286A369700FC4F9F /* Otak.mp3 */; };
+		4CFFBF83286A369900FC4F9F /* Obeng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF38286A369700FC4F9F /* Obeng.mp3 */; };
+		4CFFBF84286A369900FC4F9F /* Flamingo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF39286A369700FC4F9F /* Flamingo.mp3 */; };
+		4CFFBF85286A369900FC4F9F /* Nyamuk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3A286A369700FC4F9F /* Nyamuk.mp3 */; };
+		4CFFBF86286A369900FC4F9F /* Quran.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3B286A369700FC4F9F /* Quran.mp3 */; };
+		4CFFBF87286A369900FC4F9F /* Raket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3C286A369700FC4F9F /* Raket.mp3 */; };
+		4CFFBF88286A369900FC4F9F /* Sapi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3D286A369700FC4F9F /* Sapi.mp3 */; };
+		4CFFBF89286A369900FC4F9F /* Quokka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3E286A369700FC4F9F /* Quokka.mp3 */; };
+		4CFFBF8A286A369900FC4F9F /* Mobil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF3F286A369700FC4F9F /* Mobil.mp3 */; };
+		4CFFBF8B286A369900FC4F9F /* Cacing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF40286A369700FC4F9F /* Cacing.mp3 */; };
+		4CFFBF8C286A369900FC4F9F /* Monyet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF41286A369700FC4F9F /* Monyet.mp3 */; };
+		4CFFBF8D286A369900FC4F9F /* Cabai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF42286A369700FC4F9F /* Cabai.mp3 */; };
+		4CFFBF8E286A369900FC4F9F /* Payung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF43286A369700FC4F9F /* Payung.mp3 */; };
+		4CFFBF8F286A369900FC4F9F /* Wortel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF44286A369700FC4F9F /* Wortel.mp3 */; };
+		4CFFBF90286A369900FC4F9F /* Gitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF45286A369700FC4F9F /* Gitar.mp3 */; };
+		4CFFBF91286A369900FC4F9F /* Es Krim.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF46286A369700FC4F9F /* Es Krim.mp3 */; };
+		4CFFBF92286A369900FC4F9F /* Xerofit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF47286A369700FC4F9F /* Xerofit.mp3 */; };
+		4CFFBF93286A369900FC4F9F /* Wastafel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF48286A369700FC4F9F /* Wastafel.mp3 */; };
+		4CFFBF94286A369900FC4F9F /* Semangka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF49286A369700FC4F9F /* Semangka.mp3 */; };
+		4CFFBF95286A369900FC4F9F /* Xilofon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4A286A369700FC4F9F /* Xilofon.mp3 */; };
+		4CFFBF96286A369900FC4F9F /* Lebah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4B286A369700FC4F9F /* Lebah.mp3 */; };
+		4CFFBF97286A369900FC4F9F /* Yoyo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4C286A369800FC4F9F /* Yoyo.mp3 */; };
+		4CFFBF98286A369900FC4F9F /* Zaitun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4D286A369800FC4F9F /* Zaitun.mp3 */; };
+		4CFFBF99286A369900FC4F9F /* Gajah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4E286A369800FC4F9F /* Gajah.mp3 */; };
+		4CFFBF9A286A369900FC4F9F /* Iguana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF4F286A369800FC4F9F /* Iguana.mp3 */; };
+		4CFFBF9B286A369900FC4F9F /* Rambutan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF50286A369800FC4F9F /* Rambutan.mp3 */; };
+		4CFFBF9C286A369900FC4F9F /* Handuk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF51286A369800FC4F9F /* Handuk.mp3 */; };
+		4CFFBF9D286A369900FC4F9F /* Fosil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF52286A369800FC4F9F /* Fosil.mp3 */; };
+		4CFFBF9E286A369900FC4F9F /* Ayam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF53286A369800FC4F9F /* Ayam.mp3 */; };
+		4CFFBF9F286A369900FC4F9F /* Pisang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF54286A369800FC4F9F /* Pisang.mp3 */; };
+		4CFFBFA0286A369900FC4F9F /* Hiu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF55286A369800FC4F9F /* Hiu.mp3 */; };
+		4CFFBFA1286A369900FC4F9F /* Venus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF56286A369800FC4F9F /* Venus.mp3 */; };
+		4CFFBFA2286A369900FC4F9F /* Batu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF57286A369800FC4F9F /* Batu.mp3 */; };
+		4CFFBFA3286A369900FC4F9F /* Kucing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF58286A369800FC4F9F /* Kucing.mp3 */; };
+		4CFFBFA4286A369900FC4F9F /* Vitamin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF59286A369800FC4F9F /* Vitamin.mp3 */; };
+		4CFFBFA5286A369900FC4F9F /* Panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5A286A369800FC4F9F /* Panda.mp3 */; };
+		4CFFBFA6286A369900FC4F9F /* Ember.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5B286A369800FC4F9F /* Ember.mp3 */; };
+		4CFFBFA7286A369900FC4F9F /* Ikan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5C286A369800FC4F9F /* Ikan.mp3 */; };
+		4CFFBFA8286A369900FC4F9F /* Celengan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5D286A369800FC4F9F /* Celengan.mp3 */; };
+		4CFFBFA9286A369900FC4F9F /* Foto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5E286A369800FC4F9F /* Foto.mp3 */; };
+		4CFFBFAA286A369900FC4F9F /* Obat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF5F286A369800FC4F9F /* Obat.mp3 */; };
+		4CFFBFAB286A369900FC4F9F /* Elang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF60286A369800FC4F9F /* Elang.mp3 */; };
+		4CFFBFAC286A369900FC4F9F /* Anjing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF61286A369800FC4F9F /* Anjing.mp3 */; };
+		4CFFBFAD286A369900FC4F9F /* Udang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF62286A369800FC4F9F /* Udang.mp3 */; };
+		4CFFBFAE286A369900FC4F9F /* Apel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF63286A369800FC4F9F /* Apel.mp3 */; };
+		4CFFBFAF286A369900FC4F9F /* Vas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF64286A369800FC4F9F /* Vas.mp3 */; };
+		4CFFBFB0286A369900FC4F9F /* Bola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF65286A369800FC4F9F /* Bola.mp3 */; };
+		4CFFBFB1286A369900FC4F9F /* Dasi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF66286A369800FC4F9F /* Dasi.mp3 */; };
+		4CFFBFB2286A369900FC4F9F /* Nangka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF67286A369900FC4F9F /* Nangka.mp3 */; };
+		4CFFBFB3286A369900FC4F9F /* Buku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF68286A369900FC4F9F /* Buku.mp3 */; };
+		4CFFBFB4286A369900FC4F9F /* Sandal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF69286A369900FC4F9F /* Sandal.mp3 */; };
+		4CFFBFB5286A369900FC4F9F /* Jeruk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF6A286A369900FC4F9F /* Jeruk.mp3 */; };
+		4CFFBFB6286A369900FC4F9F /* Xerus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF6B286A369900FC4F9F /* Xerus.mp3 */; };
+		4CFFBFB7286A369900FC4F9F /* Jerapah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF6C286A369900FC4F9F /* Jerapah.mp3 */; };
 		B53F8B2AEF6E2667CF969B90 /* Pods_FonetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */; };
 		FA18867C2862C88D0043F2EA /* Mini4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886792862C88D0043F2EA /* Mini4View.swift */; };
 		FA18867D2862C88D0043F2EA /* Mini4ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18867A2862C88D0043F2EA /* Mini4ImageView.swift */; };
@@ -142,6 +223,13 @@
 		FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18868328631F8F0043F2EA /* Mini4Utils.swift */; };
 		FA1886FC28647C9E0043F2EA /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FB28647C9E0043F2EA /* GestureDemo.swift */; };
 		FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FD2864D9510043F2EA /* Mini2View.swift */; };
+		FA188702286598BD0043F2EA /* Mini3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188701286598BD0043F2EA /* Mini3View.swift */; };
+		FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188704286598EF0043F2EA /* Mini3Asset.swift */; };
+		FA188707286599020043F2EA /* Mini3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188706286599020043F2EA /* Mini3Utils.swift */; };
+		FA18870928659D760043F2EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* CardView.swift */; };
+		FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870A2865A27E0043F2EA /* ImageGuessView.swift */; };
+		FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870C286932D40043F2EA /* NetaLocation.swift */; };
+		FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -285,6 +373,87 @@
 		4CE4DC6D28631D1C00E48E6F /* MuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
 		4CE4DC6F2863282A00E48E6F /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
 		4CE4DC712863306700E48E6F /* SceneWithCaptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneWithCaptionViewModel.swift; sourceTree = "<group>"; };
+		4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourTreasureEnd.swift; sourceTree = "<group>"; };
+		4CFFBF162869524200FC4F9F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sailing Down The Aurora - Mini Game 1.mp3"; sourceTree = "<group>"; };
+		4CFFBF1A286A2A0100FC4F9F /* Sugar Spun - Mini Game 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sugar Spun - Mini Game 4.mp3"; sourceTree = "<group>"; };
+		4CFFBF1B286A2A0200FC4F9F /* Garden in Bloom - Mini Game 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Garden in Bloom - Mini Game 3.mp3"; sourceTree = "<group>"; };
+		4CFFBF1C286A2A0200FC4F9F /* Ups and Downs - Mini Game 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ups and Downs - Mini Game 2.mp3"; sourceTree = "<group>"; };
+		4CFFBF22286A369600FC4F9F /* Gergaji.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gergaji.mp3; sourceTree = "<group>"; };
+		4CFFBF23286A369600FC4F9F /* Mikrofon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mikrofon.mp3; sourceTree = "<group>"; };
+		4CFFBF24286A369600FC4F9F /* Ubi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ubi.mp3; sourceTree = "<group>"; };
+		4CFFBF25286A369600FC4F9F /* Tikus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tikus.mp3; sourceTree = "<group>"; };
+		4CFFBF26286A369600FC4F9F /* Jendela.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jendela.mp3; sourceTree = "<group>"; };
+		4CFFBF27286A369600FC4F9F /* Lemon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lemon.mp3; sourceTree = "<group>"; };
+		4CFFBF28286A369600FC4F9F /* Uang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Uang.mp3; sourceTree = "<group>"; };
+		4CFFBF29286A369600FC4F9F /* Tepung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tepung.mp3; sourceTree = "<group>"; };
+		4CFFBF2A286A369600FC4F9F /* Lemari.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lemari.mp3; sourceTree = "<group>"; };
+		4CFFBF2B286A369600FC4F9F /* Rusa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rusa.mp3; sourceTree = "<group>"; };
+		4CFFBF2C286A369600FC4F9F /* Nanas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nanas.mp3; sourceTree = "<group>"; };
+		4CFFBF2D286A369600FC4F9F /* Yogurt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yogurt.mp3; sourceTree = "<group>"; };
+		4CFFBF2E286A369600FC4F9F /* Domba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Domba.mp3; sourceTree = "<group>"; };
+		4CFFBF2F286A369600FC4F9F /* Kambing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kambing.mp3; sourceTree = "<group>"; };
+		4CFFBF30286A369600FC4F9F /* Zebra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zebra.mp3; sourceTree = "<group>"; };
+		4CFFBF31286A369600FC4F9F /* Topi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Topi.mp3; sourceTree = "<group>"; };
+		4CFFBF32286A369700FC4F9F /* Harimau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Harimau.mp3; sourceTree = "<group>"; };
+		4CFFBF33286A369700FC4F9F /* Woll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Woll.mp3; sourceTree = "<group>"; };
+		4CFFBF34286A369700FC4F9F /* Kerbau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kerbau.mp3; sourceTree = "<group>"; };
+		4CFFBF35286A369700FC4F9F /* Dadu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dadu.mp3; sourceTree = "<group>"; };
+		4CFFBF36286A369700FC4F9F /* Istana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Istana.mp3; sourceTree = "<group>"; };
+		4CFFBF37286A369700FC4F9F /* Otak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Otak.mp3; sourceTree = "<group>"; };
+		4CFFBF38286A369700FC4F9F /* Obeng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Obeng.mp3; sourceTree = "<group>"; };
+		4CFFBF39286A369700FC4F9F /* Flamingo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flamingo.mp3; sourceTree = "<group>"; };
+		4CFFBF3A286A369700FC4F9F /* Nyamuk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nyamuk.mp3; sourceTree = "<group>"; };
+		4CFFBF3B286A369700FC4F9F /* Quran.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Quran.mp3; sourceTree = "<group>"; };
+		4CFFBF3C286A369700FC4F9F /* Raket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Raket.mp3; sourceTree = "<group>"; };
+		4CFFBF3D286A369700FC4F9F /* Sapi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sapi.mp3; sourceTree = "<group>"; };
+		4CFFBF3E286A369700FC4F9F /* Quokka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Quokka.mp3; sourceTree = "<group>"; };
+		4CFFBF3F286A369700FC4F9F /* Mobil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mobil.mp3; sourceTree = "<group>"; };
+		4CFFBF40286A369700FC4F9F /* Cacing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cacing.mp3; sourceTree = "<group>"; };
+		4CFFBF41286A369700FC4F9F /* Monyet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Monyet.mp3; sourceTree = "<group>"; };
+		4CFFBF42286A369700FC4F9F /* Cabai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cabai.mp3; sourceTree = "<group>"; };
+		4CFFBF43286A369700FC4F9F /* Payung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Payung.mp3; sourceTree = "<group>"; };
+		4CFFBF44286A369700FC4F9F /* Wortel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wortel.mp3; sourceTree = "<group>"; };
+		4CFFBF45286A369700FC4F9F /* Gitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gitar.mp3; sourceTree = "<group>"; };
+		4CFFBF46286A369700FC4F9F /* Es Krim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Es Krim.mp3"; sourceTree = "<group>"; };
+		4CFFBF47286A369700FC4F9F /* Xerofit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Xerofit.mp3; sourceTree = "<group>"; };
+		4CFFBF48286A369700FC4F9F /* Wastafel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wastafel.mp3; sourceTree = "<group>"; };
+		4CFFBF49286A369700FC4F9F /* Semangka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Semangka.mp3; sourceTree = "<group>"; };
+		4CFFBF4A286A369700FC4F9F /* Xilofon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Xilofon.mp3; sourceTree = "<group>"; };
+		4CFFBF4B286A369700FC4F9F /* Lebah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lebah.mp3; sourceTree = "<group>"; };
+		4CFFBF4C286A369800FC4F9F /* Yoyo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yoyo.mp3; sourceTree = "<group>"; };
+		4CFFBF4D286A369800FC4F9F /* Zaitun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zaitun.mp3; sourceTree = "<group>"; };
+		4CFFBF4E286A369800FC4F9F /* Gajah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gajah.mp3; sourceTree = "<group>"; };
+		4CFFBF4F286A369800FC4F9F /* Iguana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Iguana.mp3; sourceTree = "<group>"; };
+		4CFFBF50286A369800FC4F9F /* Rambutan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rambutan.mp3; sourceTree = "<group>"; };
+		4CFFBF51286A369800FC4F9F /* Handuk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Handuk.mp3; sourceTree = "<group>"; };
+		4CFFBF52286A369800FC4F9F /* Fosil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fosil.mp3; sourceTree = "<group>"; };
+		4CFFBF53286A369800FC4F9F /* Ayam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ayam.mp3; sourceTree = "<group>"; };
+		4CFFBF54286A369800FC4F9F /* Pisang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pisang.mp3; sourceTree = "<group>"; };
+		4CFFBF55286A369800FC4F9F /* Hiu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hiu.mp3; sourceTree = "<group>"; };
+		4CFFBF56286A369800FC4F9F /* Venus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Venus.mp3; sourceTree = "<group>"; };
+		4CFFBF57286A369800FC4F9F /* Batu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Batu.mp3; sourceTree = "<group>"; };
+		4CFFBF58286A369800FC4F9F /* Kucing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kucing.mp3; sourceTree = "<group>"; };
+		4CFFBF59286A369800FC4F9F /* Vitamin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Vitamin.mp3; sourceTree = "<group>"; };
+		4CFFBF5A286A369800FC4F9F /* Panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Panda.mp3; sourceTree = "<group>"; };
+		4CFFBF5B286A369800FC4F9F /* Ember.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ember.mp3; sourceTree = "<group>"; };
+		4CFFBF5C286A369800FC4F9F /* Ikan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ikan.mp3; sourceTree = "<group>"; };
+		4CFFBF5D286A369800FC4F9F /* Celengan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Celengan.mp3; sourceTree = "<group>"; };
+		4CFFBF5E286A369800FC4F9F /* Foto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Foto.mp3; sourceTree = "<group>"; };
+		4CFFBF5F286A369800FC4F9F /* Obat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Obat.mp3; sourceTree = "<group>"; };
+		4CFFBF60286A369800FC4F9F /* Elang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Elang.mp3; sourceTree = "<group>"; };
+		4CFFBF61286A369800FC4F9F /* Anjing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anjing.mp3; sourceTree = "<group>"; };
+		4CFFBF62286A369800FC4F9F /* Udang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Udang.mp3; sourceTree = "<group>"; };
+		4CFFBF63286A369800FC4F9F /* Apel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Apel.mp3; sourceTree = "<group>"; };
+		4CFFBF64286A369800FC4F9F /* Vas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Vas.mp3; sourceTree = "<group>"; };
+		4CFFBF65286A369800FC4F9F /* Bola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bola.mp3; sourceTree = "<group>"; };
+		4CFFBF66286A369800FC4F9F /* Dasi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dasi.mp3; sourceTree = "<group>"; };
+		4CFFBF67286A369900FC4F9F /* Nangka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nangka.mp3; sourceTree = "<group>"; };
+		4CFFBF68286A369900FC4F9F /* Buku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Buku.mp3; sourceTree = "<group>"; };
+		4CFFBF69286A369900FC4F9F /* Sandal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sandal.mp3; sourceTree = "<group>"; };
+		4CFFBF6A286A369900FC4F9F /* Jeruk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jeruk.mp3; sourceTree = "<group>"; };
+		4CFFBF6B286A369900FC4F9F /* Xerus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Xerus.mp3; sourceTree = "<group>"; };
+		4CFFBF6C286A369900FC4F9F /* Jerapah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jerapah.mp3; sourceTree = "<group>"; };
 		6193D3A6DEE2BA4958453239 /* Pods-Foneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.debug.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.debug.xcconfig"; sourceTree = "<group>"; };
 		64DEECF0D85F64B052B35B86 /* Pods-Foneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foneta.release.xcconfig"; path = "Target Support Files/Pods-Foneta/Pods-Foneta.release.xcconfig"; sourceTree = "<group>"; };
 		685ABBF3286970BE00606A93 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
@@ -308,6 +477,13 @@
 		FA18868328631F8F0043F2EA /* Mini4Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini4Utils.swift; sourceTree = "<group>"; };
 		FA1886FB28647C9E0043F2EA /* GestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
 		FA1886FD2864D9510043F2EA /* Mini2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View.swift; sourceTree = "<group>"; };
+		FA188701286598BD0043F2EA /* Mini3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3View.swift; sourceTree = "<group>"; };
+		FA188704286598EF0043F2EA /* Mini3Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Asset.swift; sourceTree = "<group>"; };
+		FA188706286599020043F2EA /* Mini3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Utils.swift; sourceTree = "<group>"; };
+		FA18870828659D760043F2EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA18870A2865A27E0043F2EA /* ImageGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuessView.swift; sourceTree = "<group>"; };
+		FA18870C286932D40043F2EA /* NetaLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetaLocation.swift; sourceTree = "<group>"; };
+		FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSoundEffect.mp3; sourceTree = "<group>"; };
 		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -544,6 +720,7 @@
 			children = (
 				686A24EE286802CA003ECA2C /* MiniGameOne */,
 				FA1886FA28647C490043F2EA /* Mini2 */,
+				FA1887002865982E0043F2EA /* Mini3 */,
 				FA18867F2862D37F0043F2EA /* Mini4 */,
 				4CE4DBA0285AD67700E48E6F /* SampleStageView.swift */,
 			);
@@ -566,6 +743,7 @@
 				4CE4DBA6285AD9AB00E48E6F /* SoundManager.swift */,
 				4CE4DBA9285AD9F300E48E6F /* HapticManager.swift */,
 				4CE4DBAB285ADA8B00E48E6F /* TextToSpeech.swift */,
+				4CFFBF162869524200FC4F9F /* Color+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -656,7 +834,9 @@
 		4CE4DBE22861584000E48E6F /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				4CFFBF21286A34B400FC4F9F /* Stage */,
 				4CE4DC272861588600E48E6F /* Abc */,
+				4CFFBF18286A29E900FC4F9F /* Background */,
 				4CE4DC262861587E00E48E6F /* Misc */,
 				4CE4DBE32861585800E48E6F /* Story */,
 				4CE4DC5C28615DF400E48E6F /* SoundAssets.swift */,
@@ -713,6 +893,7 @@
 				4CE4DC202861587300E48E6F /* 321.mp3 */,
 				4CE4DC212861587300E48E6F /* Buka.mp3 */,
 				4CE4DC1F2861587300E48E6F /* Selanjutnya.mp3 */,
+				FA18870E286A102E0043F2EA /* wrongSoundEffect.mp3 */,
 				4CE4DC1E2861587300E48E6F /* Siap.mp3 */,
 			);
 			path = Misc;
@@ -758,11 +939,13 @@
 				4CE4DC612862181A00E48E6F /* MiniTwoStoryView.swift */,
 				4CE4DC6328621E6C00E48E6F /* MiniThreeStoryView.swift */,
 				4CE4DC652862214E00E48E6F /* MiniFourStoryView.swift */,
+				4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */,
 				4CE4DC692862DBDD00E48E6F /* MiniStoryView.swift */,
 			);
 			path = StoryScreen;
 			sourceTree = "<group>";
 		};
+
 		686A24EE286802CA003ECA2C /* MiniGameOne */ = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +953,97 @@
 				686A24F128680E21003ECA2C /* MiniOneUtils.swift */,
 			);
 			path = MiniGameOne;
+		4CFFBF18286A29E900FC4F9F /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				4CFFBF1B286A2A0200FC4F9F /* Garden in Bloom - Mini Game 3.mp3 */,
+				4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */,
+				4CFFBF1A286A2A0100FC4F9F /* Sugar Spun - Mini Game 4.mp3 */,
+				4CFFBF1C286A2A0200FC4F9F /* Ups and Downs - Mini Game 2.mp3 */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		4CFFBF21286A34B400FC4F9F /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				4CFFBF61286A369800FC4F9F /* Anjing.mp3 */,
+				4CFFBF63286A369800FC4F9F /* Apel.mp3 */,
+				4CFFBF53286A369800FC4F9F /* Ayam.mp3 */,
+				4CFFBF57286A369800FC4F9F /* Batu.mp3 */,
+				4CFFBF65286A369800FC4F9F /* Bola.mp3 */,
+				4CFFBF68286A369900FC4F9F /* Buku.mp3 */,
+				4CFFBF42286A369700FC4F9F /* Cabai.mp3 */,
+				4CFFBF40286A369700FC4F9F /* Cacing.mp3 */,
+				4CFFBF5D286A369800FC4F9F /* Celengan.mp3 */,
+				4CFFBF35286A369700FC4F9F /* Dadu.mp3 */,
+				4CFFBF66286A369800FC4F9F /* Dasi.mp3 */,
+				4CFFBF2E286A369600FC4F9F /* Domba.mp3 */,
+				4CFFBF60286A369800FC4F9F /* Elang.mp3 */,
+				4CFFBF5B286A369800FC4F9F /* Ember.mp3 */,
+				4CFFBF46286A369700FC4F9F /* Es Krim.mp3 */,
+				4CFFBF39286A369700FC4F9F /* Flamingo.mp3 */,
+				4CFFBF52286A369800FC4F9F /* Fosil.mp3 */,
+				4CFFBF5E286A369800FC4F9F /* Foto.mp3 */,
+				4CFFBF4E286A369800FC4F9F /* Gajah.mp3 */,
+				4CFFBF22286A369600FC4F9F /* Gergaji.mp3 */,
+				4CFFBF45286A369700FC4F9F /* Gitar.mp3 */,
+				4CFFBF51286A369800FC4F9F /* Handuk.mp3 */,
+				4CFFBF32286A369700FC4F9F /* Harimau.mp3 */,
+				4CFFBF55286A369800FC4F9F /* Hiu.mp3 */,
+				4CFFBF4F286A369800FC4F9F /* Iguana.mp3 */,
+				4CFFBF5C286A369800FC4F9F /* Ikan.mp3 */,
+				4CFFBF36286A369700FC4F9F /* Istana.mp3 */,
+				4CFFBF26286A369600FC4F9F /* Jendela.mp3 */,
+				4CFFBF6C286A369900FC4F9F /* Jerapah.mp3 */,
+				4CFFBF6A286A369900FC4F9F /* Jeruk.mp3 */,
+				4CFFBF2F286A369600FC4F9F /* Kambing.mp3 */,
+				4CFFBF34286A369700FC4F9F /* Kerbau.mp3 */,
+				4CFFBF58286A369800FC4F9F /* Kucing.mp3 */,
+				4CFFBF4B286A369700FC4F9F /* Lebah.mp3 */,
+				4CFFBF2A286A369600FC4F9F /* Lemari.mp3 */,
+				4CFFBF27286A369600FC4F9F /* Lemon.mp3 */,
+				4CFFBF23286A369600FC4F9F /* Mikrofon.mp3 */,
+				4CFFBF3F286A369700FC4F9F /* Mobil.mp3 */,
+				4CFFBF41286A369700FC4F9F /* Monyet.mp3 */,
+				4CFFBF2C286A369600FC4F9F /* Nanas.mp3 */,
+				4CFFBF67286A369900FC4F9F /* Nangka.mp3 */,
+				4CFFBF3A286A369700FC4F9F /* Nyamuk.mp3 */,
+				4CFFBF5F286A369800FC4F9F /* Obat.mp3 */,
+				4CFFBF38286A369700FC4F9F /* Obeng.mp3 */,
+				4CFFBF37286A369700FC4F9F /* Otak.mp3 */,
+				4CFFBF5A286A369800FC4F9F /* Panda.mp3 */,
+				4CFFBF43286A369700FC4F9F /* Payung.mp3 */,
+				4CFFBF54286A369800FC4F9F /* Pisang.mp3 */,
+				4CFFBF3E286A369700FC4F9F /* Quokka.mp3 */,
+				4CFFBF3B286A369700FC4F9F /* Quran.mp3 */,
+				4CFFBF3C286A369700FC4F9F /* Raket.mp3 */,
+				4CFFBF50286A369800FC4F9F /* Rambutan.mp3 */,
+				4CFFBF2B286A369600FC4F9F /* Rusa.mp3 */,
+				4CFFBF69286A369900FC4F9F /* Sandal.mp3 */,
+				4CFFBF3D286A369700FC4F9F /* Sapi.mp3 */,
+				4CFFBF49286A369700FC4F9F /* Semangka.mp3 */,
+				4CFFBF29286A369600FC4F9F /* Tepung.mp3 */,
+				4CFFBF25286A369600FC4F9F /* Tikus.mp3 */,
+				4CFFBF31286A369600FC4F9F /* Topi.mp3 */,
+				4CFFBF28286A369600FC4F9F /* Uang.mp3 */,
+				4CFFBF24286A369600FC4F9F /* Ubi.mp3 */,
+				4CFFBF62286A369800FC4F9F /* Udang.mp3 */,
+				4CFFBF64286A369800FC4F9F /* Vas.mp3 */,
+				4CFFBF56286A369800FC4F9F /* Venus.mp3 */,
+				4CFFBF59286A369800FC4F9F /* Vitamin.mp3 */,
+				4CFFBF48286A369700FC4F9F /* Wastafel.mp3 */,
+				4CFFBF33286A369700FC4F9F /* Woll.mp3 */,
+				4CFFBF44286A369700FC4F9F /* Wortel.mp3 */,
+				4CFFBF47286A369700FC4F9F /* Xerofit.mp3 */,
+				4CFFBF6B286A369900FC4F9F /* Xerus.mp3 */,
+				4CFFBF4A286A369700FC4F9F /* Xilofon.mp3 */,
+				4CFFBF2D286A369600FC4F9F /* Yogurt.mp3 */,
+				4CFFBF4C286A369800FC4F9F /* Yoyo.mp3 */,
+				4CFFBF4D286A369800FC4F9F /* Zaitun.mp3 */,
+				4CFFBF30286A369600FC4F9F /* Zebra.mp3 */,
+			);
+			path = Stage;
 			sourceTree = "<group>";
 		};
 		730B96DFFCB7D4DA83ACF6A2 /* Frameworks */ = {
@@ -809,6 +1083,28 @@
 				FA1886FD2864D9510043F2EA /* Mini2View.swift */,
 			);
 			path = Mini2;
+			sourceTree = "<group>";
+		};
+		FA1887002865982E0043F2EA /* Mini3 */ = {
+			isa = PBXGroup;
+			children = (
+				FA188703286598C40043F2EA /* Widgets */,
+				FA188701286598BD0043F2EA /* Mini3View.swift */,
+				FA188704286598EF0043F2EA /* Mini3Asset.swift */,
+				FA188706286599020043F2EA /* Mini3Utils.swift */,
+			);
+			name = Mini3;
+			path = Mini4/Mini3;
+			sourceTree = "<group>";
+		};
+		FA188703286598C40043F2EA /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				FA18870828659D760043F2EA /* CardView.swift */,
+				FA18870A2865A27E0043F2EA /* ImageGuessView.swift */,
+				FA18870C286932D40043F2EA /* NetaLocation.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -922,16 +1218,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CE4DC73286346D600E48E6F /* OpenDyslexicAlta-Bold.otf in Resources */,
+				4CFFBF7A286A369900FC4F9F /* Kambing.mp3 in Resources */,
 				4CE4DC472861589100E48E6F /* e.mp3 in Resources */,
 				4CE4DB91285ACE4D00E48E6F /* OpenDyslexicAlta-Italic.otf in Resources */,
+				4CFFBF9B286A369900FC4F9F /* Rambutan.mp3 in Resources */,
 				4CE4DC132861586500E48E6F /* Screen 9 Minigame End Neta.mp3 in Resources */,
 				685ABBFF2869B76C00606A93 /* Mini Game 1 - Bubble.mp3 in Resources */,
 				4CE4DC122861586500E48E6F /* Screen 21 Minigame End.mp3 in Resources */,
 				4CE4DC4D2861589100E48E6F /* p.mp3 in Resources */,
+				4CFFBFB7286A369900FC4F9F /* Jerapah.mp3 in Resources */,
+				4CFFBFB5286A369900FC4F9F /* Jeruk.mp3 in Resources */,
 				4C6628E32850A4F600084711 /* README.md in Resources */,
+				4CFFBF99286A369900FC4F9F /* Gajah.mp3 in Resources */,
+				4CFFBF9F286A369900FC4F9F /* Pisang.mp3 in Resources */,
+				4CFFBF86286A369900FC4F9F /* Quran.mp3 in Resources */,
 				4CE4DC5A2861589100E48E6F /* s.mp3 in Resources */,
+				4CFFBF77286A369900FC4F9F /* Nanas.mp3 in Resources */,
+				4CFFBF9E286A369900FC4F9F /* Ayam.mp3 in Resources */,
+				4CFFBF70286A369900FC4F9F /* Tikus.mp3 in Resources */,
+				4CFFBFB2286A369900FC4F9F /* Nangka.mp3 in Resources */,
+				4CFFBF8A286A369900FC4F9F /* Mobil.mp3 in Resources */,
+				4CFFBFA7286A369900FC4F9F /* Ikan.mp3 in Resources */,
 				4CE4DC0C2861586500E48E6F /* Screen 12.mp3 in Resources */,
+				4CFFBF84286A369900FC4F9F /* Flamingo.mp3 in Resources */,
 				4CE4DC092861586500E48E6F /* Screen 17.mp3 in Resources */,
+				4CFFBF98286A369900FC4F9F /* Zaitun.mp3 in Resources */,
 				4CE4DC052861586500E48E6F /* Screen 4 Minigame Start.mp3 in Resources */,
 				4CE4DC142861586500E48E6F /* Screen 16 Neta.mp3 in Resources */,
 				4CE4DC572861589100E48E6F /* z.mp3 in Resources */,
@@ -939,20 +1250,46 @@
 				4C6628FF2850A67A00084711 /* Inter-Thin.ttf in Resources */,
 				4CE4DC012861586500E48E6F /* Screen 11.mp3 in Resources */,
 				685ABBFC2869973100606A93 /* Mulai.mp3 in Resources */,
+				4CFFBFA5286A369900FC4F9F /* Panda.mp3 in Resources */,
 				4CE4DC252861587300E48E6F /* Buka.mp3 in Resources */,
+				4CFFBFAB286A369900FC4F9F /* Elang.mp3 in Resources */,
 				4CE4DC0B2861586500E48E6F /* Screen 5 Minigame End Kepi.mp3 in Resources */,
 				685ABBFA286970BE00606A93 /* wrongSoundEffect.mp3 in Resources */,
 				4CE4DC232861587300E48E6F /* Selanjutnya.mp3 in Resources */,
+				4CFFBFAE286A369900FC4F9F /* Apel.mp3 in Resources */,
 				4CE4DC062861586500E48E6F /* Screen 3 Kepi.mp3 in Resources */,
+				4CFFBF88286A369900FC4F9F /* Sapi.mp3 in Resources */,
+				4CFFBF94286A369900FC4F9F /* Semangka.mp3 in Resources */,
+				4CFFBF9C286A369900FC4F9F /* Handuk.mp3 in Resources */,
+				4CFFBF89286A369900FC4F9F /* Quokka.mp3 in Resources */,
+				4CFFBF8E286A369900FC4F9F /* Payung.mp3 in Resources */,
+				4CFFBF95286A369900FC4F9F /* Xilofon.mp3 in Resources */,
+				4CFFBFA6286A369900FC4F9F /* Ember.mp3 in Resources */,
 				4CE4DC0E2861586500E48E6F /* Screen 7.mp3 in Resources */,
+				4CFFBF81286A369900FC4F9F /* Istana.mp3 in Resources */,
+				4CFFBF80286A369900FC4F9F /* Dadu.mp3 in Resources */,
+				4CFFBF74286A369900FC4F9F /* Tepung.mp3 in Resources */,
+				4CFFBF8F286A369900FC4F9F /* Wortel.mp3 in Resources */,
+				4CFFBF1E286A2A0200FC4F9F /* Sugar Spun - Mini Game 4.mp3 in Resources */,
+				4CFFBFB6286A369900FC4F9F /* Xerus.mp3 in Resources */,
 				4CE4DC552861589100E48E6F /* b.mp3 in Resources */,
 				4CE4DC1B2861586500E48E6F /* Screen 7 Neta.mp3 in Resources */,
+				4CFFBF8D286A369900FC4F9F /* Cabai.mp3 in Resources */,
 				4CE4DC562861589100E48E6F /* o.mp3 in Resources */,
+				4CFFBFB3286A369900FC4F9F /* Buku.mp3 in Resources */,
+				4CFFBFB0286A369900FC4F9F /* Bola.mp3 in Resources */,
+				4CFFBF9A286A369900FC4F9F /* Iguana.mp3 in Resources */,
 				4CE4DB8E285ACE4D00E48E6F /* OpenDyslexicAlta-BoldItalic.otf in Resources */,
+				4CFFBF7D286A369900FC4F9F /* Harimau.mp3 in Resources */,
+				4CFFBF6E286A369900FC4F9F /* Mikrofon.mp3 in Resources */,
+				4CFFBFB1286A369900FC4F9F /* Dasi.mp3 in Resources */,
 				4CE4DC1A2861586500E48E6F /* Screen 8 Minigame 2.mp3 in Resources */,
+				4CFFBF96286A369900FC4F9F /* Lebah.mp3 in Resources */,
 				4CE4DC192861586500E48E6F /* Screen 15 Minigame End Neta.mp3 in Resources */,
+				4CFFBF72286A369900FC4F9F /* Lemon.mp3 in Resources */,
 				4CE4DC152861586500E48E6F /* Screen 3.mp3 in Resources */,
 				4C6629052850A67A00084711 /* Inter-SemiBold.ttf in Resources */,
+				4CFFBFB4286A369900FC4F9F /* Sandal.mp3 in Resources */,
 				4CE4DC102861586500E48E6F /* Screen 10.mp3 in Resources */,
 				4CE4DC022861586500E48E6F /* Screen 4.mp3 in Resources */,
 				4CE4DC5B2861589100E48E6F /* j.mp3 in Resources */,
@@ -962,46 +1299,85 @@
 				4CE4DC0D2861586500E48E6F /* Screen 14 Minigame 3.mp3 in Resources */,
 				4CE4DC0A2861586500E48E6F /* Screen 4 Kepi.mp3 in Resources */,
 				4CE4DC172861586500E48E6F /* Screen 7 Minigame Start.mp3 in Resources */,
+				4CFFBFA4286A369900FC4F9F /* Vitamin.mp3 in Resources */,
 				4CE4DC432861589100E48E6F /* d.mp3 in Resources */,
+				4CFFBF1D286A2A0200FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 in Resources */,
 				4CE4DC4F2861589100E48E6F /* i.mp3 in Resources */,
 				4CE4DC1C2861586500E48E6F /* Screen 18.mp3 in Resources */,
+				4CFFBF97286A369900FC4F9F /* Yoyo.mp3 in Resources */,
 				4CE4DC522861589100E48E6F /* f.mp3 in Resources */,
 				4CE4DC242861587300E48E6F /* 321.mp3 in Resources */,
+				4CFFBFA2286A369900FC4F9F /* Batu.mp3 in Resources */,
+				4CFFBF6F286A369900FC4F9F /* Ubi.mp3 in Resources */,
+				4CFFBF7C286A369900FC4F9F /* Topi.mp3 in Resources */,
+				4CFFBFAC286A369900FC4F9F /* Anjing.mp3 in Resources */,
 				4CE4DC462861589100E48E6F /* u.mp3 in Resources */,
 				4CE4DC442861589100E48E6F /* k.mp3 in Resources */,
+				4CFFBF79286A369900FC4F9F /* Domba.mp3 in Resources */,
 				4C6628FE2850A67A00084711 /* Inter-Light.ttf in Resources */,
 				4CE4DC082861586500E48E6F /* Screen 5 Minigame End.mp3 in Resources */,
+				4CFFBFA9286A369900FC4F9F /* Foto.mp3 in Resources */,
 				4C6629032850A67A00084711 /* Inter-ExtraLight.ttf in Resources */,
+				4CFFBFA3286A369900FC4F9F /* Kucing.mp3 in Resources */,
+				4CFFBF75286A369900FC4F9F /* Lemari.mp3 in Resources */,
 				4CE4DC502861589100E48E6F /* c.mp3 in Resources */,
+				4CFFBFA8286A369900FC4F9F /* Celengan.mp3 in Resources */,
+				4CFFBF82286A369900FC4F9F /* Otak.mp3 in Resources */,
+				4CFFBF7B286A369900FC4F9F /* Zebra.mp3 in Resources */,
 				4CE4DB8F285ACE4D00E48E6F /* OpenDyslexicAlta-Regular.otf in Resources */,
+				4CFFBF83286A369900FC4F9F /* Obeng.mp3 in Resources */,
+				4CFFBF7E286A369900FC4F9F /* Woll.mp3 in Resources */,
+				4CFFBF76286A369900FC4F9F /* Rusa.mp3 in Resources */,
 				4C6628B6285097B500084711 /* Preview Assets.xcassets in Resources */,
 				4CE4DC1D2861586500E48E6F /* Screen 13 Minigame Start.mp3 in Resources */,
 				685ABBF7286970BE00606A93 /* 3.mp3 in Resources */,
 				4CE4DC482861589100E48E6F /* l.mp3 in Resources */,
+				FA18870F286A102E0043F2EA /* wrongSoundEffect.mp3 in Resources */,
+				4CFFBF93286A369900FC4F9F /* Wastafel.mp3 in Resources */,
 				4CE4DC592861589100E48E6F /* v.mp3 in Resources */,
 				4C6629002850A67A00084711 /* Inter-Bold.ttf in Resources */,
 				4CE4DC542861589100E48E6F /* x.mp3 in Resources */,
 				4CE4DC582861589100E48E6F /* h.mp3 in Resources */,
 				4C6628FD2850A67A00084711 /* Inter-Medium.ttf in Resources */,
+				4CFFBF7F286A369900FC4F9F /* Kerbau.mp3 in Resources */,
 				4CE4DC422861589100E48E6F /* n.mp3 in Resources */,
+				4CFFBFAD286A369900FC4F9F /* Udang.mp3 in Resources */,
+				4CFFBF71286A369900FC4F9F /* Jendela.mp3 in Resources */,
 				4CE4DC042861586500E48E6F /* Screen 10 Neta.mp3 in Resources */,
 				685ABBF9286970BE00606A93 /* 1.mp3 in Resources */,
 				4C6629012850A67A00084711 /* Inter-Regular.ttf in Resources */,
 				4CE4DC452861589100E48E6F /* q.mp3 in Resources */,
+				4CFFBF8C286A369900FC4F9F /* Monyet.mp3 in Resources */,
 				4CE4DC4A2861589100E48E6F /* w.mp3 in Resources */,
+				4CFFBF91286A369900FC4F9F /* Es Krim.mp3 in Resources */,
 				4CE4DC182861586500E48E6F /* Screen 9 Minigame End.mp3 in Resources */,
 				4CE4DC4C2861589100E48E6F /* a.mp3 in Resources */,
 				4CE4DC072861586500E48E6F /* Screen 19 Minigame Start.mp3 in Resources */,
+				4CFFBF8B286A369900FC4F9F /* Cacing.mp3 in Resources */,
+				4CFFBF90286A369900FC4F9F /* Gitar.mp3 in Resources */,
+				4CFFBF73286A369900FC4F9F /* Uang.mp3 in Resources */,
+				4CFFBF78286A369900FC4F9F /* Yogurt.mp3 in Resources */,
 				4CE4DC492861589100E48E6F /* g.mp3 in Resources */,
+				4CFFBFAF286A369900FC4F9F /* Vas.mp3 in Resources */,
+				4CFFBF1F286A2A0200FC4F9F /* Garden in Bloom - Mini Game 3.mp3 in Resources */,
 				4CE4DC4B2861589100E48E6F /* t.mp3 in Resources */,
 				4C6628FC2850A67A00084711 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
+				4CFFBF85286A369900FC4F9F /* Nyamuk.mp3 in Resources */,
 				4CE4DC112861586500E48E6F /* Screen 2.mp3 in Resources */,
+				4CFFBFAA286A369900FC4F9F /* Obat.mp3 in Resources */,
+				4CFFBF87286A369900FC4F9F /* Raket.mp3 in Resources */,
+				4CFFBF92286A369900FC4F9F /* Xerofit.mp3 in Resources */,
 				4C6628B3285097B500084711 /* Assets.xcassets in Resources */,
 				4C6629022850A67A00084711 /* Inter-ExtraBold.ttf in Resources */,
+				4CFFBF9D286A369900FC4F9F /* Fosil.mp3 in Resources */,
 				4CE4DC162861586500E48E6F /* Screen 15 Minigame End.mp3 in Resources */,
+				4CFFBF6D286A369900FC4F9F /* Gergaji.mp3 in Resources */,
+				4CFFBFA0286A369900FC4F9F /* Hiu.mp3 in Resources */,
+				4CFFBF20286A2A0200FC4F9F /* Ups and Downs - Mini Game 2.mp3 in Resources */,
 				4CE4DC032861586500E48E6F /* Screen 6.mp3 in Resources */,
 				4CE4DC0F2861586500E48E6F /* Screen 16.mp3 in Resources */,
 				4C6629042850A67A00084711 /* Inter-Black.ttf in Resources */,
+				4CFFBFA1286A369900FC4F9F /* Venus.mp3 in Resources */,
 				4CE4DC4E2861589100E48E6F /* r.mp3 in Resources */,
 				685ABC002869B76C00606A93 /* Click.mp3 in Resources */,
 			);
@@ -1161,6 +1537,7 @@
 				4CE4DBAA285AD9F300E48E6F /* HapticManager.swift in Sources */,
 				4C6628DE28509A2000084711 /* HomeView.swift in Sources */,
 				4CE4DB7D285ACBC200E48E6F /* RMLevelSession.swift in Sources */,
+				FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */,
 				4CE4DC702863282B00E48E6F /* ReplayButton.swift in Sources */,
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
@@ -1169,6 +1546,7 @@
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
 				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
+				FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */,
 				4CE4DB9A285AD50500E48E6F /* LaneManager.swift in Sources */,
 				4CE4DBA5285AD6FD00E48E6F /* LevelContent.swift in Sources */,
 				4CE4DBA1285AD67700E48E6F /* SampleStageView.swift in Sources */,
@@ -1178,6 +1556,8 @@
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */,
 				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,
+				FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */,
+				FA188707286599020043F2EA /* Mini3Utils.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
 				686A24F228680E21003ECA2C /* MiniOneUtils.swift in Sources */,
 				FA18867C2862C88D0043F2EA /* Mini4View.swift in Sources */,
@@ -1185,13 +1565,17 @@
 				4CE4DBBC2860057400E48E6F /* TextBox.swift in Sources */,
 				FA18867E2862C88D0043F2EA /* Mini4Asset.swift in Sources */,
 				4CE4DBC3286005F100E48E6F /* CaptionBox.swift in Sources */,
+				FA18870928659D760043F2EA /* CardView.swift in Sources */,
 				4CE4DC6A2862DBDD00E48E6F /* MiniStoryView.swift in Sources */,
 				4CE4DB94285AD27900E48E6F /* UserData.swift in Sources */,
 				FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */,
 				4CE4DBCB28602B2800E48E6F /* WelcomeView.swift in Sources */,
+				4CFFBF172869524200FC4F9F /* Color+Ext.swift in Sources */,
+				4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */,
 				FA18867D2862C88D0043F2EA /* Mini4ImageView.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
 				FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */,
+				FA188702286598BD0043F2EA /* Mini3View.swift in Sources */,
 				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CE4DBAC285ADA8B00E48E6F /* TextToSpeech.swift in Sources */,
 				4CE4DBBF2860059100E48E6F /* DialogBubble.swift in Sources */,

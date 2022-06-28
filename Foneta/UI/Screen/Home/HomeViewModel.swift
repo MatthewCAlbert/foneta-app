@@ -25,7 +25,7 @@ class HomeViewModel: ObservableObject {
         } else {
             // MARK: Modify this to override first screen
             lastLevelId = mainStoryLane[0].id
-//            lastLevelId = "9"
+//            lastLevelId = "8"
         }
         if  UserData.shared.name != nil && UserData.shared.name != "" {
             skipNameAsk = true
