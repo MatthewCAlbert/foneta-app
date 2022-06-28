@@ -104,73 +104,25 @@ struct Mini4View: View {
             SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
             HapticManager.shared.impact(style: .medium)
         }
-//        switch guessNumberCase {
-//            case 0:
-//                color0=getColor(imageText: imageContentMini4Dictionary[guessNumber].name)
-//            case 1:
-//                color1=getColor(imageText: imageContentMini4Dictionary[guessNumber].name)
-//            case 2:
-//                color2=getColor(imageText: imageContentMini4Dictionary[guessNumber].name)
-//            default:
-//                return
-//            }
     }
 
-//    func click(imageText: String,guessNumberCase:Int) {
-//
-//        SoundManager.shared.playSound(imageText)
-//        if(imageText == imageContentMini4Dictionary[guessNumber].name) {
-//            indexNeta += 1
-//            print(indexNeta)
-//            random()
-//            checker=true
-//            color0=Color(.white)
-//            color1=Color(.white)
-//            color2=Color(.white)
-//
-//            if ( indexNeta == netaLocationCollection.count-1 ) {
-//                print("Finish")
-//                finishGame()
-//            }
-//        } else {
-//            checker=false
-//
-////            colorCard=Color("redFalse")
-////            getColor(imageText: imageContentMini4Dictionary[guessNumber].name)
-//            SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
-//            HapticManager.shared.impact(style: .medium)
-//        }
-//        switch guessNumberCase {
-//            case 0:
-//                color0=getColor(imageText: imageContentMini4Dictionary[guessNumber0].name!)
-//            case 1:
-//                color1=getColor(imageText: imageContentMini4Dictionary[guessNumber1].name!)
-//            case 2:
-//                color2=getColor(imageText: imageContentMini4Dictionary[guessNumber2].name!)
-//            default:
-//                return
-//            }
-//    }
-    
     func finishGame() {
         SoundManager.shared.playerChannel[2]?.stop()
         nextSceneActive = true
     }
-    
-    func getColor(imageText: String) -> Color{
+
+    func getColor(imageText: String) -> Color {
         if(imageText.prefix(1) == guessLetter && checker) {
             print("BLUE")
             return Color(.white)
-            checker=false
-        }else if(imageText.prefix(1) == guessLetter && !checker) {
+        } else if(imageText.prefix(1) == guessLetter && !checker) {
             print("Merah")
             return Color("redFalse")
-            checker=true
-        }else{
+        } else {
             return(.white)
         }
     }
-    
+
     var body: some View {
         let imageViewCollection: [String: Mini4ImageView] = [
             "A": Mini4ImageView(

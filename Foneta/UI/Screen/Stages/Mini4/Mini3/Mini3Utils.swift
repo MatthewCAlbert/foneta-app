@@ -8,5 +8,3 @@
 import SwiftUI
 
 func randomNumbers() -> Int {return(Int.random(in: 0..<26))}
-
-

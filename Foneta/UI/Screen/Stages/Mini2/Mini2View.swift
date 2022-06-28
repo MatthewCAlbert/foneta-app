@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//struct DrawingView:UIViewRepresentable{
+// struct DrawingView:UIViewRepresentable{
 //    @Binding var canvas:PKCanvasView
 //    func makeUIView(context: Context) -> PKCanvasView {
 //        canvas.drawingPolicy = PKCanvasViewDrawingPolicy.anyInput
@@ -16,8 +16,7 @@ import SwiftUI
 //    func updateUIView(_ uiView: PKCanvasView, context: Context) {
 //        return
 //    }
-//}
-
+// }
 
 struct Mini2View: View {
     var body: some View {

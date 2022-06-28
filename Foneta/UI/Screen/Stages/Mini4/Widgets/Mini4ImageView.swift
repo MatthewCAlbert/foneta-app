@@ -3,7 +3,6 @@ import SwiftUI
 
 struct Mini4ImageView: View {
     var imageContent: ImageContent
-//    @Binding var colorContent:Color
     var onClick: (() -> Void)
 
     var body: some View {
@@ -11,16 +10,10 @@ struct Mini4ImageView: View {
             onClick()
         }, label: {
             VStack(spacing:0) {
-//            RoundedRectangle(cornerRadius: 25)
-//                    .fill(.white)
-//                    .frame(width: 150, height: 150)
-//                    .padding(.all,10)
-//                    .overlay(VStack {
                 ZStack {
                     Image(imageContent.name!)
                             .resizable()
                             .imageScale(.large)
-//                            .foregroundColor(colorContent)
                             .padding()
                             .background(Color("trueBlue"))
                             .frame(width: 150, height: 150)
