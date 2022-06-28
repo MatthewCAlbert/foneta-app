@@ -1,12 +1,11 @@
-	//
-	//  MiniGameOneView.swift
-	//  Foneta
-	//
-	//  Created by Rahmat Afriyanton on 26/06/22.
-	//
+//
+//  MiniGameOneView.swift
+//  Foneta
+//
+//  Created by Rahmat Afriyanton on 26/06/22.
+//
 
 import SwiftUI
-
 
 struct MiniGameOneView: View {
 	@State private var letters = [
@@ -46,7 +45,7 @@ struct MiniGameOneView: View {
 	@State var displayedLetter: [DisplayedLetters] = []
 	@State var numberOfDisplayedLetter = 0
 	@State var lastDisplayedLetter = 0
-	
+
 	var body: some View {
 		GeometryReader { geo in
 			ZStack {
@@ -58,7 +57,7 @@ struct MiniGameOneView: View {
 						if (!isFinishedCountdown && !isFinishedPlaying) {
 							Text(countDown > 0 ? "\( countDown)" : "Mulai")
 								.miniOneGamePlayFont()
-								.onAppear() {
+								.onAppear {
 									Timer
 										.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
 											countDown -= 1
@@ -105,9 +104,9 @@ struct MiniGameOneView: View {
 										}
 									}
 								}
-							}.onAppear() {
+							}.onAppear {
 								Timer
-									.scheduledTimer(withTimeInterval: 3, repeats: true) { (timer) in
+									.scheduledTimer(withTimeInterval: 3, repeats: true) { (_) in
 										manageDisplayedLetters()
 									}
 							}
@@ -126,7 +125,8 @@ struct MiniGameOneView: View {
 
 	func manageDisplayedLetters() {
 		if (numberOfDisplayedLetter <= 1) {
-			var i = 0;
+            // swiftlint:disable:next identifier_name
+			var i = 0
 			for letter in letters {
 				if (!letter.isFinded && !letter.isDisplayed) {
 					displayedLetter.append( DisplayedLetters(id: i, letter: letter))
@@ -148,4 +148,3 @@ struct MiniGameOneView_Previews: PreviewProvider {
 			.previewInterfaceOrientation(.landscapeRight)
 	}
 }
-

@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-//            HomeView()
-			MiniGameOneView()
+            HomeView()
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .navigationBarHidden(true)

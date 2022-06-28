@@ -1,15 +1,14 @@
-	//
-	//  MiniOneUtils.swift
-	//  Foneta
-	//
-	//  Created by Rahmat Afriyanton on 26/06/22.
-	//
+//
+//  MiniOneUtils.swift
+//  Foneta
+//
+//  Created by Rahmat Afriyanton on 26/06/22.
+//
 
 import Foundation
 import SwiftUI
 
-
-	// Background Image
+// Background Image
 struct FullBackgroundImage: View {
 	var image: String
 	var body: some View {
@@ -26,13 +25,13 @@ struct FullBackgroundImage: View {
 	}
 }
 
-struct Letter:Hashable {
+struct Letter: Hashable {
 	var letterName: String
 	var isFinded = false
 	var isDisplayed = false
 }
 
-struct DisplayedLetters:Hashable {
+struct DisplayedLetters: Hashable {
 	var id: Int
 	var letter: Letter
 }
@@ -61,10 +60,10 @@ struct BottomBoardLetter: View {
 							height: kepiWidth,
 							alignment: .trailing)
 						.offset(x: kepiX, y: kepiY)
-				}.onAppear() {
+				}.onAppear {
 					Timer
 						.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-							withAnimation() {
+							withAnimation {
 
 								if (kepiY > -350) {
 									kepiX -= 70
