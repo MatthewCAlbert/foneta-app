@@ -203,9 +203,9 @@ struct Mini3View: View {
                 }
             }
         }
-//        .onAppear {
-//            SoundManager.shared.playSound(.mini3Bgm, channel: 2, loop: -1)
-//        }
+        .onAppear {
+            SoundManager.shared.playSound(.mini3Bgm, channel: 2, loop: -1)
+        }
         if (nextScreenId != nil ) {
             HStack {}
             .overlay(
