@@ -16,7 +16,7 @@ struct LeafView: View, Hashable {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 500, height: 500)
+            .frame(width: 750, height: 750)
 //            .padding(enumParserPaddingType(paddingTypes: paddingType),paddingSize)
     }
 }

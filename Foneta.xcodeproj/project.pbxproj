@@ -225,13 +225,15 @@
 		FA1886822863121C0043F2EA /* LeafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886812863121C0043F2EA /* LeafView.swift */; };
 		FA18868428631F8F0043F2EA /* Mini4Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18868328631F8F0043F2EA /* Mini4Utils.swift */; };
 		FA1886FC28647C9E0043F2EA /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FB28647C9E0043F2EA /* GestureDemo.swift */; };
-		FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FD2864D9510043F2EA /* Mini2View.swift */; };
+		FA1886FE2864D9510043F2EA /* Mini2View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1886FD2864D9510043F2EA /* Mini2View1.swift */; };
 		FA188702286598BD0043F2EA /* Mini3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188701286598BD0043F2EA /* Mini3View.swift */; };
 		FA188705286598EF0043F2EA /* Mini3Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188704286598EF0043F2EA /* Mini3Asset.swift */; };
 		FA188707286599020043F2EA /* Mini3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA188706286599020043F2EA /* Mini3Utils.swift */; };
 		FA18870928659D760043F2EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870828659D760043F2EA /* CardView.swift */; };
 		FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870A2865A27E0043F2EA /* ImageGuessView.swift */; };
 		FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18870C286932D40043F2EA /* NetaLocation.swift */; };
+		FA48093B286B8B5D00691406 /* Mini2View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48093A286B8B5D00691406 /* Mini2View2.swift */; };
+		FA48093D286B8B9E00691406 /* Mini2View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48093C286B8B9E00691406 /* Mini2View3.swift */; };
 		FB49BDC11C1559BB66DE1BFC /* Pods_Foneta_FonetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8CD1D52A3658A544B34C9C /* Pods_Foneta_FonetaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -481,13 +483,15 @@
 		FA1886812863121C0043F2EA /* LeafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafView.swift; sourceTree = "<group>"; };
 		FA18868328631F8F0043F2EA /* Mini4Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini4Utils.swift; sourceTree = "<group>"; };
 		FA1886FB28647C9E0043F2EA /* GestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
-		FA1886FD2864D9510043F2EA /* Mini2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View.swift; sourceTree = "<group>"; };
+		FA1886FD2864D9510043F2EA /* Mini2View1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View1.swift; sourceTree = "<group>"; };
 		FA188701286598BD0043F2EA /* Mini3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3View.swift; sourceTree = "<group>"; };
 		FA188704286598EF0043F2EA /* Mini3Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Asset.swift; sourceTree = "<group>"; };
 		FA188706286599020043F2EA /* Mini3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3Utils.swift; sourceTree = "<group>"; };
 		FA18870828659D760043F2EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA18870A2865A27E0043F2EA /* ImageGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGuessView.swift; sourceTree = "<group>"; };
 		FA18870C286932D40043F2EA /* NetaLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetaLocation.swift; sourceTree = "<group>"; };
+		FA48093A286B8B5D00691406 /* Mini2View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View2.swift; sourceTree = "<group>"; };
+		FA48093C286B8B9E00691406 /* Mini2View3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini2View3.swift; sourceTree = "<group>"; };
 		FD92DB01FD61FABF43FB5168 /* Pods_FonetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FonetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1095,7 +1099,9 @@
 			isa = PBXGroup;
 			children = (
 				FA1886FB28647C9E0043F2EA /* GestureDemo.swift */,
-				FA1886FD2864D9510043F2EA /* Mini2View.swift */,
+				FA1886FD2864D9510043F2EA /* Mini2View1.swift */,
+				FA48093A286B8B5D00691406 /* Mini2View2.swift */,
+				FA48093C286B8B9E00691406 /* Mini2View3.swift */,
 			);
 			path = Mini2;
 			sourceTree = "<group>";
@@ -1558,6 +1564,7 @@
 				4C6628E82850A55100084711 /* AppColor.swift in Sources */,
 				4CE4DC622862181A00E48E6F /* MiniTwoStoryView.swift in Sources */,
 				FA1886822863121C0043F2EA /* LeafView.swift in Sources */,
+				FA48093D286B8B9E00691406 /* Mini2View3.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
 				4CFB7D19286B8687003CBE91 /* StoryMapView.swift in Sources */,
@@ -1573,6 +1580,7 @@
 				4C6628AF285097B400084711 /* FonetaApp.swift in Sources */,
 				4CE4DC6428621E6C00E48E6F /* MiniThreeStoryView.swift in Sources */,
 				4CE4DBC928602A9200E48E6F /* InputNameOnboardView.swift in Sources */,
+				FA48093B286B8B5D00691406 /* Mini2View2.swift in Sources */,
 				FA18870D286932D40043F2EA /* NetaLocation.swift in Sources */,
 				FA188707286599020043F2EA /* Mini3Utils.swift in Sources */,
 				4C6628E028509A2C00084711 /* HomeViewModel.swift in Sources */,
@@ -1590,7 +1598,7 @@
 				4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */,
 				FA18867D2862C88D0043F2EA /* Mini4ImageView.swift in Sources */,
 				4CE4DBA7285AD9AB00E48E6F /* SoundManager.swift in Sources */,
-				FA1886FE2864D9510043F2EA /* Mini2View.swift in Sources */,
+				FA1886FE2864D9510043F2EA /* Mini2View1.swift in Sources */,
 				FA188702286598BD0043F2EA /* Mini3View.swift in Sources */,
 				4CE4DBB9285F0DE200E48E6F /* ThemedButton.swift in Sources */,
 				4CFB7D10286AAD54003CBE91 /* MiniGameOneView.swift in Sources */,
