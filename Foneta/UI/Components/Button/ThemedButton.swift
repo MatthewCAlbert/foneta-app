@@ -32,6 +32,7 @@ struct ThemedButton: View {
 
     var body: some View {
         Button(action: {
+
             HapticManager.shared.impact(style: .medium)
             if isTTS {
                 if voiceover != nil {

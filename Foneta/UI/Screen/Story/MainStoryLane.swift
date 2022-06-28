@@ -20,7 +20,11 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "3",
-        body: LaneWrapperView(childView: AnyView(MiniOneStoryView(page: 3, nextScreenId: "mini-1-end")))
+        body: LaneWrapperView(childView: AnyView(MiniOneStoryView(page: 3, nextScreenId: "mini-1-game")))
+    ),
+    LaneItem(
+        id: "mini-1-game",
+        body: LaneWrapperView(childView: AnyView(MiniGameOneView(nextScreenId: "mini-1-end")))
     ),
     LaneItem(
         id: "mini-1-end",

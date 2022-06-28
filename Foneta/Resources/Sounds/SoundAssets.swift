@@ -26,7 +26,6 @@ enum SoundAssets: String {
     case mini2Bgm = "Ups and Downs - Mini Game 2"
     case mini3Bgm = "Garden in Bloom - Mini Game 3"
     case mini4Bgm = "Sugar Spun - Mini Game 4"
-
     // Abc
     case a
     case b
