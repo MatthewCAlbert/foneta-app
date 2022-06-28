@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 struct Mini3Card: View {
+    @Binding var color:Color
     var text:String!
     var onClick: (() -> Void)
 
@@ -11,12 +12,12 @@ struct Mini3Card: View {
         }, label: {
             VStack {
             RoundedRectangle(cornerRadius: 25)
-                    .fill(.white)
-                    .frame(width: 120, height: 50)
+                    .fill(color)
+                    .frame(width: 180, height: 70)
                     .padding(.all,10)
                     .overlay(VStack {
                         Text(text)
-                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 20))
+                            .font(Font.custom(AppFont.openDyslexic.rawValue, size: 35))
                             .foregroundColor(.black)
                     })
             }

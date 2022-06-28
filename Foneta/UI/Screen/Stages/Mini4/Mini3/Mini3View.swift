@@ -13,7 +13,8 @@ struct Mini3View: View {
     @State var guessNumber1: Int = 2
     @State var guessNumber2: Int = 3
     @State var guessNumber: Int = 1
-
+    @State var checker:Bool=true
+//    @State var colorCard:Color=Color.white
     @State var netaLocationCollection: [NetaLocation] = [
         NetaLocation(imageName: "Neta-Climbing-1", paddingSize: 500, paddingSizeHorizontal: 50),
         NetaLocation(imageName: "Neta-Climbing-2", paddingSize: 400, paddingSizeHorizontal: 60),
@@ -108,20 +109,38 @@ struct Mini3View: View {
     ]
 
     func click(imageText: String) {
+        checker=false
         print(imageText)
         SoundManager.shared.playSound(imageText)
+        
         if(imageText == imageContentMini4Dictionary[guessNumber].name) {
             indexNeta += 1
             print(indexNeta)
+            checker=true
             random()
             if ( indexNeta == netaLocationCollection.count-1 ) {
                 print("Finish")
                 finishGame()
             }
         } else {
-            random()
+            checker=false
+//            colorCard=Color("redFalse")
+//            getColor(imageText: imageContentMini4Dictionary[guessNumber].name)
             SoundManager.shared.playSound(SoundAssets.wrongSoundEffect, channel: 1)
             HapticManager.shared.impact(style: .medium)
+        }
+    }
+    
+    func getColor(imageText: String) -> Color{
+        if(imageText == imageContentMini4Dictionary[guessNumber].name && checker) {
+            print("BLUE")
+            return Color("trueBlue")
+        }else if(imageText != imageContentMini4Dictionary[guessNumber].name && !checker) {
+            print("Merah")
+            return Color("redFalse")
+        }
+        else {
+            return Color(.white)
         }
     }
 
@@ -144,18 +163,18 @@ struct Mini3View: View {
                         ImageGuessView(imageName: imageContentMini4Dictionary[guessNumber].name)
                         HStack {
                            Mini3Card(
-                            text: imageContentMini4Dictionary[guessNumber0].name,
+                            color: getColor(imageText: $(imageContentMini4Dictionary[guessNumber0].name!)), text: imageContentMini4Dictionary[guessNumber0].name,
                             onClick: {
                                 click(imageText: imageContentMini4Dictionary[guessNumber0].name!)
                             })
                            Mini3Card(
-                            text: imageContentMini4Dictionary[guessNumber1].name,
+                            color: getColor(imageText: $(imageContentMini4Dictionary[guessNumber1].name!)), text: imageContentMini4Dictionary[guessNumber1].name,
                             onClick: {
                                 click(imageText: imageContentMini4Dictionary[guessNumber1].name!)
                             })
                         }
                         Mini3Card(
-                            text: imageContentMini4Dictionary[guessNumber2].name,
+                            color: getColor(imageText: $(imageContentMini4Dictionary[guessNumber2].name!)), text: imageContentMini4Dictionary[guessNumber2].name,
                             onClick: {
                                 click(imageText: imageContentMini4Dictionary[guessNumber2].name!)
                         })
@@ -163,9 +182,9 @@ struct Mini3View: View {
                 }
             }
         }
-        .onAppear {
-            SoundManager.shared.playSound(.mini3Bgm, channel: 2, loop: -1)
-        }
+//        .onAppear {
+//            SoundManager.shared.playSound(.mini3Bgm, channel: 2, loop: -1)
+//        }
         if (nextScreenId != nil ) {
             HStack {}
             .overlay(

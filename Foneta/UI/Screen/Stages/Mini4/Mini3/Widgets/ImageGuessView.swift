@@ -12,18 +12,20 @@ struct ImageGuessView: View {
     var body: some View {
         Circle()
             .fill(.blue)
-            .frame(width: 250, height: 250)
+            .frame(width: 350, height: 350)
             .padding(.bottom,50)
             .overlay(
                 VStack(spacing:0) {
                 Image(imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 150 , height: 150)
+                    .frame(width: 250 , height: 250)
                 Text(imageName)
-                    .font(Font.custom(AppFont.openDyslexic.rawValue, size: 35))
+                    .font(Font.custom(AppFont.openDyslexic.rawValue, size: 60))
                     .foregroundColor(.white)
                 Spacer()
+                        .frame(height:30)
+                        .padding(.bottom,30)
             })
     }
 }

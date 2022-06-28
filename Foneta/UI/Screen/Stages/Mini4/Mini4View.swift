@@ -16,6 +16,7 @@ struct Mini4View: View {
     @State var guessLetter2: String = "A"
     @State var guessLetter: String = "D"
     @State var leafViewCount = 0
+   
 
     func random() {
         let randomNum = Int.random(in: 0..<3)
@@ -253,9 +254,9 @@ struct Mini4View: View {
                 )
             }
         }
-        .onAppear {
-            SoundManager.shared.playSound(.mini4Bgm, channel: 2, loop: -1)
-        }
+//        .onAppear {
+//            SoundManager.shared.playSound(.mini4Bgm, channel: 2, loop: -1)
+//        }
     }
 }
 
