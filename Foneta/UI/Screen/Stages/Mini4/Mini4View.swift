@@ -68,7 +68,6 @@ struct Mini4View: View {
             guessLetter1 = tempString1
         }
     }
-
    var leafViewCollection: [LeafView] = [
         LeafView(imageName: "daun1"),
         LeafView(imageName: "daun2"),
@@ -81,7 +80,6 @@ struct Mini4View: View {
         LeafView(imageName: "daun9"),
         LeafView(imageName: "daun10")
     ]
-
     func click(imageText: String) {
         checker=false
         SoundManager.shared.playSound(imageText)
