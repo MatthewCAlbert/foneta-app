@@ -124,6 +124,9 @@ struct MiniGameOneView: View {
 								Timer
 									.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
 										manageDisplayedLetters()
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                            manageDisplayedLetters()
+                                        }
 									}
 							}
 						}

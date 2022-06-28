@@ -105,7 +105,9 @@ struct Mini4View: View {
 
     func finishGame() {
         SoundManager.shared.playerChannel[2]?.stop()
-        nextSceneActive = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            nextSceneActive = true
+        }
     }
 
     var body: some View {

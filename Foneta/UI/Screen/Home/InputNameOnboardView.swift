@@ -41,7 +41,7 @@ struct InputNameOnboardView: View {
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
                     ThemedButton(
                         width: 280, height: 70, fontSize: 32,
-                        text: "MULAI"
+                        text: "MULAI", voiceover: .mulai
                     ) {
                         startAdventure()
                     }
