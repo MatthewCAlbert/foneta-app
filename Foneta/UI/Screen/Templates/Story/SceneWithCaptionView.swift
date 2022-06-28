@@ -128,10 +128,11 @@ struct SceneWithCaptionView: View {
                         voiceoverPlayed = false
                     }
                 }
-                .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: geo.size.width * 0.03))
+                .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: geo.size.width * 0.03))
                 .frame(width: geo.size.width, height: geo.size.height, alignment: .topTrailing)
             }
         }
+        .ignoresSafeArea()
     }
 }
 

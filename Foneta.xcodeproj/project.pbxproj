@@ -129,6 +129,7 @@
 		4CFB7D10286AAD54003CBE91 /* MiniGameOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D0E286AAD54003CBE91 /* MiniGameOneView.swift */; };
 		4CFB7D12286ABF7D003CBE91 /* Sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */; };
 		4CFB7D16286B6F9D003CBE91 /* MiniGameCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D15286B6F9D003CBE91 /* MiniGameCountdown.swift */; };
+		4CFB7D19286B8687003CBE91 /* StoryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7D18286B8687003CBE91 /* StoryMapView.swift */; };
 		4CFFBF1528692B7F00FC4F9F /* MiniFourTreasureEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */; };
 		4CFFBF172869524200FC4F9F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFBF162869524200FC4F9F /* Color+Ext.swift */; };
 		4CFFBF1D286A2A0200FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */; };
@@ -378,6 +379,7 @@
 		4CFB7D0E286AAD54003CBE91 /* MiniGameOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGameOneView.swift; sourceTree = "<group>"; };
 		4CFB7D11286ABF7D003CBE91 /* Sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sparkle.mp3; sourceTree = "<group>"; };
 		4CFB7D15286B6F9D003CBE91 /* MiniGameCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameCountdown.swift; sourceTree = "<group>"; };
+		4CFB7D18286B8687003CBE91 /* StoryMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMapView.swift; sourceTree = "<group>"; };
 		4CFFBF1428692B7F00FC4F9F /* MiniFourTreasureEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniFourTreasureEnd.swift; sourceTree = "<group>"; };
 		4CFFBF162869524200FC4F9F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		4CFFBF19286A2A0100FC4F9F /* Sailing Down The Aurora - Mini Game 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sailing Down The Aurora - Mini Game 1.mp3"; sourceTree = "<group>"; };
@@ -809,6 +811,7 @@
 		4CE4DBD72860AD5B00E48E6F /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB7D17286B8635003CBE91 /* StoryMap */,
 				4CE4DC602861DFE500E48E6F /* StoryScreen */,
 				4CE4DC5E2861D85200E48E6F /* MainStoryLane.swift */,
 			);
@@ -955,6 +958,14 @@
 				4CFB7D0E286AAD54003CBE91 /* MiniGameOneView.swift */,
 			);
 			path = MiniGameOne;
+			sourceTree = "<group>";
+		};
+		4CFB7D17286B8635003CBE91 /* StoryMap */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB7D18286B8687003CBE91 /* StoryMapView.swift */,
+			);
+			path = StoryMap;
 			sourceTree = "<group>";
 		};
 		4CFFBF18286A29E900FC4F9F /* Background */ = {
@@ -1549,6 +1560,7 @@
 				FA1886822863121C0043F2EA /* LeafView.swift in Sources */,
 				4CE4DB7B285ACBA700E48E6F /* RMStageSession.swift in Sources */,
 				4CE4DC5D28615DF400E48E6F /* SoundAssets.swift in Sources */,
+				4CFB7D19286B8687003CBE91 /* StoryMapView.swift in Sources */,
 				4CE4DC68286228CD00E48E6F /* StoryMiniEndView.swift in Sources */,
 				4C6628B1285097B400084711 /* ContentView.swift in Sources */,
 				FA18870B2865A27E0043F2EA /* ImageGuessView.swift in Sources */,

@@ -86,6 +86,12 @@ let mainStoryLane = LaneManager([
     ),
     LaneItem(
         id: "mini-4-end",
-        body: LaneWrapperView(childView: AnyView(MiniFourStoryView(page: 4, nextScreenId: "0")))
+        body: LaneWrapperView(childView: AnyView(MiniFourStoryView(page: 4, nextScreenId: "story-map-1")))
+    ),
+
+    // Story Map
+    LaneItem(
+        id: "story-map-1",
+        body: LaneWrapperView(childView: AnyView(StoryMapView(nextScreenId: "0")))
     )
 ])

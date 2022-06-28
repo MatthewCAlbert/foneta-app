@@ -86,6 +86,7 @@ struct StoryMiniEndView: View {
             }
             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
         }
+        .ignoresSafeArea()
     }
 }
 

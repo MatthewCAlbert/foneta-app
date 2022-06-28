@@ -8,7 +8,6 @@
 import SwiftUI
 
 protocol MiniStoryView {
-    var page: Int { get }
     var nextScreenId: String { get }
     var voiceoverPlayed: Bool { get }
 }

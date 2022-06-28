@@ -48,10 +48,23 @@ struct MiniGameOneView: View {
 	@State var numberOfDisplayedLetter = 0
 	@State var lastDisplayedLetter = 0
 
+    // Kepi
+    @State var kepiX: CGFloat = 0.0
+    @State var kepiY: CGFloat = 0.0
+    @State var kepiHeight: CGFloat = 50
+    @State var kepiWidth: CGFloat = 50
+
     func finishGame() {
-        SoundManager.shared.playerChannel[2]?.stop()
         isFinishedPlaying = true
+        withAnimation(.linear(duration: 2.2)) {
+            kepiX = 0
+            kepiY = 0
+            kepiWidth = 400 * 0.9
+            kepiHeight = 400 * 0.9
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+            SoundManager.shared.playerChannel[2]?.stop()
+            SoundManager.shared.playSound(SoundAssets.miniGame1Bubble, channel: 1)
             nextSceneActive = true
         }
     }
@@ -114,16 +127,35 @@ struct MiniGameOneView: View {
                             .frame(width: geo.size.width, height: geo.size.height * 0.9, alignment: .center)
                         ))
 					}
-
-					ZStack {
+				}
+                ZStack {
+                    ZStack {
                         BottomBoardLetter(
                             letters: letters,
-                            isFinished: isFinishedPlaying ? true : false,
+                            isFinished: isFinishedPlaying,
                             endingDuration: 2.0
                         )
-					}.frame(width: geo.size.width * 0.95, height: geo.size.height * 0.1, alignment: .center)
-						.background(Color.white.opacity(0.83))
-				}
+                    }.frame(width: geo.size.width * 0.95, height: geo.size.height * 0.1, alignment: .center)
+                    .background(Color.white.opacity(0.83))
+                }
+                .frame(width: geo.size.width, height: geo.size.height, alignment: .bottom)
+                ZStack {
+                    ZStack {
+                        Image("Kepi-Happy")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(
+                                width: kepiHeight,
+                                height: kepiWidth,
+                                alignment: .trailing)
+                            .offset(x: kepiX, y: kepiY)
+                            .onAppear {
+                                kepiX = geo.size.width * 0.4
+                                kepiY = geo.size.height * 0.44
+                            }
+                    }
+                    .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                }
                 if (nextScreenId != nil ) {
                     HStack {}
                     .overlay(
