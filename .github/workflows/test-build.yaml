@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - destination: platform=iOS Simulator,name=iPhone 13
+          - destination: platform=iOS Simulator,name=iPad Pro (12.9-inch) (5th generation)
 
     steps:
       - uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
       - name: CocoaPods Install
         run: pod install
 
-      - name: Build (${{ matrix.ios }})
+      - name: Build
         run: |
           xcodebuild -workspace Foneta.xcworkspace \
             -scheme Foneta \
